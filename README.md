@@ -1,3 +1,3 @@
 # NSML Documents
 
-NSML document for AI-Rush aaa
+NSML document for AI-Rush
