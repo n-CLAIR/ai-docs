@@ -1,1 +1,3 @@
-# rush-docs
+# NSML Documents
+
+NSML document for AI-Rush
