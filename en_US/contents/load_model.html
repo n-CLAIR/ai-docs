@@ -1,0 +1,406 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en-US" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Load a model in a session &mdash; NSML  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Dataset" href="dataset/dataset.html" />
+    <link rel="prev" title="Model Capacity Management" href="model_capacity_management.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> NSML
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#install-nsml">Install nsml</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#install-local-nsml">Install local-nsml</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#login">Login</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#path-registration">Path registration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#run-a-session">Run a session</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="model_capacity_management.html">Model Capacity Management</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="model_capacity_management.html#step-1">Step 1. 삭제할 모델 조회하기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="model_capacity_management.html#step-2">Step 2. 모델 삭제하기 &amp; 확인하기</a></li>
+</ul>
+</li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Load a model in a session</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="dataset/dataset.html">Dataset</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dataset/dataset_overview.html">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataset/list_dataset.html">List dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataset/search_dataset.html">Search dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataset/show_leaderboard.html">Show leaderboard of dataset</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="session.html">Session</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="session/session_overview.html">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session/prepare_a_session_environment.html">Prepare a session environment</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="session/prepare_a_session_environment.html#nsml-ignore">NSML ignore</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="session/run_a_session.html">Run a session</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session/submit_a_session.html">Submit a session</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session/access_to_a_session_for_repl.html">Access to a session for repl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session/change_a_session_memo.html">Change a session memo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session/delete_a_model.html">Delete a model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session/fork_a_session.html">Fork a session</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session/get_a_log_from_session.html">Get a log from session</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session/pull_sessions.html">Pull sessions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session/show_models.html">list models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session/show_sessions.html">Check a session status</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="nsml_library/nsml_library.html">NSML library</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="nsml_library/reserved_arguments.html">reserved arguments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nsml_library/nsml_constants.html">NSML Constants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nsml_library/nsml_report.html">nsml.report</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nsml_library/nsml_bind.html">nsml.bind</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="nsml_library/nsml_bind.html#nsml-bind-save">nsml.bind-save</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nsml_library/nsml_bind.html#nsml-bind-load">nsml.bind-load</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="nsml_library/nsml_save.html">nsml.save</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nsml_library/nsml_load.html">nsml.load</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nsml_library/nsml_paused.html">nsml.paused</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nsml_library/bind_model.html">bind_model</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="web_interface/web_interface.html">Web interface</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="web_interface/leaderboard.html">Leaderboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="web_interface/check_log.html">Check log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="web_interface/check_session_diff.html">Check session diff</a></li>
+<li class="toctree-l2"><a class="reference internal" href="web_interface/graph.html">Graph visualization</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="web_interface/graph.html#graph-controller">Graph Controller</a></li>
+<li class="toctree-l3"><a class="reference internal" href="web_interface/graph.html#meta-info">Meta Info.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="web_interface/graph.html#graph-for-scalar-data">Graph for Scalar data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="web_interface/graph.html#advanced-usage">Advanced Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="web_interface/usage_of_resources.html">Usage of resources</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Appendix.html">Appendix</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="appendix/recovery.html">Recovery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Appendix.html#notification">Notification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Appendix.html#dataset-policy">Dataset Policy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Appendix.html#gpu-credit-rule">GPU credit rule</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">NSML</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Load a model in a session</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/contents/load_model.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="load-a-model-in-a-session">
+<span id="tutorial-load-model"></span><h1>Load a model in a session<a class="headerlink" href="#load-a-model-in-a-session" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>You can import models from other sessions within your code using the NSML library.It works by loading another session’s model with <a class="reference internal" href="nsml_library/nsml_load.html#nsml-load"><span class="std std-ref">nsml.load</span></a> and storing it with <a class="reference internal" href="nsml_library/nsml_save.html#nsml-save"><span class="std std-ref">nsml.save</span></a>, and then create a dummy session to terminate.</p>
+<p>Let’s take a look at it with baseline examples.</p>
+<p>First, execute the following command with the <a class="reference internal" href="session/run_a_session.html#nsml-run"><span class="std std-ref">nsml run</span></a> command.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> ls
+<span class="go">README.md      data_loader.py main.py        setup.py</span>
+
+<span class="gp">$</span> nsml run -d mnist
+<span class="go">INFO[2019/07/19 15:06:04.170] .nsmlignore check - start</span>
+<span class="go">INFO[2019/07/19 15:06:04.170] .nsmlignore check - done</span>
+<span class="go">INFO[2019/07/19 15:06:04.235] file integrity check - start</span>
+<span class="go">INFO[2019/07/19 15:06:04.237] file integrity check - done</span>
+<span class="go">INFO[2019/07/19 15:06:04.238] .nsmlignore 16 B - start</span>
+<span class="go">INFO[2019/07/19 15:06:04.238] .nsmlignore 16 B - done (1/5 20.00%) (16 B/18 KiB 0.09%)</span>
+<span class="go">INFO[2019/07/19 15:06:04.238] README.md 9.1 KiB - start</span>
+<span class="go">INFO[2019/07/19 15:06:04.239] README.md 9.1 KiB - done (2/5 40.00%) (9.2 KiB/18 KiB 50.32%)</span>
+<span class="go">INFO[2019/07/19 15:06:04.239] data_loader.py 1.5 KiB - start</span>
+<span class="go">INFO[2019/07/19 15:06:04.239] data_loader.py 1.5 KiB - done (3/5 60.00%) (11 KiB/18 KiB 58.57%)</span>
+<span class="go">INFO[2019/07/19 15:06:04.239] main.py 7.3 KiB - start</span>
+<span class="go">INFO[2019/07/19 15:06:04.239] main.py 7.3 KiB - done (4/5 80.00%) (18 KiB/18 KiB 98.81%)</span>
+<span class="go">INFO[2019/07/19 15:06:04.239] setup.py 221 B - start</span>
+<span class="go">INFO[2019/07/19 15:06:04.239] setup.py 221 B - done (5/5 100.00%) (18 KiB/18 KiB 100.00%)</span>
+<span class="go">.....</span>
+<span class="go">Building docker image. It might take for a while</span>
+<span class="go">......</span>
+<span class="go">Session nsml_team/mnist/48 is started</span>
+</pre></div>
+</div>
+<p>If you check the newly created 48th session using <a class="reference internal" href="session/show_models.html#nsml-model-ls"><span class="std std-ref">model list</span></a>, you can see the list of models created as follows</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> nsml model ls nsml_team/mnist/48
+<span class="go">Checkpoint    Last Modified    Elapsed    Summary                                                                    Size</span>
+<span class="go">------------  ---------------  ---------  -------------------------------------------------------------------------  ---------</span>
+<span class="go">0             36 minutes ago   3.397      epoch_total=5, loss=7.083731204539806, acc=0.0019707207207207205, epoch=0  366.74 MB</span>
+<span class="go">1             36 minutes ago   24.667     epoch_total=5, loss=6.765417760556883, acc=0.00563063063063063, epoch=1    366.74 MB</span>
+<span class="go">2             35 minutes ago   24.624     epoch_total=5, loss=6.254474949192357, acc=0.02294481981981982, epoch=2    366.74 MB</span>
+<span class="go">3             35 minutes ago   24.751     epoch_total=5, loss=5.404983241278846, acc=0.08727477477477477, epoch=3    366.74 MB</span>
+<span class="go">4             34 minutes ago   24.630     epoch_total=5, loss=4.27992379557979, acc=0.21494932432432431, epoch=4     366.74 MB</span>
+</pre></div>
+</div>
+<p>Let’s create a new session by loading the 4th checkpoint model in the 48th session using <a class="reference internal" href="nsml_library/nsml_load.html#nsml-load"><span class="std std-ref">nsml.load</span></a> function with the three lines of code.</p>
+<p>Add the following three lines of code to the main.py of the baseline</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">nsml</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">checkpoint</span><span class="o">=</span><span class="s1">&#39;4&#39;</span><span class="p">,</span> <span class="n">session</span><span class="o">=</span><span class="s1">&#39;nsml_team/mnist/48&#39;</span><span class="p">)</span>
+<span class="n">nsml</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;saved&#39;</span><span class="p">)</span>
+<span class="nb">exit</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Specify the index of checkpoint and session name to load in load() function, and save with save() function. The best position of writing the code is below of <code class="docutils literal notranslate"><span class="pre">Trainmode</span> <span class="pre">=</span> <span class="pre">True</span></code> as shown in the below example. If you use the code at the other positions, you should insert the code after calling the bind_model(model) function.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">bind_model</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">config</span><span class="o">.</span><span class="n">pause</span><span class="p">:</span>
+    <span class="n">nsml</span><span class="o">.</span><span class="n">paused</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="nb">locals</span><span class="p">())</span>
+
+<span class="n">bTrainmode</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="k">if</span> <span class="n">config</span><span class="o">.</span><span class="n">mode</span> <span class="o">==</span> <span class="s1">&#39;train&#39;</span><span class="p">:</span>
+    <span class="n">bTrainmode</span> <span class="o">=</span> <span class="bp">True</span>
+
+    <span class="c1"># the three lines of load/save source codes are positioned at below.</span>
+    <span class="n">nsml</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">checkpoint</span><span class="o">=</span><span class="s1">&#39;4&#39;</span><span class="p">,</span> <span class="n">session</span><span class="o">=</span><span class="s1">&#39;nsml_team/mnist/48&#39;</span><span class="p">)</span>
+    <span class="n">nsml</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;saved&#39;</span><span class="p">)</span>
+    <span class="nb">exit</span><span class="p">()</span>
+    <span class="c1"># If you want to place it to the other line, you should put it below the bind_model() function,</span>
+
+    <span class="sd">&quot;&quot;&quot; Initiate RMSprop optimizer &quot;&quot;&quot;</span>
+    <span class="n">opt</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">optimizers</span><span class="o">.</span><span class="n">rmsprop</span><span class="p">(</span><span class="n">lr</span><span class="o">=</span><span class="mf">0.00045</span><span class="p">,</span> <span class="n">decay</span><span class="o">=</span><span class="mf">1e-6</span><span class="p">)</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="s1">&#39;categorical_crossentropy&#39;</span><span class="p">,</span>
+                  <span class="n">optimizer</span><span class="o">=</span><span class="n">opt</span><span class="p">,</span>
+                  <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>Let’s try to run the session again. Session 49 begins.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> nsml run -d mnist
+<span class="go">INFO[2019/07/19 15:10:10.803] .nsmlignore check - start</span>
+<span class="go">INFO[2019/07/19 15:10:10.804] .nsmlignore check - done</span>
+<span class="go">INFO[2019/07/19 15:10:10.942] file integrity check - start</span>
+<span class="go">INFO[2019/07/19 15:10:10.944] file integrity check - done</span>
+<span class="go">INFO[2019/07/19 15:10:10.946] .nsmlignore 16 B - start</span>
+<span class="go">INFO[2019/07/19 15:10:10.946] .nsmlignore 16 B - done (1/5 20.00%) (16 B/18 KiB 0.09%)</span>
+<span class="go">INFO[2019/07/19 15:10:10.946] README.md 9.1 KiB - start</span>
+<span class="go">INFO[2019/07/19 15:10:10.946] README.md 9.1 KiB - done (2/5 40.00%) (9.2 KiB/18 KiB 50.02%)</span>
+<span class="go">INFO[2019/07/19 15:10:10.946] data_loader.py 1.5 KiB - start</span>
+<span class="go">INFO[2019/07/19 15:10:10.947] data_loader.py 1.5 KiB - done (3/5 60.00%) (11 KiB/18 KiB 58.23%)</span>
+<span class="go">INFO[2019/07/19 15:10:10.947] main.py 7.4 KiB - start</span>
+<span class="go">INFO[2019/07/19 15:10:10.947] main.py 7.4 KiB - done (4/5 80.00%) (18 KiB/18 KiB 98.82%)</span>
+<span class="go">INFO[2019/07/19 15:10:10.947] setup.py 221 B - start</span>
+<span class="go">INFO[2019/07/19 15:10:10.947] setup.py 221 B - done (5/5 100.00%) (18 KiB/18 KiB 100.00%)</span>
+<span class="go">.....</span>
+<span class="go">Building docker image. It might take for a while</span>
+<span class="go">......</span>
+<span class="go">Session nsml_team/mnist/49 is started</span>
+</pre></div>
+</div>
+<p>If you find the following two statements in the log, you can see that the model has been loaded correctly.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> nsml logs nsml_team/mnist/49
+<span class="go">...</span>
+<span class="go">model loaded!</span>
+<span class="go">model saved!</span>
+<span class="go">...</span>
+</pre></div>
+</div>
+<p>A checkpoint named ‘saved’ is created. This is because we named it when calling the nsml.save() function.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> nsml model ls nsml_team/mnist/49
+<span class="go">Checkpoint    Last Modified    Elapsed    Summary    Size</span>
+<span class="go">------------  ---------------  ---------  ---------  ---------</span>
+<span class="go">saved         20 minutes ago   0.000                 366.74 MB</span>
+</pre></div>
+</div>
+<p>You can submit your model to the leaderboard using the nsml submit command in the same way as any other session.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> nsml submit nsml_team/mnist/49 saved
+<span class="go">........</span>
+<span class="go">Building docker image. It might take for a while</span>
+<span class="go">.............</span>
+<span class="go">Score: 0.012391527150908917</span>
+<span class="go">Done</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="dataset/dataset.html" class="btn btn-neutral float-right" title="Dataset" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="model_capacity_management.html" class="btn btn-neutral float-left" title="Model Capacity Management" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, NAVER
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
