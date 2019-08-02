@@ -1,0 +1,378 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Model Capacity Management &mdash; NSML  문서</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="색인" href="../genindex.html" />
+    <link rel="search" title="검색" href="../search.html" />
+    <link rel="next" title="Load a model in a session" href="load_model.html" />
+    <link rel="prev" title="Getting started" href="getting_started.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> NSML
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#install-nsml">Install nsml</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#install-local-nsml">Install local-nsml</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#login">Login</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#path-registration">Path registration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#run-a-session">Run a session</a></li>
+</ul>
+</li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Model Capacity Management</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#step-1">Step 1. 삭제할 모델 조회하기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-2">Step 2. 모델 삭제하기 &amp; 확인하기</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="load_model.html">Load a model in a session</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="dataset/dataset.html">Dataset</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dataset/dataset_overview.html">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataset/list_dataset.html">List dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataset/search_dataset.html">Search dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataset/show_leaderboard.html">Show leaderboard of dataset</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="session.html">Session</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="session/session_overview.html">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session/prepare_a_session_environment.html">Prepare a session environment</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="session/prepare_a_session_environment.html#nsml-ignore">NSML ignore</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="session/run_a_session.html">Run a session</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session/submit_a_session.html">Submit a session</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session/access_to_a_session_for_repl.html">Access to a session for repl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session/change_a_session_memo.html">Change a session memo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session/delete_a_model.html">Delete a model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session/fork_a_session.html">Fork a session</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session/get_a_log_from_session.html">Get a log from session</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session/pull_sessions.html">Pull sessions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session/show_models.html">list models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session/show_sessions.html">Check a session status</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="nsml_library/nsml_library.html">NSML library</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="nsml_library/reserved_arguments.html">reserved arguments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nsml_library/nsml_constants.html">NSML Constants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nsml_library/nsml_report.html">nsml.report</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nsml_library/nsml_bind.html">nsml.bind</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="nsml_library/nsml_bind.html#nsml-bind-save">nsml.bind-save</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nsml_library/nsml_bind.html#nsml-bind-load">nsml.bind-load</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="nsml_library/nsml_save.html">nsml.save</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nsml_library/nsml_load.html">nsml.load</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nsml_library/nsml_paused.html">nsml.paused</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nsml_library/bind_model.html">bind_model</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="web_interface/web_interface.html">Web interface</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="web_interface/leaderboard.html">Leaderboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="web_interface/check_log.html">Check log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="web_interface/check_session_diff.html">Check session diff</a></li>
+<li class="toctree-l2"><a class="reference internal" href="web_interface/graph.html">Graph visualization</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="web_interface/graph.html#graph-controller">Graph Controller</a></li>
+<li class="toctree-l3"><a class="reference internal" href="web_interface/graph.html#meta-info">Meta Info.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="web_interface/graph.html#graph-for-scalar-data">Graph for Scalar data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="web_interface/graph.html#advanced-usage">Advanced Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="web_interface/usage_of_resources.html">Usage of resources</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Appendix.html">Appendix</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="appendix/recovery.html">Recovery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Appendix.html#notification">Notification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Appendix.html#dataset-policy">Dataset Policy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Appendix.html#gpu-credit-rule">GPU credit rule</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">NSML</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Model Capacity Management</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/contents/model_capacity_management.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="model-capacity-management">
+<span id="model-capacity"></span><h1>Model Capacity Management<a class="headerlink" href="#model-capacity-management" title="제목 주소">¶</a></h1>
+<blockquote>
+<div><p>NSML은 다른 해커톤 참여자들과 함께 사용하는 공간입니다. 모델 저장에 과도한 용량을 사용하면 다른 참여자에게 피해를 주는 상황을 초래할 수 있습니다.</p>
+<p>submit을 시도했거나 더 이상 필요하지 않은 모델은 계속 삭제하여 총 모델 용량을 관리해주시기 바랍니다. 모델 용량을 너무 크게 유지하실 경우, 사용 상의 불이익이 발생할 수 있음을 미리 알려드립니다. 정기 모니터링을 진행하여 정리를 권고할 예정입니다.</p>
+</div></blockquote>
+<div class="section" id="step-1">
+<h2>Step 1. 삭제할 모델 조회하기<a class="headerlink" href="#step-1" title="제목 주소">¶</a></h2>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>nsml model ls</strong> SESSION_NAME</p></td>
+</tr>
+</tbody>
+</table>
+<p>각 모델의 사이즈는 맨 오른쪽 Size 열에서 확인하실 수 있습니다.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> nsml model ls nsmlteam/mnist/4
+<span class="go">Checkpoint    Last Modified    Elapsed    Summary                           Size</span>
+<span class="go">------------  ---------------  ---------  --------------------------------  ---------</span>
+<span class="go">0             32 minutes ago   3.785      epoch=0, loss=7.015200052175436   366.74 MB</span>
+<span class="go">1             31 minutes ago   25.032     epoch=1, loss=6.762363957929182   366.74 MB</span>
+<span class="go">2             31 minutes ago   24.942     epoch=2, loss=6.377185855899845   366.74 MB</span>
+<span class="go">3             30 minutes ago   25.053     epoch=3, loss=5.742813685992816   366.74 MB</span>
+<span class="go">4             30 minutes ago   24.971     epoch=4, loss=4.847646936640009   366.74 MB</span>
+<span class="go">11            29 minutes ago   25.032     epoch=1, loss=6.762363957929182   366.74 MB</span>
+<span class="go">21            29 minutes ago   24.942     epoch=2, loss=6.377185855899845   366.74 MB</span>
+<span class="go">31            28 minutes ago   25.053     epoch=3, loss=5.742813685992816   366.74 MB</span>
+<span class="go">41            28 minutes ago   24.971     epoch=4, loss=4.847646936640009   366.74 MB</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="step-2">
+<h2>Step 2. 모델 삭제하기 &amp; 확인하기<a class="headerlink" href="#step-2" title="제목 주소">¶</a></h2>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>nsml model rm</strong> SESSION_NAME <em>CHECKPOINT</em></p></td>
+</tr>
+</tbody>
+</table>
+<p>모델을 삭제하고, 원하는 대로 삭제가 되었는지 확인하시기 바랍니다.</p>
+<p>웹페이지에서 오른쪽 상단의 본인의 프로필 사진 이미지를 클릭후에 Settings버튼을 누른후 Storage Management 구역에서 모델을 쉽게 확인하고 삭제할수도 있습니다.</p>
+<p>Example:</p>
+<blockquote>
+<div><div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">해당 세션에 있는 모델 모두 삭제하기</span><a class="headerlink" href="#id1" title="이 코드에 대한 퍼머링크">¶</a></div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> nsml model rm nsmlteam/mnist/4 <span class="s2">&quot;*&quot;</span>
+<span class="gp">$</span> nsml model ls nsmlteam/mnist/4
+<span class="go">Checkpoint    Last Modified    Elapsed    Summary                         Size</span>
+<span class="go">------------  ---------------  ---------  ------------------------------  ---------</span>
+</pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">session에 있는 1번부터 35번 model을 전부 bash script로 삭제하기</span><a class="headerlink" href="#id2" title="이 코드에 대한 퍼머링크">¶</a></div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="k">for</span> i in <span class="sb">`</span>seq <span class="m">1</span> <span class="m">35</span><span class="sb">`</span><span class="p">;</span> <span class="k">do</span> nsml model rm nsmlteam/mnist/<span class="nv">$i</span> <span class="s2">&quot;*&quot;</span> <span class="p">;</span> <span class="k">done</span>
+<span class="gp">$</span> nsml model ls nsmlteam/mnist/35
+<span class="go">Checkpoint    Last Modified    Elapsed    Summary                         Size</span>
+<span class="go">------------  ---------------  ---------  ------------------------------  ---------</span>
+</pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-text">1개 삭제하기</span><a class="headerlink" href="#id3" title="이 코드에 대한 퍼머링크">¶</a></div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> nsml model rm nsmlteam/mnist/4 <span class="m">0</span>
+<span class="gp">$</span> nsml model ls nsmlteam/mnist/4
+<span class="go">Checkpoint    Last Modified    Elapsed    Summary                         Size</span>
+<span class="go">------------  ---------------  ---------  -------------------------------  ---------</span>
+<span class="go">1             31 minutes ago   25.032     epoch=1, loss=6.762363957929182  366.74 MB</span>
+<span class="go">2             31 minutes ago   24.942     epoch=2, loss=6.377185855899845  366.74 MB</span>
+<span class="go">3             30 minutes ago   25.053     epoch=3, loss=5.742813685992816  366.74 MB</span>
+<span class="go">4             30 minutes ago   24.971     epoch=4, loss=4.847646936640009  366.74 MB</span>
+<span class="go">11            29 minutes ago   25.032     epoch=1, loss=6.762363957929182  366.74 MB</span>
+<span class="go">21            29 minutes ago   24.942     epoch=2, loss=6.377185855899845  366.74 MB</span>
+<span class="go">31            28 minutes ago   25.053     epoch=3, loss=5.742813685992816  366.74 MB</span>
+<span class="go">41            28 minutes ago   24.971     epoch=4, loss=4.847646936640009  366.74 MB</span>
+</pre></div>
+</div>
+</div>
+</div></blockquote>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="load_model.html" class="btn btn-neutral float-right" title="Load a model in a session" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="getting_started.html" class="btn btn-neutral float-left" title="Getting started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, NAVER
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

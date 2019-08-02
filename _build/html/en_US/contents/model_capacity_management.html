@@ -1,0 +1,377 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en-US" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Model Capacity Management &mdash; NSML  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Load a model in a session" href="load_model.html" />
+    <link rel="prev" title="Getting started" href="getting_started.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> NSML
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#install-nsml">Install nsml</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#install-local-nsml">Install local-nsml</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#login">Login</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#path-registration">Path registration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#run-a-session">Run a session</a></li>
+</ul>
+</li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Model Capacity Management</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#step-1">Step 1. List the model to delete</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-2">Step 2. Delete model</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="load_model.html">Load a model in a session</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="dataset/dataset.html">Dataset</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dataset/dataset_overview.html">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataset/list_dataset.html">List dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataset/search_dataset.html">Search dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataset/show_leaderboard.html">Show leaderboard of dataset</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="session.html">Session</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="session/session_overview.html">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session/prepare_a_session_environment.html">Prepare a session environment</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="session/prepare_a_session_environment.html#nsml-ignore">NSML ignore</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="session/run_a_session.html">Run a session</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session/submit_a_session.html">Submit a session</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session/access_to_a_session_for_repl.html">Access to a session for repl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session/change_a_session_memo.html">Change a session memo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session/delete_a_model.html">Delete a model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session/fork_a_session.html">Fork a session</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session/get_a_log_from_session.html">Get a log from session</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session/pull_sessions.html">Pull sessions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session/show_models.html">list models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="session/show_sessions.html">Check a session status</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="nsml_library/nsml_library.html">NSML library</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="nsml_library/reserved_arguments.html">reserved arguments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nsml_library/nsml_constants.html">NSML Constants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nsml_library/nsml_report.html">nsml.report</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nsml_library/nsml_bind.html">nsml.bind</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="nsml_library/nsml_bind.html#nsml-bind-save">nsml.bind-save</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nsml_library/nsml_bind.html#nsml-bind-load">nsml.bind-load</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="nsml_library/nsml_save.html">nsml.save</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nsml_library/nsml_load.html">nsml.load</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nsml_library/nsml_paused.html">nsml.paused</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nsml_library/bind_model.html">bind_model</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="web_interface/web_interface.html">Web interface</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="web_interface/leaderboard.html">Leaderboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="web_interface/check_log.html">Check log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="web_interface/check_session_diff.html">Check session diff</a></li>
+<li class="toctree-l2"><a class="reference internal" href="web_interface/graph.html">Graph visualization</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="web_interface/graph.html#graph-controller">Graph Controller</a></li>
+<li class="toctree-l3"><a class="reference internal" href="web_interface/graph.html#meta-info">Meta Info.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="web_interface/graph.html#graph-for-scalar-data">Graph for Scalar data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="web_interface/graph.html#advanced-usage">Advanced Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="web_interface/usage_of_resources.html">Usage of resources</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Appendix.html">Appendix</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="appendix/recovery.html">Recovery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Appendix.html#notification">Notification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Appendix.html#dataset-policy">Dataset Policy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Appendix.html#gpu-credit-rule">GPU credit rule</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">NSML</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Model Capacity Management</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/contents/model_capacity_management.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="model-capacity-management">
+<span id="model-capacity"></span><h1>Model Capacity Management<a class="headerlink" href="#model-capacity-management" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>NSML is a platform for use with other hacker tone participants.Excessive use of capacity for model storage can result in a situation that can harm other participants.</p>
+<p>Please keep track of the total model capacity by continuously deleting models that you have attempted to submit or that are no longer needed.If you keep the model capacity too large, we will inform you in advance that there may be disadvantages to use. We will regularly monitor and recommend to organize it.</p>
+</div></blockquote>
+<div class="section" id="step-1">
+<h2>Step 1. List the model to delete<a class="headerlink" href="#step-1" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>nsml model ls</strong> SESSION_NAME</p></td>
+</tr>
+</tbody>
+</table>
+<p>The size of each model can be found in the Size column on the right.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> nsml model ls nsmlteam/mnist/4
+<span class="go">Checkpoint    Last Modified    Elapsed    Summary                           Size</span>
+<span class="go">------------  ---------------  ---------  --------------------------------  ---------</span>
+<span class="go">0             32 minutes ago   3.785      epoch=0, loss=7.015200052175436   366.74 MB</span>
+<span class="go">1             31 minutes ago   25.032     epoch=1, loss=6.762363957929182   366.74 MB</span>
+<span class="go">2             31 minutes ago   24.942     epoch=2, loss=6.377185855899845   366.74 MB</span>
+<span class="go">3             30 minutes ago   25.053     epoch=3, loss=5.742813685992816   366.74 MB</span>
+<span class="go">4             30 minutes ago   24.971     epoch=4, loss=4.847646936640009   366.74 MB</span>
+<span class="go">11            29 minutes ago   25.032     epoch=1, loss=6.762363957929182   366.74 MB</span>
+<span class="go">21            29 minutes ago   24.942     epoch=2, loss=6.377185855899845   366.74 MB</span>
+<span class="go">31            28 minutes ago   25.053     epoch=3, loss=5.742813685992816   366.74 MB</span>
+<span class="go">41            28 minutes ago   24.971     epoch=4, loss=4.847646936640009   366.74 MB</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="step-2">
+<h2>Step 2. Delete model<a class="headerlink" href="#step-2" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>nsml model rm</strong> SESSION_NAME <em>CHECKPOINT</em></p></td>
+</tr>
+</tbody>
+</table>
+<p>Please delete the model and confirm that it has been deleted as desired.</p>
+<p>You can also click the Settings button after clicking on your profile picture image in the top right corner of the webpage, then you can easily view and delete the model in the Storage Management tab.</p>
+<p>Example:</p>
+<blockquote>
+<div><div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">Delete all models in this session</span><a class="headerlink" href="#id1" title="Permalink to this code">¶</a></div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> nsml model rm nsmlteam/mnist/4 <span class="s2">&quot;*&quot;</span>
+<span class="gp">$</span> nsml model ls nsmlteam/mnist/4
+<span class="go">Checkpoint    Last Modified    Elapsed    Summary                         Size</span>
+<span class="go">------------  ---------------  ---------  ------------------------------  ---------</span>
+</pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">Delete 1th to 35th models in session with bash script</span><a class="headerlink" href="#id2" title="Permalink to this code">¶</a></div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="k">for</span> i in <span class="sb">`</span>seq <span class="m">1</span> <span class="m">35</span><span class="sb">`</span><span class="p">;</span> <span class="k">do</span> nsml model rm nsmlteam/mnist/<span class="nv">$i</span> <span class="s2">&quot;*&quot;</span> <span class="p">;</span> <span class="k">done</span>
+<span class="gp">$</span> nsml model ls nsmlteam/mnist/35
+<span class="go">Checkpoint    Last Modified    Elapsed    Summary                         Size</span>
+<span class="go">------------  ---------------  ---------  ------------------------------  ---------</span>
+</pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-text">Delet a single model</span><a class="headerlink" href="#id3" title="Permalink to this code">¶</a></div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> nsml model rm nsmlteam/mnist/4 <span class="m">0</span>
+<span class="gp">$</span> nsml model ls nsmlteam/mnist/4
+<span class="go">Checkpoint    Last Modified    Elapsed    Summary                         Size</span>
+<span class="go">------------  ---------------  ---------  -------------------------------  ---------</span>
+<span class="go">1             31 minutes ago   25.032     epoch=1, loss=6.762363957929182  366.74 MB</span>
+<span class="go">2             31 minutes ago   24.942     epoch=2, loss=6.377185855899845  366.74 MB</span>
+<span class="go">3             30 minutes ago   25.053     epoch=3, loss=5.742813685992816  366.74 MB</span>
+<span class="go">4             30 minutes ago   24.971     epoch=4, loss=4.847646936640009  366.74 MB</span>
+<span class="go">11            29 minutes ago   25.032     epoch=1, loss=6.762363957929182  366.74 MB</span>
+<span class="go">21            29 minutes ago   24.942     epoch=2, loss=6.377185855899845  366.74 MB</span>
+<span class="go">31            28 minutes ago   25.053     epoch=3, loss=5.742813685992816  366.74 MB</span>
+<span class="go">41            28 minutes ago   24.971     epoch=4, loss=4.847646936640009  366.74 MB</span>
+</pre></div>
+</div>
+</div>
+</div></blockquote>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="load_model.html" class="btn btn-neutral float-right" title="Load a model in a session" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="getting_started.html" class="btn btn-neutral float-left" title="Getting started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, NAVER
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
