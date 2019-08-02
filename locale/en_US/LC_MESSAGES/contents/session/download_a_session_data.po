@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-05 08:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../contents/session/download_a_session_data.rst:4
+msgid "Download a session data"
+msgstr ""
+
+#: ../../contents/session/download_a_session_data.rst:9
+msgid "Usage:"
+msgstr ""
+
+#: ../../contents/session/download_a_session_data.rst:8
+msgid "**nsml download** *Options* SESSION_NAME *PATH*"
+msgstr ""
+
+#: ../../contents/session/download_a_session_data.rst:12
+msgid "Description:"
+msgstr ""
+
+#: ../../contents/session/download_a_session_data.rst:12
+msgid "session 이 진행되면서 만들어진 output 파일들을 local로 다운로드 받습니다."
+msgstr "Download generated output files during the session to local."
+
+#: ../../contents/session/download_a_session_data.rst:33
+msgid "Options:"
+msgstr ""
+
+#: ../../contents/session/download_a_session_data.rst:15
+msgid "1개의 파일 또는 directory 를 가져옵니다."
+msgstr "Import a single file or directory."
+
+#: ../../contents/session/download_a_session_data.rst:17
+msgid "이미 해당 경로에 같은 이름의 파일이 존재한다면 덮어씁니다."
+msgstr "If the file already exists in the path, it will be overwritten."
+
+#: ../../contents/session/download_a_session_data.rst:19
+msgid "-s 로 파일을 가져올 경우, '/app/'의 경로를 붙여주셔야 합니다."
+msgstr "When importing files with -s, you will need to append the path '/app/'"
+
+#: ../../contents/session/download_a_session_data.rst:25
+msgid "file 이름이나 path 에 아래에 기입된 문자 외에 다른 문자가 있을 경우 에러가 납니다."
+msgstr ""
+"An error occurs if the file name or path contains any characters other "
+"than those listed below."
+
+#~ msgid "-f 로 파일을 가져올경우 '/app/'의 경로를 붙여주셔야합니다"
+#~ msgstr ""
+
+#~ msgid "file 이름이나 path 에 아래에 기입된 문자외에 다른 문자가있을경우 에러가 납니다."
+#~ msgstr ""
+
+#~ msgid "directory 가 있다면 덮어씁니다."
+#~ msgstr "If there is a directory, it is overwritten."

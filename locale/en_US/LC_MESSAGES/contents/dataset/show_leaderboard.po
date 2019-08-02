@@ -1,0 +1,60 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-01 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../contents/dataset/show_leaderboard.rst:4
+msgid "Show leaderboard of dataset"
+msgstr ""
+
+#: ../../contents/dataset/show_leaderboard.rst:9
+msgid "Usage:"
+msgstr ""
+
+#: ../../contents/dataset/show_leaderboard.rst:8
+msgid "**nsml dataset board** *Options* DATASET_NAME"
+msgstr ""
+
+#: ../../contents/dataset/show_leaderboard.rst:12
+msgid "Description:"
+msgstr ""
+
+#: ../../contents/dataset/show_leaderboard.rst:12
+msgid "NSML에 올라간 데이터셋 기준으로 leaderboard를 보여줍니다."
+msgstr "It shows leaderboard based on dataset uploaded to NSML."
+
+#: ../../contents/dataset/show_leaderboard.rst:22
+msgid "Example:"
+msgstr ""
+
+#: ../../contents/dataset/show_leaderboard.rst:15
+msgid "Basic command"
+msgstr ""
+
+#: ../../contents/dataset/show_leaderboard.rst:26
+msgid "Options:"
+msgstr ""
+
+#: ../../contents/dataset/show_leaderboard.rst:27
+msgid "json 형식으로 보여줍니다."
+msgstr "It shows in json format."
+
+#~ msgid "Board dataset"
+#~ msgstr ""
+
+#~ msgid "특정한 user의 leaderboard를 보여줍니다."
+#~ msgstr "It shows the leaderboard of a specific user."
+

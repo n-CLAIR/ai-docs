@@ -1,0 +1,143 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-01 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../contents/appendix/recovery.rst:2
+msgid "Recovery"
+msgstr ""
+
+#: ../../contents/appendix/recovery.rst:4
+msgid ""
+"NSML을 사용하다 보면, 여러 이유로 세션이 멈춰서 복구해야 할 때가 있습니다. :ref:`NSML library<nsml "
+"library>` 에서 제공하는 함수의 사용 여부에 따라서 복구 방법이 달라집니다. 자세한 복구 프로세스는 다음과 같습니다."
+msgstr ""
+"When using NSML, there are a number of reasons why a session may have to "
+"stop and recover. The recovery method depends on whether use function "
+"provided by :ref:`NSML library<nsml library>`. The detailed recovery "
+"process is as follows:"
+
+#: ../../contents/appendix/recovery.rst:6
+msgid "모델을 기존 세션에서 받아와야 할 경우"
+msgstr "If you need to get a model from an existing session"
+
+#: ../../contents/appendix/recovery.rst:8
+msgid "코드 안에서 :ref:`nsml.load<nsml.load()>` 로 대상 세션의 모델을 불러올 수 있습니다."
+msgstr ""
+"Within the code, you can load the model of the target session with "
+":ref:`nsml.load<nsml.load()>`."
+
+#: ../../contents/appendix/recovery.rst:10
+msgid "NSML 명령어를 사용하여 세션을 재생성할 수 있을 경우"
+msgstr "When you can regenerate a session using NSML commands"
+
+#: ../../contents/appendix/recovery.rst:12
+msgid ""
+":ref:`nsml fork<nsml fork>` 명령어로 기존 세션을 복사해서 마지막으로 저장한 모델, 혹은 특정 모델부터 학습을"
+" 재개할 수 있습니다."
+msgstr ""
+"The :ref:`nsml fork<nsml fork>` command allows you to copy an existing "
+"session to resume learning from the last saved model, or from a specific "
+"model."
+
+#: ../../contents/appendix/recovery.rst:14
+msgid "복구가 필요한 상황 역시 크게 세 종류로 구분할 수 있으며, 각각의 상황 및 대처법은 다음과 같습니다."
+msgstr ""
+"There are three types of situations that need to be recovered. Each "
+"situation and countermeasures are as follows."
+
+#: ../../contents/appendix/recovery.rst:16
+msgid "세션이 비정상 종료된 경우"
+msgstr "If the session is exited abnormally."
+
+#: ../../contents/appendix/recovery.rst:17
+msgid "`OOM`_ 같이 세션이 예고 없이 죽는 경우입니다. 위의 방법으로 해결할 수 있습니다."
+msgstr ""
+"Like `OOM`_ , a session dies without notice. It can be solved by the "
+"method of 1, 2, 3 above."
+
+#: ../../contents/appendix/recovery.rst:19
+msgid "세션이 응답이 없는 경우"
+msgstr "If the session is not responding"
+
+#: ../../contents/appendix/recovery.rst:20
+msgid ""
+"nsml [rm, stop, logs, ...] 등 세션에 접근하는 명령어가 반응이 없는 경우인데, 위의 방법으로 해결 또는 "
+"NSML admin에게 제보"
+msgstr ""
+"It is case that commands such as nsml [rm, stop, logs, ...]"
+" etc. that access the session does not respond. This "
+"problem is resolved by the above methods, or please report to NSML admin."
+
+#: ../../contents/appendix/recovery.rst:22
+msgid "세션 로그에 'NSML warning' 이 발생한 경우"
+msgstr "An 'NSML warning' occurred in the session log."
+
+#: ../../contents/appendix/recovery.rst:23
+msgid ""
+"NSML server와 통신하는 도중 에러가 발생한 경우입니다. NSML admin에게 로그 내용 제보하면, 상황에 맞게 복구 "
+"방법을 안내받을 수 있습니다."
+msgstr ""
+"An error occurred while communicating with the NSML server. If you report"
+" the log contents to NSML admin, you can get the recovery method "
+"according to the situation."
+
+#: ../../contents/appendix/recovery.rst:25
+msgid ""
+"스토리지 문제로 모델 저장이 실패한 경우 복구가 불가능합니다 (세션 내에 저장했다면 1번으로 복구 가능합니다). 이러한 상황을 "
+"피하기 위해서, 모델 저장소 관리가 필요합니다. :ref:`nsml ps -a<nsml ps>` 를 통해서 현재 있는 세션의 크기를"
+" 직접 체크할 수 있고, 가용 용량이 부족할 때에는 NSML admin이 미리 파악해서 메일을 보내드립니다."
+msgstr ""
+"If saving of the model fails due to a storage problem, it can not be "
+"recovered (it can be recovered to 1 if it is saved in the session). To "
+"avoid this situation, model repository management is required. You can "
+"check the size of the current session directly through :ref:`nsml ps "
+"-a<nsml ps>`. If the available capacity is insufficient, NSML admin will "
+"send you an email in advance."
+
+#~ msgid ""
+#~ ":ref:`nsml download<nsml download>` 로 세션에 "
+#~ "접근해서 모델을 가져오고, :ref:`nsml run<nsml run>`"
+#~ " 할 때 모델과 같이 올린 후 코드 안에서"
+#~ " 가져온 모델을 load한 후 세션을 실행시킵니다."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":ref:`nsml download<nsml download>` 로 세션에 "
+#~ "접근해서 모델을 가져오고, :ref:`nsml run<nsml run>`"
+#~ " 할 때 모델과 코드를 같이 올린 후 코드"
+#~ " 안에서 가져온 모델을 load한 후 세션을 "
+#~ "실행시킵니다."
+#~ msgstr ""
+#~ "Use :ref:`nsml download<nsml download>` to "
+#~ "import the model with pulling the "
+#~ "session. When execute :ref:`nsml run<nsml "
+#~ "run>`, upload the model with codes, "
+#~ "load the model in the code, then"
+#~ " run the session."
+
+#~ msgid "모델이 NSML server에 저장되어있고, 이를 불러올 경우"
+#~ msgstr "If the model is stored in the NSML server and import it"
+
+#~ msgid ""
+#~ ":ref:`nsml model pull<nsml model pull>` "
+#~ "로 저장된 모델을 가져온 후 1번과 같이 복구할"
+#~ " 수 있습니다."
+#~ msgstr ""
+#~ "You can retrieve a saved model "
+#~ "with :ref:`nsml model pull<nsml model "
+#~ "pull>` and restore it like # 1."
+

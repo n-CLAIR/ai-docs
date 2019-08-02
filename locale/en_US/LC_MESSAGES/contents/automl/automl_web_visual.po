@@ -1,0 +1,593 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-04 10:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../contents/automl/automl_web_visual.rst:4
+msgid "AutoML Web Visual Analytics"
+msgstr ""
+
+#: ../../contents/automl/automl_web_visual.rst:6
+msgid ""
+"https://automl.nsml.navercorp.com/ 에서 Dashboard를 확인하고, Visual Analytics로 "
+"들어오실 수 있습니다. 그 방법은 :ref:`How to go to Visual Analytics<how to go vis>` "
+"파트에서 알아보실 수 있습니다."
+msgstr ""
+"You can check out Dashboard at https://automl.nsml.navercorp.com/ and "
+"enter Visual Analytics. You can find out how to do this in :ref:`How to "
+"go to Visual Analytics <how to go vis>` s."
+
+#: ../../contents/automl/automl_web_visual.rst:11
+msgid "Table of contents"
+msgstr ""
+
+#: ../../contents/automl/automl_web_visual.rst:13
+msgid ":ref:`Visual Analytics <VA>`"
+msgstr ""
+
+#: ../../contents/automl/automl_web_visual.rst:15
+msgid ":ref:`Visual Analytics(Main Visualization) <VA main>`"
+msgstr ""
+
+#: ../../contents/automl/automl_web_visual.rst:17
+msgid ":ref:`Visual Analytics(Left Panel) <VA left>`"
+msgstr ""
+
+#: ../../contents/automl/automl_web_visual.rst:19
+msgid ":ref:`Visual Analytics(Right Panel) <VA right>`"
+msgstr ""
+
+#: ../../contents/automl/automl_web_visual.rst:21
+msgid ":ref:`Setting <automl setting>`"
+msgstr ""
+
+#: ../../contents/automl/automl_web_visual.rst:27
+msgid "Visual Analytics"
+msgstr ""
+
+#: ../../contents/automl/automl_web_visual.rst:31
+msgid ""
+"``AutoML Visual Analytics`` 는 여러분이 모델의 hyperparameter tuning의 결과를 모니터링하고,"
+" 분석할 수 있는 환경을 제공합니다. 각각의 실험/모델들이 갖고 있는 다양한 metric 값들과 시각화 그래프, AutoML이 "
+"hyperparapmeter space를 탐색하는 과정을 보여줍니다. 이를 통해 튜닝 과정에 대한 인사이트를 얻을 수 있습니다. "
+"또한 사용자가 직접 interaction을 이용해서 손쉽게 hyperparameter space를 새롭게 정의하고 새로운 "
+"AutoML session을 만들 수 있는 fine-tuning 기능을 제공합니다."
+msgstr ""
+"``AutoML Visual Analytics`` provides an environment where you can monitor"
+" and analyze the results of your model's hyperparameter tuning. It shows "
+"the various metric values, visualization graphs, the process by which "
+"AutoML searches hyperparameter space. This gives you insight into the "
+"tuning process. It also provides a fine-tuning function that allows users"
+" to easily define new hyperparameter space using interaction and create a"
+" new AutoML session. \""
+
+#: ../../contents/automl/automl_web_visual.rst:34
+msgid ""
+"``Visual Analytics`` 화면은 크게 'session & main vis. control panel (A)', "
+"'Main visualization (B)', 'Advanced Analytics (C)' 3개의 구성으로 이루어져 있습니다. 각 "
+"구성의 역할은 다음 section에서 자세히 살펴보겠습니다."
+msgstr ""
+"``Visual Analytics`` screen is largely divided into 'session & main vis. "
+"control panel (A)', 'Main visualization (B)' and 'Advanced Analytics "
+"(C)'. The role of each configuration will be discussed in detail in the "
+"next section."
+
+#: ../../contents/automl/automl_web_visual.rst:43
+msgid ""
+"NSML AutoML과 Visual Analytics를 이용해서 hyperparamter tuning 결과를 분석하고 목표로 하는 "
+"모델을 얻기까지의 flow는 아래와 같습니다."
+msgstr ""
+"The flow of analyzing hyperparameter tuning results using NSML AutoML and"
+" Visual Analytics and obtaining the target model is as follows. "
+
+#: ../../contents/automl/automl_web_visual.rst:50
+msgid "Step 1."
+msgstr ""
+
+#: ../../contents/automl/automl_web_visual.rst:50
+msgid "초기에 작성한 configuraion file의 hyperparamter set을 바탕으로 AutoML session을 생성합니다."
+msgstr ""
+"Create an AutoML session based on the hyperparameter set of the initial "
+"configuration file. "
+
+#: ../../contents/automl/automl_web_visual.rst:53
+msgid "Step 2."
+msgstr ""
+
+#: ../../contents/automl/automl_web_visual.rst:53
+msgid ""
+"tuning된 결과를 visual analytics에서 분석합니다. Visual analytics를 이용해서 어떤 "
+"hyperparameter가 obejctive metric에 영향을 크게 주는지에 대한 context를 얻습니다."
+msgstr ""
+"Analyze the tuned results in visual analytics. Use Visual analytics to "
+"get a context on which hyperparameters are most likely to affect the "
+"obejctive metric."
+
+#: ../../contents/automl/automl_web_visual.rst:56
+msgid "Step 2. a)"
+msgstr ""
+
+#: ../../contents/automl/automl_web_visual.rst:56
+msgid ""
+"Step 2)의 결과에서 AutoML에 의해 탐색되지 않은 space나, 좀더 좁은 space에 대한 영향을 파악하기 위한 "
+"단계입니다. Visual Analytics에서 새로운 range를 정의하고, 정의된 range으로 새로운 autoML "
+"session을 만들 수 있습니다. :ref:`AutoML rerun<automl rerun>` 파트를 참고하시기 바랍니다."
+msgstr ""
+"This is the step to understand the effect of the result of Step 2) on the"
+" unspecified space or the narrower space by AutoML. In Visual Analytics, "
+"you can define a new range and create a new autoML session with a defined"
+" range. See :ref:`AutoML rerun <automl rerun>` part."
+
+#: ../../contents/automl/automl_web_visual.rst:59
+msgid "Step 3"
+msgstr ""
+
+#: ../../contents/automl/automl_web_visual.rst:59
+msgid ""
+"Step 2)와 Step 2. a) 거쳐서 원하는 hyperparameter set 조합을 얻은 경우, 새로운 "
+"hyperparamter를 추가하거나, tuning을 마칠지를 결정합니다."
+msgstr ""
+"If you get the desired hyperparameter set combination through Step 2) and"
+" Step 2. a), decide to add a new hyperparameter or to end the tuning."
+
+#: ../../contents/automl/automl_web_visual.rst:62
+msgid "Step 3. a)"
+msgstr ""
+
+#: ../../contents/automl/automl_web_visual.rst:62
+msgid ""
+"Step 3)까지 tuning을 마치고, 새로운 hyperparamter를 추가할 때 거치는 과정입니다. AutoML "
+"configuration 파일에서 새로운 hyperparamter를 작성 한 뒤 새로운 autoML session을 생성합니다. "
+"이후에는 step 2) ~ step 3. a)의 과정을 반복합니다."
+msgstr ""
+"This is the process of finishing the tuning up to Step 3) and adding a "
+"new hyperparameter. Create a new hyperparamter from the AutoML "
+"configuration file and create a new autoML session. Repeat step 2) to "
+"step 3. a)."
+
+#: ../../contents/automl/automl_web_visual.rst:66
+msgid "Step 4"
+msgstr ""
+
+#: ../../contents/automl/automl_web_visual.rst:65
+msgid "tuning을 모두 마치고, 최적의 hyperparamter를 가진 모델을 얻습니다."
+msgstr "After finishing the tuning, obtain the model with optimal hyperparameter."
+
+#: ../../contents/automl/automl_web_visual.rst:68
+msgid ""
+"다음 장에서는 Visual Analytics를 이용해서 어떻게 AutoML 결과를 분석하고, fine-tuning을 어떻게 할 수 "
+"있는지 살펴보겠습니다."
+msgstr ""
+"In the next chapter, we will use Visual Analytics to analyze AutoML "
+"results and fine-tuning."
+
+#: ../../contents/automl/automl_web_visual.rst:73
+msgid "Main Visualization Panel"
+msgstr ""
+
+#: ../../contents/automl/automl_web_visual.rst:75
+msgid ""
+"Visual Analytics의 가장 큰 부분이고, **중간** 에 위치한 Main visualization panel에 대해 "
+"알아보겠습니다. Main visualization은 Parallel Coordinates plot과 Scalar plot 두 파트로"
+" 구성되어 있습니다."
+msgstr ""
+"Let's take a look at the Main visualization panel, which is the largest "
+"part of Visual Analytics and is located in **Intermediate**. Main "
+"visualization consists of two parts: Parallel Coordinates plot and Scalar"
+" plot."
+
+#: ../../contents/automl/automl_web_visual.rst:79
+msgid "Parallel Coordinates plot에서는 AutoML session이 수행한 모든 실험의 결과를 보여줍니다."
+msgstr ""
+"Parallel Coordinates plot shows the results of all experiments performed "
+"AutoML session."
+
+#: ../../contents/automl/automl_web_visual.rst:83
+msgid ""
+"각 NSML session에 저장된 model들 중에서 가장 높은 성능, 즉 여러분이 입력한 objective metric 기준과 "
+"해당 모델의 hyperparamter 값이 표현됩니다."
+msgstr ""
+"The highest performance among the models stored in each NSML session, "
+"that is, the criteria of the objective metric you entered and the "
+"hyperparameter value of that model are displayed."
+
+#: ../../contents/automl/automl_web_visual.rst:85
+msgid ""
+"Parallel coordinates plot에서는 각각의 축을 평행하게 배열하여 session creation time, "
+"hyperparamters, obejctive metric을 표현하고, 각 축들을 지나는 하나의 선이 하나의 model에 대한 "
+"정보를 담고 있습니다."
+msgstr ""
+"In the parallel coordinates plot, each axis is arranged in parallel to "
+"represent session creation time, hyperparameters, obejctive metric, and "
+"one line passing through each axis contains information about one model"
+
+#: ../../contents/automl/automl_web_visual.rst:87
+msgid ""
+"현재 진행 중인 NSML 세션 안의 모델은 점선으로 표시됩니다. 점선으로 표시할지의 여부는 오른쪽 상단의 설정에서 확인할 수 "
+"있습니다."
+msgstr ""
+"The models in the current NSML session are shown as dotted lines. Whether"
+" or not to display a dotted line can be seen in the settings at the top "
+"right."
+
+#: ../../contents/automl/automl_web_visual.rst:91
+msgid "**Brush interaction**"
+msgstr ""
+
+#: ../../contents/automl/automl_web_visual.rst:93
+msgid "Parallel Coordinates plot에서 가장 주된 interaction은 Brush interaction 입니다."
+msgstr "Brush interaction is the main interaction in Parallel Coordinates plot"
+
+#: ../../contents/automl/automl_web_visual.rst:95
+msgid ""
+"아래 그림과 같이 먼저 filtering할 축 위에서 mouse를 이용해 drag를 하면 drag한 범위에만 해당하는 model들만"
+" filtering 됩니다."
+msgstr ""
+"As shown in the figure below, if you drag the mouse on the axis to be "
+"filtered first, only the models corresponding to the dragged range will "
+"be filtered."
+
+#: ../../contents/automl/automl_web_visual.rst:99
+msgid ""
+"Brush interaction을 통해서 수 많은 model들 중 관심 있는 model들만 선별적으로 선택이 가능하고, 선별한 "
+"모델들을 이용해서 Scalar plot, Selected model summary, paramter analytics 등에서 여러 "
+"분석들이 가능합니다."
+msgstr ""
+"Through the brush interaction, you can select only the models of interest"
+" among the many models, and you can use the selected models to perform "
+"various analyzes in Scalar plot, Selected model summary, and paramter "
+"analytics."
+
+#: ../../contents/automl/automl_web_visual.rst:103
+msgid "**Selected Models**"
+msgstr ""
+
+#: ../../contents/automl/automl_web_visual.rst:105
+msgid ""
+"Parallel Coordinates plot, Advanced Analytics, Get Top/Bottom 에서 "
+"interaction을 통해 선택한 models들이 담겨지는 component입니다."
+msgstr ""
+"It is the component that put models selected with brush interaction from "
+"Parallel Coordinates plot, Advanced Analytics, Get Top/Bottom. "
+
+#: ../../contents/automl/automl_web_visual.rst:109
+msgid ""
+"위에서 설명한 Brush interaction을 통해 분석하고자 하는 model들을 선별적으로 선택한 다음, Scalar "
+"plot에서 각 model의 training status를 좀 더 세밀하게 분석할 수 있습니다. Scalar plot의 각 기능은 "
+"NSML web에서 사용하는 Scalar plot과 동일합니다 :ref:`NSML web scalar plot<graph "
+"scalar plot>` 파트를 참고하시기 바랍니다."
+msgstr ""
+"With the push interaction described above, you can select the models you "
+"want to analyze and then further analyze the training status of each "
+"model in Scala plot. Each function of the Scala plot is the same as the "
+"Scala plot used on the NSML web. :ref:`NSML web scalar plot<graph scalar"
+" plot>`"
+
+#: ../../contents/automl/automl_web_visual.rst:119
+msgid "Sessions Control Panel"
+msgstr ""
+
+#: ../../contents/automl/automl_web_visual.rst:121
+msgid "Screen **왼쪽** 에 위치한 Session Visualization Control 패널에 대해 알아보겠습니다."
+msgstr ""
+"Let's learn about the Session Visualization Control panel located on the "
+"Screen **left** ."
+
+#: ../../contents/automl/automl_web_visual.rst:123
+msgid ""
+"해당 패널은 main visualization을 제어할 수 있는 기능들을 제공하고, 올려진 AutoML 세션의 meta 정보와 함께"
+" 해당 세션을 제어할 수 있는 기능을 합니다."
+msgstr ""
+"The panel provides functions for controlling main visualization and "
+"controls sessions with meta information from AutoML session."
+
+#: ../../contents/automl/automl_web_visual.rst:127
+msgid ""
+"여러 개의 AutoML 세션을 함께 분석하는 경우, 여러 개 중 하나씩 선택할 수 있고, Merge 버튼을 눌러 모든 세션들을 "
+"한꺼번에 분석할 수 있습니다."
+msgstr ""
+"If you analyze multiple AutoML sessions together, you can select one of "
+"several, and then press the Merge button to analyze all sessions at once."
+
+#: ../../contents/automl/automl_web_visual.rst:134
+msgid "NSML 세션들 중 objective metric 값의 기준으로 상위/하위 n개를 버튼 클릭 한번으로 선택할 수 있습니다."
+msgstr ""
+"You can select the upper/lower n MSML sessions as the criterion for the "
+"objective metric value of NSML sessions with a click of a button."
+
+#: ../../contents/automl/automl_web_visual.rst:141
+msgid "각 축을 기준으로 Highlight, 축의 범위를 축소/확장, 그리고 축의 Visibility를 조정할 수 있습니다."
+msgstr ""
+"You can adjust the Highlight, the range of the axis, and the visibility "
+"of the axis based on each axis."
+
+#: ../../contents/automl/automl_web_visual.rst:143
+msgid ""
+":guilabel:`Highlight` : 해당 hyperparamter의 기준으로 parallel coordinates plot "
+"line의 색상을 mapping 합니다. numeric hyperparameter의 경우 linear scale, "
+"categorical의 경우 discrete scale로 mapping 합니다."
+msgstr ""
+":guilabel:`Highlight` : Do mapping the color of the parallel coordinates "
+"plot line based on the hyperparamter. Do mapping the linear scale for the"
+" numeric hyperparameter and the decrete scale for the categorical."
+
+#: ../../contents/automl/automl_web_visual.rst:145
+msgid ""
+":guilabel:`Axis Scale` : 해당 hyperparamter의 density를 보여주고, axis 값의 범위를 "
+"변경합니다. >< (축소), <> (확대) 를 통해 scale을 조절할 수 있습니다. 또한 drag해서 조절할 수 있습니다."
+msgstr ""
+":guilabel:`Axis Scale` : Displays the density of the hyperparameter and "
+"changes the range of the axis value. You can adjust the scale through "
+"><(reduce), <>(zoom). You can also drag to adjust."
+
+#: ../../contents/automl/automl_web_visual.rst:147
+msgid ""
+":guilabel:`Visibility` : 해당 hyperparamter를 parallel coordinates plot에 나타낼"
+" 지의 여부를 선택합니다."
+msgstr ""
+":guilabel:`Visibility` : Select whether or not the corresponding "
+"hyperparameter should appear in the parallel cosine plot."
+
+#: ../../contents/automl/automl_web_visual.rst:150
+msgid ""
+"아래 그림은 'depth' hyperparameter 기준으로 highlight함으로써 parallel coordinates "
+"plot의 라인들이 각각의 depth 색깔로 구별됨을 확인할 수 있습니다. 그리고 axis scale 창을 클릭하여 각 "
+"hyperparameter의 distribution을 직관적으로 볼 수 있습니다. 또한 createdAt 축의 visibility가"
+" off된 것을 확인할 수 있습니다."
+msgstr ""
+"The figure below shows that the lines in the parallel coordinates plot "
+"are differentiated by their respective depth colors by high light based "
+"on the 'depth' hyperparameter. And you can see the distribution of each "
+"hyperparameter intuitively by clicking on the Axis scale window. You can "
+"also see that the visibility of the createdAt axis is turned off."
+
+#: ../../contents/automl/automl_web_visual.rst:158
+msgid ""
+"현재 분석하고 있는 AutoML 세션의 meta 정보를 확인할 수 있고, 세션을 중단하거나, 새로운 hyperparameter "
+"range를 정의해서 새로운 세션을 생성할 수 있습니다."
+msgstr ""
+"You can view the meta information of the AutoML session you are "
+"analyzing, interrupt the session, or define a new hyperparameter range to"
+" create a new session."
+
+#: ../../contents/automl/automl_web_visual.rst:160
+msgid ":guilabel:`Stop` : 현재 진행 중이면 AutoML session이 NSML 세션 생성을 중단합니다."
+msgstr ""
+":guilabel:`Stop` : AutoML session stops generating NSML sessions if they "
+"are currently in progress. "
+
+#: ../../contents/automl/automl_web_visual.rst:164
+msgid ""
+":guilabel:`Re-run!` : 새로운 AutoML 세션이 만들어집니다. 새로 정의된 range가 없을 경우 기존 세션이 "
+"가진 hyperparameter space로 재탐색합니다."
+msgstr ""
+":guilabel:`Re-run!` : A new AutoML session is created. If no new range is"
+" defined, rescan with the hyperparameter space that the existing session "
+"has. "
+
+#: ../../contents/automl/automl_web_visual.rst:166
+msgid ""
+"아래는 기존의 autoML 세션 결과를 바탕으로 brush interaction으로 hyperparamter space를 재정의한 "
+"후 새로운 autoML 세션을 만드는 예시입니다."
+msgstr ""
+"Below is an example of creating a new autoML session after redefining "
+"hyperparameter space with brush interaction based on existing autoML "
+"session results."
+
+#: ../../contents/automl/automl_web_visual.rst:176
+msgid "Advanced Analytics"
+msgstr ""
+
+#: ../../contents/automl/automl_web_visual.rst:178
+msgid ""
+"Screen **오른쪽** 에 위치한 Advanced Analytics 패널에 대해 알아보겠습니다. 해당 패널에서는 고급 분석을 "
+"위한 Parameter Analytics, Session Overview, Selected Model Summary 세 가지 "
+"컴포넌트로 구성되어 있습니다."
+msgstr ""
+"Let's learn about the Advanced Analytics panel located on the Screen ** right**. The panel consists of three components: Parameter Analytics  for advanced analysis, Session Overview, and Selected Model Summary."
+
+#: ../../contents/automl/automl_web_visual.rst:181
+msgid ""
+"세 컴포넌트들은 모두 Parallel Coordinates의 brush interaction과 synced 되어 현재 여러분이 "
+"filtering한 모델들이 어떤 attributes를 가지고 있는 지 확인할 수 있습니다."
+msgstr ""
+"All three components have been synced with brush interaction from "
+"Parallel Coordinates to identify which attributes models you currently filtered have."
+
+#: ../../contents/automl/automl_web_visual.rst:183
+msgid ""
+":guilabel:`Parameter Analytics` : Scatter plot을 이용해 각 모델이 가진 "
+"hyperparameter, attributes 값을 x, y축, 그리고 color와 size로 mapping하여 분석할 수 "
+"있습니다."
+msgstr ""
+":guilabel:`Parameter Analytics` : Using the Scatter plot, you can analyze hyperparameter, "
+"attribute values in each model by mapping them to x, y-axis, and color and size. "
+
+#: ../../contents/automl/automl_web_visual.rst:185
+msgid ""
+":guilabel:`Session Overview` : AutoML 세션이 생성한 nsml 세션들의 overview를 여러가지 "
+"형태로 보여줍니다."
+msgstr ""
+":guilabel:`Session Overview` : Shows an overview of nsml sessions created by AutoML sessions in various forms."
+
+#: ../../contents/automl/automl_web_visual.rst:187
+msgid ""
+":guilabel:`Selected Model Summary` : 선택한 모델들이 가진 데이터 (hyperparamter "
+"config, model attributes) 를 자세히 확인하고, raw data의 configuration을 다운로드 하실 수 "
+"있습니다."
+msgstr ""
+":guilabel:`Selected Model Summary` : You can check the data (hyperparamter config, model attributes) that selected models have in detail and download the configuration of raw data."
+
+#: ../../contents/automl/automl_web_visual.rst:192
+msgid ""
+"x축, y축, color, size를 설정하여 scatter plot 시각화를 확인합니다. 각 circle 을 mouse "
+"click을 통해 :ref:`Selected models<automl selected model>` 에 담고, 모델들을 자세히 "
+"분석할 수 있습니다."
+msgstr ""
+"Check the scatter plot visualization by setting the x-axis, y-axis, color, and size. Through mouse click, each circle can be put in :ref:`Selected models<automl selected model>` and analyzed the models in details."
+
+#: ../../contents/automl/automl_web_visual.rst:194
+msgid "color와 size를 설정한 경우 선택된 속성이 나타내는 범위에 대한 legend가 표시됩니다."
+msgstr "If color and size are set, the legend for the range that the selected property represents is displayed."
+
+#: ../../contents/automl/automl_web_visual.rst:196
+msgid ""
+"size에 대한 legend의 경우 mouse를 hover 했을 때에는 해당 크기를 가진 model들이 scatter plot에 "
+"활성화 되며, mouse click 했을 때에는 해당 크기의 값을 가진 model들이 Selected models에 담겨집니다."
+msgstr ""
+"In case of a legend for size, models of that size are activated "
+"in the scatter plot when the mouse is hovered. When the mouse click, "
+"the models of that size are inserted in the selected models."
+
+msgid "Session Overview"
+msgstr ""
+
+#: ../../contents/automl/automl_web_visual.rst:203
+msgid "AutoML 세션이 생성한 NSML 세션들의 overview를 여러가지 형태로 보여줍니다."
+msgstr "Shows an overview of NSML sessions created by AutoML sessions in several methods."
+
+#: ../../contents/automl/automl_web_visual.rst:207
+msgid ""
+":guilabel:`Training status overview` : AutoML 세션이 생성한 NSML 세션들의 training "
+"status들을 보여줍니다. 가장 최근에 갱신한 model step 의 값이 bar의 길이로 표현됩니다."
+msgstr ""
+":guilabel:`Training status overview` : Shows the training status of NSML sessions created by AutoML sessions. "
+"The value of the most recently updated model step is expressed as the length of the bar."
+
+#: ../../contents/automl/automl_web_visual.rst:209
+msgid ""
+":guilabel:`Projection view of hyerparameter spaces` : 생성된 NSML 세션들이 가진 "
+"hyperparamter 값들의 space에 대한 overview를 보여줍니다. t-SNE (ref: "
+"https://lvdmaaten.github.io/tsne/ , https://github.com/karpathy/tsnejs ) "
+"을 이용하여 2차원 상에 hyperparamter를 시각화 합니다. 각 hyperparameter 값 들이 어떻게 서로 뭉쳐 있는지"
+" 확인할 수 있고, 어떤 값들의 cluster가 objective metric에 영향을 주는지 다차원적으로 파악이 가능합니다. "
+"우측의 hyperparatmer button을 이용해 space를 재정의하여 t-SNE plot을 다시 그릴 수 있습니다."
+msgstr ""
+":guilabel:`Projection view of hyerparameter spaces` : Shows an overview of the space of hyperparameter values of generated NSML sessions. Visualize the hyperparameter in two dimensions using t-SNE (ref:https://lvdmaaten.github.io/tsne/ andhttps://github.com/karpathy/tsnejs). You can see how each Hyperparameter value is clustered together, "
+"and you can see in a multi-dimensional way what clusters of values "
+"affect the objective metric. Use the hyperparatmer button on the right to redefine the space and draw the t-SNE plot. "
+
+#: ../../contents/automl/automl_web_visual.rst:211
+msgid ""
+":guilabel:`Hierarchical overview (for PBT only)` : AutoML 세션이 어떻게 NSML "
+"session들을 fork했는지에 대한 hierarchical overview를 보여줍니다."
+msgstr ""
+":guilabel:`Hierarchical overview (for PBT only)` : Shows a hierarchical overview of how AutoML sessions forked NSML sessions. "
+
+#: ../../contents/automl/automl_web_visual.rst:213
+msgid "automl session 생성시 Fork option을 true로 했을 경우에만 유의미한 결과가 나타납니다."
+msgstr "When creating an automl session, a meaningful result only appears if Fork option is set to true."
+
+#: ../../contents/automl/automl_web_visual.rst:216
+msgid "Session overview에 대한 추가적인 interaction들은 아래와 같습니다."
+msgstr "Additional interactions for Session overview are as follows:"
+
+#: ../../contents/automl/automl_web_visual.rst:218
+msgid ""
+":guilabel:`filtering by selection` : parallel coordinates plot 에서 brush "
+"interaction을 통해 선택한 모델만 표시합니다."
+msgstr ""
+":guilabel:`filtering by selection` : Displays only the model selected "
+"through brush interaction in the parallel coordinates plot."
+
+#: ../../contents/automl/automl_web_visual.rst:220
+msgid ""
+":guilabel:`PlayBack` : AutoML 세션이 공간을 탐색하고 NSML 세션을 생성하는 프로세스를 애니메이션으로 "
+"보여줍니다."
+msgstr ""
+":guilabel:`PlayBack` : Animates the process of AutoML sessions exploring "
+"spaces and creating NSML sessions."
+
+#: ../../contents/automl/automl_web_visual.rst:222
+msgid ""
+":guilabel:`size by`, :guilabel:`color by` : size와 color로 표현할 session "
+"overview의 object들을 설정할 수 있습니다."
+msgstr ""
+":guilabel:`size by`, :guilabel:`color by` : You can set the objects of "
+"session overview to be expressed with size and color."
+
+#: ../../contents/automl/automl_web_visual.rst:224
+msgid ""
+"또한 Parameter Analytics와 같이 각 object를 mouse click을 통해 :ref:`Selected "
+"models<automl brush interaction>` 에 담고, scalar plot을 통해 자세히 분석할 수 있습니다."
+msgstr ""
+"In addition, each object can be put in :ref:`Selected models<automl brush"
+" interaction>` through mouse click, as well as can be analyzed in detail "
+"through the scalar plot."
+
+msgid "Selected Model Summary"
+msgstr ""
+
+#: ../../contents/automl/automl_web_visual.rst:229
+msgid "Selected models에 담긴 model들에 대한 여러 metric의 실제 값을 확인하고, 데이터를 다운로드 받을 수 있습니다."
+msgstr ""
+"You can see the actual values of the various metrics for the models in "
+"the Selected models, and download the data."
+
+#: ../../contents/automl/automl_web_visual.rst:236
+msgid "Setting"
+msgstr ""
+
+#: ../../contents/automl/automl_web_visual.rst:238
+msgid ""
+"Visual Analytics 에서 조정할 수 있는 여러 설정들에 대해 알아보겠습니다. 설정 창은 오른 쪽 상단의 아이콘 버튼을 "
+"통해 확인할 수 있습니다."
+msgstr ""
+"Let's look at the different settings that you can adjust in Visual "
+"Analytics. The setting window can be checked by clicking the icon button "
+"in the upper right corner."
+
+#: ../../contents/automl/automl_web_visual.rst:242
+msgid ""
+":guilabel:`Reload for Running jobs` : AutoML session이 계속 진행 중이라면 그래프의 모양은"
+" 계속 변경될 것입니다. 주기적으로 업데이트를 할 것인지를 묻는 옵션입니다."
+msgstr ""
+":guilabel:`Reload for Running jobs` : If the AutoML session is still in "
+"progress, the appearance of the graph will continue to change. Option to "
+"ask if you want to update periodically."
+
+#: ../../contents/automl/automl_web_visual.rst:244
+msgid ""
+":guilabel:`Show Running session's context` : 현재 진행 중인 세션을 점선으로 표시할 것인지 묻는"
+" 옵션입니다."
+msgstr ""
+":guilabel:`Show Running session's context` : An option to ask if you want"
+" to mark the current session as a dotted line. "
+
+#: ../../contents/automl/automl_web_visual.rst:246
+msgid ""
+":guilabel:`Axis ordering method of parallel coordinates` : 각 축들이 정렬되는 순서에"
+" 대한 옵션입니다. 기본 값으로는 pearson correlation 방식을 사용하고, 다른 방법들을 설정하실 수 있습니다. 각 "
+"하이퍼 파라미터의 벡터와 가장 오른쪽에 위치한 objective metric vector간의 상관관계가 높은 순으로 오른쪽에서 왼쪽"
+" 순으로 각 축들이 배치 됩니다. 즉 objective metric 과의 상관관계가 가장 높은 hyperparameter의 축이 "
+"가장 가깝게 위치합니다."
+msgstr ""
+":guilabel:`Axis ordering method of parallel coordinates` : An option for "
+"the order in which each axis is aligned. You can use the Pearson "
+"correlation method as the default value and set other methods. Each axis "
+"is placed in order from right to left in order of increasing correlation "
+"between the vector of each hyperparameter and the rightmost objective "
+"metric vector. The axis of the hyperparameter with the highest "
+"correlation with the objective metric is located closest to the axis."
+
+#: ../../contents/automl/automl_web_visual.rst:248
+msgid ""
+":guilabel:`Curveness of parallel coordinates` : 그래프에 있는 모델들의 꺾어지는 정도를 "
+"설정하는 옵션입니다. 숫자가 커질 수록 곡선이 부드러워집니다."
+msgstr ""
+":guilabel:`Curveness of parallel coordinates` : This option sets the "
+"degree of bending of the models in the graph. The larger the number, the "
+"smoother the curve."

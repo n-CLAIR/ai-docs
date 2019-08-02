@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-01 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../contents/dataset/list_dataset.rst:4
+msgid "List dataset"
+msgstr ""
+
+#: ../../contents/dataset/list_dataset.rst:11
+msgid "Usage:"
+msgstr ""
+
+#: ../../contents/dataset/list_dataset.rst:10
+msgid "**nsml dataset ls** *Options*"
+msgstr ""
+
+#: ../../contents/dataset/list_dataset.rst:15
+msgid "Description:"
+msgstr ""
+
+#: ../../contents/dataset/list_dataset.rst:16
+msgid "NSML에 등록된 모든 데이터셋의 이름, 크기, 올린 사람을 보여줍니다."
+msgstr "test"
+"It shows the name, size, sender, and notes of the entire dataset that "
+"NSML has."
+
+#: ../../contents/dataset/list_dataset.rst:21
+msgid "Example:"
+msgstr ""
+
+#: ../../contents/dataset/list_dataset.rst:29
+msgid "Options:"
+msgstr ""
+
+#: ../../contents/dataset/list_dataset.rst:30
+msgid "json 형식으로 보여줍니다."
+msgstr "It shows in json format."
+
+#~ msgid "Basic command"
+#~ msgstr ""
+

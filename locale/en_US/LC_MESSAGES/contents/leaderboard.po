@@ -1,0 +1,304 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-07 11:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../contents/leaderboard.rst:5
+msgid "Leaderboard"
+msgstr ""
+
+#: ../../contents/leaderboard.rst:7
+msgid ""
+":ref:`nsml submit SESSION CHECKPOINT<nsml submit>` 명령어로 모델을 평가하고, "
+":ref:`nsml web<nsml web leaderboard>` 의 leaderboard에 점수를 올립니다."
+msgstr ""
+":ref:`nsml submit SESSION CKPT<nsml submit>` evaluate the model with the "
+"CKPT command and upload the score to a leaderboard in the :ref:`nsml "
+"web<nsml web leaderboard>`."
+
+#: ../../contents/leaderboard.rst:9
+msgid ""
+"그 전에 :ref:`dataset<prepare_a_dataset>` , "
+":ref:`data_loader<data_loader.py>` , :ref:`session<prepare_a_session>` 이 "
+"준비가 되어야 합니다."
+msgstr ""
+"Before that, :ref:`dataset<prepare_a_dataset>` , "
+":ref:`data_loader<data_loader.py>` , :ref:`session<prepare_a_session>` "
+"should be prepared."
+
+#: ../../contents/leaderboard.rst:11
+msgid ""
+"NSML 에서 내부적으로 :ref:`submit<nsml submit>` 을 하고 :ref:`leaderboard<nsml web "
+"leaderboard>` 에 표시되는 과정은 다음과 같습니다. 전체 예제코드는 "
+"https://oss.navercorp.com/nsml/nsml-"
+"examples/tree/master/04.Advanced/04_ladder_networks 에 있습니다."
+msgstr ""
+"Internally in NSML, after :ref:`submit<nsml submit>`, the process of "
+"displaying the result in :ref:`leaderboard<nsml web leaderboard>` is as "
+"follows: The complete example code is at https://oss.navercorp.com/nsml"
+"/nsml-examples/tree/master/04.Advanced/04_ladder_networks ."
+
+#: ../../contents/leaderboard.rst:13
+msgid "새로운 세션을 생성합니다."
+msgstr "Create a new session."
+
+#: ../../contents/leaderboard.rst:15
+msgid "새로운 세션에서 제출할 세션 데이터를 가져옵니다."
+msgstr "Gets session data to be submitted in a new session."
+
+#: ../../contents/leaderboard.rst:19
+msgid ""
+":ref:`nsml run<nsml run>` 과 마찬가지로 실행시키지만 \\\\-\\\\-pause 1과 "
+"\\\\-\\\\-mode test 옵션이 추가됩니다. :ref:`참고<reserved arguments>`"
+msgstr ""
+"Runs like :ref:`nsml run<nsml run>` but adds \\\\-\\\\-pause 1 and "
+"\\\\-\\\\-mode test options. :ref:`Reference<reserved arguments>`."
+
+#: ../../contents/leaderboard.rst:23
+msgid ""
+":ref:`nsml.paused()<nsml.paused()>` 함수 안에서 model을 "
+":ref:`load<nsml.load()>` 합니다."
+msgstr ""
+":ref:`load<nsml.load()>` the model in the\" "
+"\":ref:`nsml.paused()<nsml.paused()>` function."
+
+#: ../../contents/leaderboard.rst:25
+msgid ""
+"테스트용 데이터는 :ref:`data_loader.py<data_loader.py>` 를 통해서 얻으며, 이를 "
+":ref:`nsml.bind()<nsml.bind()>` 를 통해 전달된 infer 함수에 전달합니다."
+msgstr ""
+"The test data is obtained through :ref:`data_loader.py<data_loader.py>`  "
+"and passed to the infer function passed through "
+":ref:`nsml.bind()<nsml.bind()>`."
+
+#: ../../contents/leaderboard.rst:27
+msgid ""
+"inference가 끝난 후 :ref:`evaluation.py<evaluation.py>` 를 통해서 평가한 결과가 "
+":ref:`leaderboard<nsml web leaderboard>` 에 표시됩니다."
+msgstr ""
+"After the inference is over, the results of evaluation through "
+":ref:`evaluation.py<evaluation.py>` are displayed on the "
+":ref:`leaderboard<nsml web leaderboard>`."
+
+#: ../../contents/leaderboard.rst:34
+msgid "1. Prepare a dataset"
+msgstr ""
+
+#: ../../contents/leaderboard.rst:36
+msgid "leaderboard 용으로 데이터셋을 올리기 전에, 폴더 구조는 아래와 같아야 합니다."
+msgstr ""
+"Before uploading the dataset for the leaderboard, the folder structure "
+"should look like this:"
+
+#: ../../contents/leaderboard.rst:50
+msgid ""
+"위와 같이 train, test 폴더가 나누어져 있어야 하며, submit 할 때 이용할 "
+":ref:`data_loader.py<data_loader.py>` 가 디렉토리 최상단에 있어야 합니다."
+msgstr ""
+"As above, the train and test folders should be divided, and  "
+":ref:`data_loader.py<data_loader.py>` must be at the top of the directory"
+" to be used for the submit ."
+
+#: ../../contents/leaderboard.rst:52
+msgid ""
+"또한, 파일 이름의 제약도 있습니다. train 폴더의 내의 파일에는 제약이 없지만, test 폴더 내의 파일들과 "
+":ref:`data_loader.py<data_loader.py>` 는 위와 정확히 일치하는 파일명을 가지고 있어야 합니다."
+msgstr ""
+"There are also file name restrictions. There are no restrictions on the "
+"files in the train folder, but the files in the test folder and "
+":ref:`data_loader.py<data_loader.py>` must have exactly the same file "
+"names as above."
+
+#: ../../contents/leaderboard.rst:54
+msgid ":ref:`data_loader.py<data_loader.py>` 를 통해 테스트 데이터를 불러옵니다."
+msgstr "Load the test data via :ref:`data_loader.py<data_loader.py>`."
+
+#: ../../contents/leaderboard.rst:56
+msgid ":ref:`data_loader.py<data_loader.py>` 에는 다음과 같은 함수가 구현되어 있어야 합니다."
+msgstr ""
+"The following functions should be implemented in "
+":ref:`data_loader.py<data_loader.py>`."
+
+#: ../../contents/leaderboard.rst:73
+msgid "추가로 :ref:`evaluation.py<evaluation.py>` 은 데이터셋의 평가 방식을 직접 정의하고 싶을 때 추가합니다."
+msgstr ""
+"In addition, :ref:`evaluation.py<evaluation.py>` is added when you want "
+"to define your dataset's evaluation method yourself."
+
+#: ../../contents/leaderboard.rst:75
+msgid "현재 NSML에서 기본적으로 제공하는 평가 지표는 accuracy와 mse, f1 score 입니다."
+msgstr ""
+"Currently, the evaluation indexes provided by NSML are accuracy, mse, and"
+" f1 score."
+
+#: ../../contents/leaderboard.rst:77
+msgid ""
+"이 외에 따로 지정하고 싶은 지표가 있다면 아래와 같이 :ref:`evaluation.py<evaluation.py>` 를 구현해서"
+" push 할 때 해당 파일의 경로를 지정해주면 됩니다. (예제로 recall 평가방법을 만들어보겠습니다.)"
+msgstr ""
+"If there is an index that you want to specify besides this, please "
+"implement the :ref:`evaluation.py<evaluation.py>` as below and specify "
+"the path of the file when pushing. (Let's create a recall evaluation "
+"method as an example.)"
+
+#: ../../contents/leaderboard.rst:136
+msgid "Ground truth(test_label)의 값과, 모델의 inference한 결과값을 불러온 후에, 평가합니다."
+msgstr ""
+"The value of the ground truth (test_label) and the inference result of "
+"the model are retrieved and evaluated."
+
+#: ../../contents/leaderboard.rst:139
+msgid ""
+"test_label을 불러오는 함수(# 1), inference 결과를 불러오는 함수(# 2), 불러온 결과값을 실질적으로 평가하는"
+" 함수(# 3)로 구성합니다."
+msgstr ""
+"It consists of a function (# 1) that calls test_label, a function that "
+"loads inference results (# 2), and a function that actually evaluates the"
+" loaded result (# 3)."
+
+#: ../../contents/leaderboard.rst:142
+msgid ""
+":ref:`dataset push<nsml dataset push>` 를 할때, -l 옵션으로 데이터셋을 올렸다면, "
+"*test_label* 을 자동으로 Ground truth로 인식합니다."
+msgstr ""
+"When execute :ref:`dataset push<nsml dataset push>`, if you put the "
+"dataset with the -l option, it automatically recognizes *test_label*  as "
+"Ground truth."
+
+#: ../../contents/leaderboard.rst:145
+msgid "inference의 결과값은 NSML에서 evaluation.py를 호출할때 변수로 넣어줍니다."
+msgstr ""
+"The result value of inference is entered as a variable when calling "
+"evaluation.py in NSML."
+
+#: ../../contents/leaderboard.rst:147
+msgid "Argument로 *prediction* 을 받을 수 있어야 합니다."
+msgstr "It must be able to receive *prediction* as Argument."
+
+#: ../../contents/leaderboard.rst:150
+msgid "test_label_path는 */data/[dataset]/test/test_label* 로 설정합니다."
+msgstr "test_label_path is set to */data/[dataset]/test/test_label*"
+
+#: ../../contents/leaderboard.rst:152
+msgid "[dataset]: 올린 데이터셋의 이름"
+msgstr "[dataset]: The name of the dataset you uploaded"
+
+#: ../../contents/leaderboard.rst:155
+msgid "return 값은 print로 출력해야 합니다."
+msgstr "The return value should be printed as print."
+
+#: ../../contents/leaderboard.rst:160
+msgid "2. Prepare a session"
+msgstr ""
+
+#: ../../contents/leaderboard.rst:162
+msgid ""
+"save, load, infer 함수를 작성해서 :ref:`nsml.bind()<nsml.bind()>` 함수에 변수로 입력합니다."
+" (아래 예제는 :ref:`bind_model()<bind_model()>` 을 사용하겠습니다.)"
+msgstr ""
+"Create a save, load, and infer function and enter it as a variable in the"
+" :ref:`nsml.bind()<nsml.bind()>` function. ( We'll use "
+":ref:`bind_model()<bind_model()>` in the example below.)"
+
+#: ../../contents/leaderboard.rst:202
+msgid ""
+"infer 함수의 return 형식은 *[(prob, result), (prob, result), ...., (prob, "
+"result)] (확률, 결과값)* 으로 맞춰주어야 하며, result를 기준으로 모델을 평가합니다. prob는 디버깅 혹은 서비스"
+" 용도로 사용되며, leaderboard에서는 어떤 값이 들어와도 무방합니다."
+msgstr ""
+"The return type of the infer function is *[(prob, result), (prob, "
+"result), ... . (prob, result)] (probability, result value)* , and "
+"evaluates the model based on result. prob is used for debugging or "
+"service purposes, and any value can be entered in the leaderboard."
+
+#: ../../contents/leaderboard.rst:205
+msgid ""
+":ref:`reserved arguments<reserved arguments>` 를 이용해서 entry 파일에서 다음과 같이 "
+":ref:`nsml.paused()<nsml.paused()>` 함수를 호출합니다."
+msgstr ""
+"Use the :ref:`reserved arguments<reserved arguments>` to call the "
+":ref:`nsml.paused()<nsml.paused()>` function in the entry file as "
+"follows:"
+
+#: ../../contents/leaderboard.rst:220
+msgid "3. Submit"
+msgstr ""
+
+#: ../../contents/leaderboard.rst:222
+msgid ":ref:`nsml submit<nsml submit>` 을 이용해서 session을 제출합니다."
+msgstr "Submit session using :ref:`nsml submit<nsml submit>`."
+
+#: ../../contents/leaderboard.rst:224
+msgid ""
+"submit 할 때 session은 train_data와 train_label이 없는 곳에 생성되므로 "
+":ref:`nsml.paused()<nsml.paused()>` 함수 호출 전에 데이터에 접근하면 에러가 발생합니다."
+msgstr ""
+"When submitting, the session is created where there is no train_data and "
+"train_label, so if you access the data before calling the "
+":ref:`nsml.paused()<nsml.paused()>` function, an error occurs."
+
+#: ../../contents/leaderboard.rst:228
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../contents/leaderboard.rst:230
+msgid "submit 도중에"
+msgstr "during submit"
+
+#: ../../contents/leaderboard.rst:236
+msgid ""
+"위와 같은 메시지가 나타난다면, :ref:`nsml.paused()<nsml.paused()>` 가 호출되기 전에 에러가 발생한 "
+"것으로, 크게 두 가지로 나눌 수 있습니다."
+msgstr ""
+"If you see the above message, there are two main types of errors that "
+"occurred before :ref:`nsml.paused()<nsml.paused()>` was called."
+
+#: ../../contents/leaderboard.rst:238
+msgid ""
+":ref:`nsml.paused()<nsml.paused()>` 호출되기 전 test_data 또는 test_label에 접근하는 "
+"경우"
+msgstr ""
+"If you access test_data or test_label before "
+":ref:`nsml.paused()<nsml.paused()>` is called"
+
+#: ../../contents/leaderboard.rst:240
+msgid ":ref:`nsml.load()<nsml.load()>` 도중 에러가 난 경우"
+msgstr "If there is an error during :ref:`nsml.load()<nsml.load()>`"
+
+#: ../../contents/leaderboard.rst:242
+msgid ""
+"위와 같은 문제가 발생할 때는 :ref:`nsml submit -t SESSION CKPT<nsml submit>` 를 통해서 "
+"디버깅을 할 수 있습니다."
+msgstr ""
+"If you encounter any of these problems, you can debug with :ref:`nsml "
+"submit -t SESSION CKPT<nsml submit>`"
+
+#~ msgid ""
+#~ "이 외에 따로 지정하고 싶은 지표가 있다면 아래와"
+#~ " 같이 :ref:`evaluation.py<evaluation.py>` 를 구현해서"
+#~ " push 할 때 해당 파일의 경로를 지정해주면 "
+#~ "됩니다. (예제로 recall 평가방법을 만들어보겠습니다)"
+#~ msgstr ""
+
+#~ msgid "Argument로 *prediction* 을 받을 수 있어야 합니다"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "위와 같은 문제가 발생할 때는 :ref:`nsml submit"
+#~ " -t SESSION CKPT<nsml submit>` 를 통해서"
+#~ " 디버깅을 할 수 있습니다"
+#~ msgstr ""

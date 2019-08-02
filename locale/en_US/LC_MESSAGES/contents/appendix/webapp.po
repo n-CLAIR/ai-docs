@@ -1,0 +1,131 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-10-26 05:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../contents/appendix/webapp.rst:2
+msgid "Web app"
+msgstr ""
+
+#: ../../contents/appendix/webapp.rst:11
+msgid ""
+"Web app은 모델의 입력에 대한 결과값을 서버를 실행하지 않아도 테스트 가능하며, 실험에서 나온 결과를 여러 사람과 쉽게 공유할"
+" 수 있습니다. Web app은 :ref:`nsml infer<nsml infer>` 를 사용합니다."
+msgstr ""
+"Web app can test the results of inputs to the model without having to run the server, "
+"and it is easy to share the results from the experiment with multiple people. The Web app uses :ref:`nsml infer<nsml infer>`."
+
+#: ../../contents/appendix/webapp.rst:17
+msgid "How to use"
+msgstr ""
+
+#: ../../contents/appendix/webapp.rst:19
+msgid ""
+"Web app을 사용하기 위해서 `https://dev.apis.naver.com/nsml_/infer/local`_ 로 모델 "
+"정보와 입력 데이터를 전달해야 합니다."
+msgstr ""
+"To use Web app, you need to pass model information and input data to"
+" `https://dev.apis.naver.com/nsml_/infer/local`_."
+
+#: ../../contents/appendix/webapp.rst:22
+msgid "jQuery"
+msgstr ""
+
+#: ../../contents/appendix/webapp.rst:27
+msgid "CDN version 3.x"
+msgstr ""
+
+#: ../../contents/appendix/webapp.rst:52 ../../contents/appendix/webapp.rst:78
+msgid "Usage:"
+msgstr ""
+
+#: ../../contents/appendix/webapp.rst:54
+msgid "axios"
+msgstr ""
+
+#: ../../contents/appendix/webapp.rst:59
+msgid "CDN"
+msgstr ""
+
+#: ../../contents/appendix/webapp.rst:80
+msgid ""
+"URL은 `https://dev.apis.naver.com/nsml_/infer/local`_ 을 사용하고 있으며, 변경될 수 "
+"있습니다."
+msgstr ""
+"The URL is `https://dev.apis.naver.com/nsml_/infer/local`_ "
+"and is subject to change."
+
+#: ../../contents/appendix/webapp.rst:83
+msgid "Data format"
+msgstr ""
+
+#: ../../contents/appendix/webapp.rst:86
+msgid "http 네트워크를 호출하였을 때 결과가 아래와 같이 나옵니다."
+msgstr "When you call the http network, the result is shown below."
+
+#: ../../contents/appendix/webapp.rst:95
+msgid ""
+"Output 은 base64로 인코딩 된 값입니다. 이 값은 window 내장 함수인 `atob`_ 을 사용하면 base64로 "
+"디코딩 된 결과 값이 string 타입으로 리턴되며, `JSON.parse`_ 를 사용하면 JSON으로 리턴되어 사용할 수 "
+"있습니다."
+msgstr ""
+"Output is a base64 encoded value. This value is returned by result of decoded base64 when using `atob`_ which is a window built-in function. "
+"You can get return value as JSON type by using `JSON.parse`_."
+
+#: ../../contents/appendix/webapp.rst:98
+msgid "아래는 mnist webapp 예시입니다. ( `jquery`_ )"
+msgstr "Below is an example of the mnist webapp. ( `jquery`_ )"
+
+#: ../../contents/appendix/webapp.rst:100
+msgid "Web example"
+msgstr ""
+
+#: ../../contents/appendix/webapp.rst:103
+msgid "source :"
+msgstr ""
+
+#: ../../contents/appendix/webapp.rst:103
+msgid "https://oss.navercorp.com/nsml/nsml_webapp"
+msgstr ""
+
+#: ../../contents/appendix/webapp.rst:107
+msgid "git page"
+msgstr ""
+
+#: ../../contents/appendix/webapp.rst:106
+msgid "https://pages.oss.navercorp.com/nsml/nsml_webapp/"
+msgstr ""
+
+#: ../../contents/appendix/webapp.rst:110
+msgid "Make Git page"
+msgstr ""
+
+#: ../../contents/appendix/webapp.rst:113
+msgid "https://pages.github.com/"
+msgstr ""
+
+#: ../../contents/appendix/webapp.rst:116
+msgid "영상 01:30"
+msgstr "Video 01:30"
+
+#~ msgid ""
+#~ "Output 은 base64로 인코딩 된 값입니다. 이 "
+#~ "값은 window 내장 함수인 `atob`_ 을 사용하면"
+#~ " base64로 디코딩 된 결과 값이 string "
+#~ "타입으로 나오며, `JSON.parse`_ 를 사용하면 JSON으로"
+#~ " 사용할수 있습니다."
+#~ msgstr ""

@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-01 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../contents/nsml_library/reserved_arguments.rst:4
+msgid "reserved arguments"
+msgstr ""
+
+#: ../../contents/nsml_library/reserved_arguments.rst:6
+msgid ""
+"NSML 에서는 세션을 재생성 하는 command 들(:ref:`nsml fork<nsml fork>`, :ref:`nsml "
+"submit<nsml submit>`)을 사용할 때 entry 파일에서 다음의 3가지 옵션을 받을 수 있어야 합니다."
+msgstr ""
+"In NSML, when using the commands to regenerate a session (:ref:`nsml "
+"fork<nsml fork>`, :ref:`nsml submit<nsml submit>`, :ref:`nsml infer<nsml "
+"infer>`), the entry file should have three options:"
+
+#: ../../contents/nsml_library/reserved_arguments.rst:11
+msgid "들어온 command 가  :ref:`nsml submit<nsml submit>` 일 경우 사용됩니다."
+msgstr ""
+"It is used to distinguish whether incoming command is :ref:`nsml "
+"infer<nsml infer>` or :ref:`nsml submit<nsml submit>`."
+
+#: ../../contents/nsml_library/reserved_arguments.rst:13
+msgid ":ref:`nsml submit<nsml submit>`"
+msgstr ""
+
+#: ../../contents/nsml_library/reserved_arguments.rst:14
+msgid "\\-\\-mode test 로 설정됩니다."
+msgstr "It is set to \\-\\-mode test."
+
+#: ../../contents/nsml_library/reserved_arguments.rst:18
+msgid "model 을 load 할때 1로 설정됩니다."
+msgstr "Set to 1 when loading model."
+
+#: ../../contents/nsml_library/reserved_arguments.rst:22
+msgid ""
+":ref:`nsml fork<nsml fork>` 할 때의 iteration로 설정됩니다. 이는 checkpoint와 동일한 "
+"개념입니다. iteration 옵션을 주지 않으면 마지막 wall time 의 model 을 가져옵니다."
+msgstr ""
+"Set to checkpoint when commanding :ref:`nsml fork<nsml fork>`. If "
+"checkpoint option is not given, the model of the last wall time is "
+"obtained."
+
+#~ msgid ":ref:`nsml infer<nsml infer>`"
+#~ msgstr ""
+
+#~ msgid "\\-\\-mode infer 로 설정됩니다."
+#~ msgstr "It is set to \\-\\-mode infer."
+

@@ -1,0 +1,157 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-05 04:40+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../contents/dataset/change_metadata.rst:5
+msgid "Change metadata"
+msgstr ""
+
+#: ../../contents/dataset/change_metadata.rst:10
+msgid "Usage:"
+msgstr ""
+
+#: ../../contents/dataset/change_metadata.rst:9
+msgid "**nsml dataset change** *Options* DATASET_NAME"
+msgstr ""
+
+#: ../../contents/dataset/change_metadata.rst:13
+msgid "Description:"
+msgstr ""
+
+#: ../../contents/dataset/change_metadata.rst:13
+msgid "데이터셋 정보를 수정합니다."
+msgstr "It modifies the dataset information."
+
+#: ../../contents/dataset/change_metadata.rst:27
+msgid "Example:"
+msgstr ""
+
+#: ../../contents/dataset/change_metadata.rst:16
+msgid "Basic command"
+msgstr ""
+
+#: ../../contents/dataset/change_metadata.rst:75
+msgid "Options:"
+msgstr ""
+
+#: ../../contents/dataset/change_metadata.rst:32
+msgid "상세한 진행과정을 표시합니다."
+msgstr "Displays detailed progress."
+
+#: ../../contents/dataset/change_metadata.rst:36
+msgid "데이터셋의 설명을 변경합니다."
+msgstr "It modifies the dataset information."
+
+#: ../../contents/dataset/change_metadata.rst:40
+msgid ":ref:`leaderboard<leaderboard>` 를 활성화 했을 때의 평가 지표를 정합니다."
+msgstr ""
+"Determines the evaluation index when :ref:`leaderboard<leaderboard>` is "
+"activated."
+
+#: ../../contents/dataset/change_metadata.rst:42
+msgid "value값은 \"accuracy\"(default), \"mse\", \"custom\" 입니다."
+msgstr "accuracy(default), mse, custom is available for value. "
+
+#: ../../contents/dataset/change_metadata.rst:44
+msgid "다른 평가 지표가 필요하면 :ref:`evaluation.py<evaluation.py>` 파일을 작성해서"
+msgstr "It is also possible to create an :ref:`evaluation.py<evaluation.py>` file "
+
+#: ../../contents/dataset/change_metadata.rst:46
+msgid "push할 때 파일 경로를 지정하여 사용할 수 있습니다."
+msgstr "and give a file path when push dataset."
+
+#: ../../contents/dataset/change_metadata.rst:50
+msgid "model의 크기 제한을 변경합니다."
+msgstr "Changes the size limit of the model."
+
+#: ../../contents/dataset/change_metadata.rst:54
+msgid ":ref:`leaderboard<leaderboard>` 를 활성화 했을 때의 순서를 변경합니다."
+msgstr ""
+"Determines the evaluation index when :ref:`leaderboard<leaderboard>` is "
+"activated."
+
+#: ../../contents/dataset/change_metadata.rst:56
+msgid "value값으로 score 오름차순 정렬로 \"ascending\""
+msgstr "You can use \"\"ascending\" and "
+
+#: ../../contents/dataset/change_metadata.rst:58
+msgid "내림차순 정렬로 \"descending\"이 있습니다."
+msgstr "\"descending\" to sort by score"
+
+#: ../../contents/dataset/change_metadata.rst:62
+msgid "데이터셋에 tag를 답니다."
+msgstr "Tag the dataset. "
+
+#: ../../contents/dataset/change_metadata.rst:64
+msgid "tag의 길이는 하나당 최대 50자까지 가능합니다."
+msgstr "The length of tag can be up to 50 characters "
+
+#: ../../contents/dataset/change_metadata.rst:66
+msgid "최대 7개까지 등록할 수 있습니다."
+msgstr "Up to 7 tags can be registered"
+
+#: ../../contents/dataset/change_metadata.rst:68
+msgid "#으로 시작해야 합니다. ex) \"#example\""
+msgstr "should be start with #. ex) \"#example\""
+
+#: ../../contents/dataset/change_metadata.rst:72
+msgid "데이터셋이 private일 때, 접근할 수 있는 유저를 추가합니다."
+msgstr ""
+"When the dataset is private, adds a user who can access it."
+
+#: ../../contents/dataset/change_metadata.rst:76
+msgid "web interface를 바꿉니다. (추가예정)"
+msgstr "Replaces the web interface. (To be added)"
+
+#~ msgid "데이터셋의 description을 변경합니다."
+#~ msgstr "Change the description of the dataset."
+
+#~ msgid "데이터셋의 평가 지표를 변경합니다."
+#~ msgstr "Change the metrics of the dataset."
+
+#~ msgid "leaderboard에 표시될 순서를 변경합니다."
+#~ msgstr "Change the order in which they appear on the leaderboard."
+
+#~ msgid "데이터셋의 tag 를 변경합니다."
+#~ msgstr "Change the tag of the dataset."
+
+#~ msgid "데이터셋의 설명을 변경합니다. string 타입으로 지정합니다."
+#~ msgstr "Changes the description of the dataset. Specify it as a string type."
+
+#~ msgid ""
+#~ "string 타입으로 지정하고, \"accuracy\"(default), "
+#~ "\"mse\", \"custom\"을 선택할 수 있습니다. 다른 "
+#~ "평가 지표가 필요하면 :ref:`evaluation.py<evaluation.py>` "
+#~ "파일을 작성해서 push할 때 파일 경로를 지정하여 "
+#~ "사용할 수 있습니다."
+#~ msgstr ""
+#~ "Specifies it as a string type and"
+#~ " there are accuracy(default), mse, and "
+#~ "custom. It is also possible to "
+#~ "create an :ref:`evaluation.py<evaluation.py>` file"
+#~ " and give it a file path."
+
+#~ msgid ""
+#~ ":ref:`leaderboard<leaderboard>` 를 활성화 했을 때의"
+#~ " 순서를 변경합니다. string 타입으로 지정하며, "
+#~ "\"ascending\"과 \"descending\"을 사용하여 score "
+#~ "오름차순, 내림차순으로 정렬할 수 있습니다."
+#~ msgstr ""
+#~ "Sets the order when "
+#~ ":ref:`leaderboard<leaderboard>` is activated. "
+#~ "Specify it as a string type. You"
+#~ " can use \"\"ascending\" and \"descending\""

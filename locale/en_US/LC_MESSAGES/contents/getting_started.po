@@ -1,0 +1,209 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-01 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../contents/getting_started.rst:4
+msgid "Getting started"
+msgstr ""
+
+#: ../../contents/getting_started.rst:8
+msgid "Install nsml"
+msgstr ""
+
+#: ../../contents/getting_started.rst:10
+msgid "https://airush.nsml.navercorp.com/download 페이지에서 자신의 플랫폼에 맞는 NSML을 다운받습니다."
+msgstr ""
+"Download the NSML for your platform from the "
+"https://airush.nsml.navercorp.com/download page."
+
+#: ../../contents/getting_started.rst:12
+msgid "혹은 `wget` 명령어를 이용해서 받습니다. (아래 예제는 mac버전의 NSML을 다운받습니다.)"
+msgstr ""
+"Or you can use `wget` command. (The example below help you download the "
+"mac version of NSML.)"
+
+#: ../../contents/getting_started.rst:21
+msgid "Install local-nsml"
+msgstr ""
+
+#: ../../contents/getting_started.rst:23
+msgid "What is a local-nsml?"
+msgstr ""
+
+#: ../../contents/getting_started.rst:24
+msgid ""
+"NSML에 올리는 코드를 로컬 환경에서 디버깅할 때, NSML의 라이브러리에 대해서 생기는 `ImportError` 를 방지하기 "
+"위한 파이썬 패키지입니다."
+msgstr ""
+"This is a Python package to prevent the `ImportError` on the NSML library"
+" when debugging code posted to NSML locally."
+
+#: ../../contents/getting_started.rst:26
+msgid "pip가 이미 설치되어 있다는 전제 하에, 아래 명령어를 입력하면 됩니다."
+msgstr "Assuming pip is already installed, you can enter the following command."
+
+#: ../../contents/getting_started.rst:34
+msgid "Login"
+msgstr ""
+
+#: ../../contents/getting_started.rst:36
+msgid ""
+"NSML을 사용하기 위해선 로그인을 해야 합니다. Github 아이디와 비밀번호로 로그인합니다. 아래 소스 코드에서는 "
+"``nsmlteam`` 을 Github 아이디로 사용하여 로그인하겠습니다."
+msgstr ""
+"You need to login to use NSML."
+"Log in with your Github username and password."
+"In the source code below shows log in using nsmlteam Github ID."
+
+#: ../../contents/getting_started.rst:40
+msgid "**Github에서 Two-factor authentication을 해제해야 사용 가능합니다.**"
+msgstr "Two-factor authentication must be disabled before it can be used."
+
+#: ../../contents/getting_started.rst:42
+msgid "(확인 방법 : Settings > Security > Two-factor authentication 체크)"
+msgstr "(Check: Settings > Security > Two-factor authentication)"
+
+#: ../../contents/getting_started.rst:53
+msgid "Path registration"
+msgstr ""
+
+#: ../../contents/getting_started.rst:55
+msgid ""
+"다양한 위치에서 nsml을 실행하기 위해서 path 설정을 해주는 것을 권장합니다. nsml login을 실행했을 때 다음과 같은 "
+"오류 메시지가 뜨는 경우가 발생하는 경우에도 Path 설정을 해주어야 합니다."
+msgstr ""
+"It is recommended that you set the path to run nsml on multiple paths. If"
+" you get the following error message when you run nsml login, you need to"
+" set the path."
+
+#: ../../contents/getting_started.rst:63
+msgid ""
+"path 설정법을 알아보겠습니다. 먼저 nsml 실행파일이 있는 폴더에 들어간 뒤, pwd를 입력하고 나온 path를 복사합니다. "
+"pwd로 ``/Users/user/Documents/nsml_client.darwin.amd64.hack`` 가 나왔다고 "
+"가정합니다."
+msgstr ""
+"Let's look at how to set the path. First, enter the folder where the nsml"
+" exe. file is located, then type pwd and copy the path. Assume that pwd "
+"is ``/Users/user/Documents/nsml_client.darwin.amd64.hack``."
+
+#: ../../contents/getting_started.rst:71
+msgid ""
+"그리고 ``export PATH=$PATH:`` 명령어 뒤에 pwd에서 나온 path를 붙여주고 명령어를 실행합니다. "
+"``export PATH=$PATH:[pwd path]`` 형식입니다."
+msgstr ""
+"Then run the command ``export PATH=$PATH:`` and path from pwd. The entire"
+" command is ``export PATH = $ PATH: [pwd path]``."
+
+#: ../../contents/getting_started.rst:79
+msgid "경로 설정이 완료되면 어떤 path 상에서도 nsml login이 가능합니다."
+msgstr "Once the path is set up, nsml login is available on any path."
+
+#: ../../contents/getting_started.rst:83
+msgid "Run a session"
+msgstr ""
+
+#: ../../contents/getting_started.rst:85
+msgid ""
+"nsml run을 할 때는 dataset을 -d 옵션으로 반드시 지정해야 합니다. 예제의 dataset 이름은 mnist이며 "
+"``-d mnist`` 로 지정합니다. ``-e main.py`` 로 entry 파일(시작 파일)를 옵션으로 같이 지정할 수 "
+"있습니다."
+msgstr ""
+"When you type nsml run command, dataset must be specified with the -d option.
+"The dataset name in the example is mnist and is specified with -d mnist."
+"You can optionally specify an entry file with ``-e main.py``."
+
+#: ../../contents/getting_started.rst:92
+msgid ""
+"아래 예제에서는 이번 해커톤의 baseline code를 실행시켜보겠습니다. :ref:`nsml run <nsml run>` 을 "
+"이용합니다."
+msgstr ""
+"In the example below, we'll run the baseline code for this hackathon "
+"through :ref:`nsml run <nsml run>`."
+
+#: ../../contents/getting_started.rst:95
+msgid "Github의 baseline 레파지토리를 먼저 clone합니다."
+msgstr "Clone Github's baseline repository first."
+
+#: ../../contents/getting_started.rst:128
+msgid "지금까지 NSML의 기본 사용법을 알아보았습니다.  다음 파트부터는 NSML에서 사용하는 명령어들을 알아보겠습니다."
+msgstr ""
+"So far, we've looked at the basic usage of NSML. "
+"In the next part, we will look at the commands used in NSML."
+
+#~ msgid "Login NSML"
+#~ msgstr ""
+
+#~ msgid "Sign-up"
+#~ msgstr ""
+
+#~ msgid "https://nsml.navercorp.com/signup 에서 사용 신청을 하면, 승인 후에 사용이 가능합니다."
+#~ msgstr ""
+#~ "When you apply for use in "
+#~ "https://nsml.navercorp.com/signup, can use NSML "
+#~ "after approval."
+
+#~ msgid "NSML에서 login하는 명령어입니다."
+#~ msgstr "NSML login"
+
+#~ msgid "Login Troubleshooting(Windows OS)"
+#~ msgstr ""
+
+#~ msgid "Windows OS에서 MINGW 터미널을 사용할 경우 발생할 수 있는 Login 오류입니다."
+#~ msgstr "Login error that can occur when using MINGW terminal in Windows OS."
+
+#~ msgid "EOF 메시지를 발견하시면 Windows 기본 cmd를 활용하시거나 다음 명령어로 로그인해주시기 바랍니다."
+#~ msgstr ""
+#~ "If you find the EOF message, "
+#~ "please use the Windows default cmd "
+#~ "or log in with the following "
+#~ "command."
+
+#~ msgid "**nsml login** --username *username* --password *password*"
+#~ msgstr ""
+
+#~ msgid "Upload dataset"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "NSML에 데이터셋을 올릴 때는 :ref:`nsml dataset "
+#~ "push<nsml dataset push>` 명령어를 사용합니다. "
+#~ "예제로, :download:`diabetes "
+#~ "<../static/example_dataset/dataset_diabetes.zip>` 데이터셋을 올려"
+#~ " 보겠습니다."
+#~ msgstr ""
+#~ "When uploading a dataset to NSML, "
+#~ "use the :ref:`nsml dataset push<nsml "
+#~ "dataset push>` command. As an example,"
+#~ " let's look at a dataset "
+#~ ":download:`diabetes "
+#~ "<../static/example_dataset/dataset_diabetes.zip>`."
+
+#~ msgid "데이터셋이 올라갔다면 :ref:`nsml dataset ls<nsml dataset ls>` 명령어로 확인할 수 있습니다."
+#~ msgstr ""
+#~ "If the dataset is uploaded, you "
+#~ "can verify it with the :ref:`nsml "
+#~ "dataset ls<nsml dataset ls>` command."
+
+#~ msgid ""
+#~ "`nsml-examples`_ 에서 받은 예제코드를 :ref:`nsml"
+#~ " run <nsml run>` 을 이용해 실행해 "
+#~ "보겠습니다."
+#~ msgstr ""
+#~ "Let's run the example code from "
+#~ "`nsml-examples`_ using :ref:`nsml run <nsml"
+#~ " run>`."
+

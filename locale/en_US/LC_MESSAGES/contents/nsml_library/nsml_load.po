@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-01 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../contents/nsml_library/nsml_load.rst:4
+msgid "nsml.load"
+msgstr ""
+
+#: ../../contents/nsml_library/nsml_load.rst:8
+msgid "저장된 모델을 불러옵니다. :ref:`nsml.bind()<nsml.bind()>` 함수에서는 load 함수를 정의만 합니다."
+msgstr ""
+"The function that load saved model. :ref:`nsml.bind()<nsml.bind()>` only "
+"defines a save function."
+
+#: ../../contents/nsml_library/nsml_load.rst
+msgid "매개변수"
+msgstr "Parameters"
+
+#: ../../contents/nsml_library/nsml_load.rst:10
+msgid "session 의 호출할 checkpoint을 정의합니다."
+msgstr "defines the checkpoint of the session to be called."
+
+#: ../../contents/nsml_library/nsml_load.rst:12
+msgid ""
+"모델을 load 하는 방법이 정의된 함수를 인수로 받습니다. load 함수가 호출되는 우선순위는  1. 이 함수로 전달된 "
+"load_fn 2. nsml.bind() 에 binding 된 load 함수 3. nsml 에서 정의한 default load "
+"함수입니다."
+msgstr ""
+
+#: ../../contents/nsml_library/nsml_load.rst:12
+msgid "모델을 load 하는 방법이 정의된 함수를 인수로 받습니다. load 함수가 호출되는 우선순위는"
+msgstr ""
+"It receives function define the way of loading the model as an argument."
+"  The priority at which the load function is called is"
+
+#: ../../contents/nsml_library/nsml_load.rst:14
+msgid "이 함수로 전달된 load_fn"
+msgstr "load_fn delivered to this function"
+
+#: ../../contents/nsml_library/nsml_load.rst:15
+msgid "nsml.bind() 에 binding 된 load 함수"
+msgstr "load function bound to nsml.bind()"
+
+#: ../../contents/nsml_library/nsml_load.rst:16
+msgid "nsml 에서 정의한 default load 함수입니다."
+msgstr "default load function defined by NSML."
+
+#: ../../contents/nsml_library/nsml_load.rst:18
+msgid "해당 session name 에서 저장된 model 을 불러옵니다."
+msgstr "Loads the saved model from the session name."
+
+#: ../../contents/nsml_library/nsml_load.rst:21
+msgid "Example ::"
+msgstr ""
+
+#~ msgid ""
+#~ ":ref:`nsml.bind()<nsml.bind()>` 에서는 load 함수를 "
+#~ "정의하기만 하고 실제 호출되는 시점은 nsml.load() 가"
+#~ " 호출될때 입니다."
+#~ msgstr ""
+
+#~ msgid "Parameters"
+#~ msgstr ""
+
+#~ msgid "매개 변수"
+#~ msgstr ""
+
+#~ msgid "매개변수"
+#~ msgstr ""
+

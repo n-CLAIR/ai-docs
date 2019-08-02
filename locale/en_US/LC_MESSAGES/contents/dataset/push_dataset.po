@@ -1,0 +1,170 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-31 07:40+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../contents/dataset/push_dataset.rst:4
+msgid "Push dataset"
+msgstr ""
+
+#: ../../contents/dataset/push_dataset.rst:9
+msgid "Usage:"
+msgstr ""
+
+#: ../../contents/dataset/push_dataset.rst:8
+msgid "**nsml dataset push** *Options* DATASET_NAME PATH"
+msgstr ""
+
+#: ../../contents/dataset/push_dataset.rst:12
+msgid "Description:"
+msgstr ""
+
+#: ../../contents/dataset/push_dataset.rst:12
+msgid "입력한 위치에 있는 데이터셋을 NSML에 업로드 합니다. 데이터셋의 이름 길이는 20자를 넘을 수 없습니다."
+msgstr ""
+"It uploads the dataset at the location you entered to NSML. Dataset name "
+"length can not exceed 20 characters."
+
+#: ../../contents/dataset/push_dataset.rst:27
+msgid "Example:"
+msgstr ""
+
+#: ../../contents/dataset/push_dataset.rst:15
+msgid "Basic command"
+msgstr ""
+
+#: ../../contents/dataset/push_dataset.rst:90
+msgid "Options:"
+msgstr ""
+
+#: ../../contents/dataset/push_dataset.rst:32
+msgid "상세한 진행과정을 표시합니다."
+msgstr "Displays detailed progress."
+
+#: ../../contents/dataset/push_dataset.rst:36
+msgid "데이터셋의 설명을 추가합니다."
+msgstr "Add a description of the dataset."
+
+#: ../../contents/dataset/push_dataset.rst:40
+msgid "데이터셋 을 업로드할 때 모든 장비에 복사합니다."
+msgstr "When you upload a dataset, copy it to all devices."
+
+#: ../../contents/dataset/push_dataset.rst:44
+msgid "기존에 데이터셋이 있다면 덮어씁니다."
+msgstr "Overwrite existing datasets."
+
+#: ../../contents/dataset/push_dataset.rst:48
+msgid ":ref:`leaderboard<leaderboard>` 를 활성화 했을 때의 순서를 정합니다."
+msgstr ""
+"Set the evaluation index when you activate the "
+":ref:`leaderboard<leaderboard>`."
+
+#: ../../contents/dataset/push_dataset.rst:50
+msgid "value값으로 score 오름차순 정렬로 \"ascending\""
+msgstr "You can use \"\"ascending\" and "
+
+#: ../../contents/dataset/push_dataset.rst:52
+msgid "내림차순 정렬로 \"descending\"을 지정할 수 있습니다."
+msgstr "\"descending\" to sort by score"
+
+#: ../../contents/dataset/push_dataset.rst:56
+#: ../../contents/dataset/push_dataset.rst:63
+msgid ":ref:`leaderboard<leaderboard>` 를 활성화 했을 때의 평가 지표를 정합니다."
+msgstr ""
+"Set the evaluation index when you activate the "
+":ref:`leaderboard<leaderboard>`."
+
+#: ../../contents/dataset/push_dataset.rst:58
+msgid ":ref:`data structure<prepare_a_dataset>` 를 맞춰야합니다."
+msgstr "You have to set :ref:`data structure<prepare_a_dataset>`"
+
+#: ../../contents/dataset/push_dataset.rst:65
+msgid "value값은 \"accuracy\"(default), \"mse\", \"custom\"을 선택할 수 있습니다."
+msgstr "accuracy(default), mse, custom is available for value. "
+
+#: ../../contents/dataset/push_dataset.rst:67
+msgid "다른 평가 지표가 필요하면 :ref:`evaluation.py<evaluation.py>` 파일을 작성해서"
+msgstr "It is also possible to create an :ref:`evaluation.py<evaluation.py>` file "
+
+#: ../../contents/dataset/push_dataset.rst:69
+msgid "push할 때 파일 경로를 지정하여 사용할 수 있습니다."
+msgstr "and give a file path when push dataset."
+
+#: ../../contents/dataset/push_dataset.rst:73
+msgid "model을 저장할 때의 크기 제한을 설정합니다. 기본적으로는 무제한입니다."
+msgstr "Sets the size limit when saving the model. Basically unlimited. "
+
+#: ../../contents/dataset/push_dataset.rst:77
+msgid "데이터셋을 올릴 때, 올린 사람에게만 읽기/변경/삭제 권한을 부여합니다."
+msgstr "Grants permission to read/change/delete to the uploader only."
+
+#: ../../contents/dataset/push_dataset.rst:79
+msgid ""
+"처음에는 본인에게만 권한을 주지만 :ref:`nsml dataset change -u USER_ID<nsml dataset "
+"change>` 로"
+msgstr ""
+"At first, only visible only to you. :ref:`nsml dataset change -u "
+"USERID<nsml dataset change>` "
+
+#: ../../contents/dataset/push_dataset.rst:81
+msgid "접근 가능한 유저를 추가할 수 있습니다."
+msgstr "command will allow other users access to dataset. "
+
+#: ../../contents/dataset/push_dataset.rst:85
+msgid "데이터셋에 tag를 답니다."
+msgstr "Tag the dataset. "
+
+#: ../../contents/dataset/push_dataset.rst:87
+msgid "tag의 길이는 하나당 최대 50자까지 가능합니다."
+msgstr "The length of tag can be up to 50 characters "
+
+#: ../../contents/dataset/push_dataset.rst:89
+msgid "최대 7개까지 등록할 수 있습니다."
+msgstr "Up to 7 tags can be registered"
+
+#: ../../contents/dataset/push_dataset.rst:91
+msgid "#으로 시작해야 합니다. ex) \"#example\""
+msgstr "should be start with #. ex) \"#example\""
+
+#~ msgid ":ref:`leaderboard<leaderboard>` 를 활성화 하는 옵션입니다. (데이터의 구조를 맞춰야합니다)"
+#~ msgstr ""
+#~ "This option activates the "
+#~ ":ref:`leaderboard<leaderboard>`. (The structure of"
+#~ " the data must be matched)"
+
+#~ msgid ""
+#~ ":ref:`leaderboard<leaderboard>` 를 활성화 했을 때의"
+#~ " 평가 지표를 정합니다. string 타입으로 지정합니다. "
+#~ "( :ref:`data structure<prepare_a_dataset>` 를 "
+#~ "맞춰야합니다. )"
+#~ msgstr ""
+#~ "Set the evaluation index when you "
+#~ "activate the :ref:`leaderboard<leaderboard>`.Specify "
+#~ "it as a string type. (You should"
+#~ " match :ref:`data structure<prepare_a_dataset>` )"
+
+#~ msgid ""
+#~ "string 타입으로 지정하며 \"accuracy\"(default), "
+#~ "\"mse\", \"custom\"을 선택할 수 있습니다. 다른 "
+#~ "평가 지표가 필요하면 :ref:`evaluation.py<evaluation.py>` "
+#~ "파일을 작성해서 push할 때 파일 경로를 지정하여 "
+#~ "사용할 수 있습니다."
+#~ msgstr ""
+#~ "Specify it as a string type and"
+#~ " there are accuracy(default), mse, and "
+#~ "custom. It is also possible to "
+#~ "create an :ref:`evaluation.py<evaluation.py>` file"
+#~ " and give it a file path."

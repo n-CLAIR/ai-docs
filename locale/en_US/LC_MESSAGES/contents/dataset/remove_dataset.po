@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-05 04:40+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../contents/dataset/remove_dataset.rst:4
+msgid "Remove dataset"
+msgstr ""
+
+#: ../../contents/dataset/remove_dataset.rst:9
+msgid "Usage:"
+msgstr ""
+
+#: ../../contents/dataset/remove_dataset.rst:8
+msgid "**nsml dataset rm** *Options* DATASET_NAME"
+msgstr ""
+
+#: ../../contents/dataset/remove_dataset.rst:14
+msgid "Description:"
+msgstr ""
+
+#: ../../contents/dataset/remove_dataset.rst:12
+msgid "데이터셋을 삭제합니다."
+msgstr "It deletes the dataset."
+
+#: ../../contents/dataset/remove_dataset.rst:26
+msgid "Example:"
+msgstr ""
+
+#: ../../contents/dataset/remove_dataset.rst:17
+msgid "Basic command"
+msgstr ""
+
+#: ../../contents/dataset/remove_dataset.rst:30
+msgid "Options:"
+msgstr ""
+
+#: ../../contents/dataset/remove_dataset.rst:31
+msgid "상세한 진행과정을 표시합니다."
+msgstr "Displays detailed progress."
+
+#~ msgid "remove dataset"
+#~ msgstr ""
+

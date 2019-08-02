@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-01 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../contents/session/submit_a_session.rst:4
+msgid "Submit a session"
+msgstr ""
+
+#: ../../contents/session/submit_a_session.rst:6
+msgid "Usage:"
+msgstr ""
+
+#: ../../contents/session/submit_a_session.rst:8
+msgid "**nsml submit** *Options* SESSION_NAME *CHECKPOINT*"
+msgstr ""
+
+#: ../../contents/session/submit_a_session.rst:11
+msgid ""
+"session 을 submit 하여서 leaderboard 에 점수를 제출합니다. 하루에 submit 횟수는 제한이 없습니다. 다만"
+" submit을 한 번 했다면 1시간 후에 다시 submit이 가능합니다. 즉, submit 시간 간격은 1시간이 넘어야 합니다. "
+"(단, -t 옵션을 사용하는 submit은 submit 시간 간격 카운트에 포함되지 않습니다.)"
+msgstr ""
+"Submit your score to the leaderboard by submitting a session.The number "
+"of submission is not limited, but you can submit only a single session in"
+" an hour. (submissions using the -t option are not counted.)"
+
+#: ../../contents/session/submit_a_session.rst:13
+msgid "Example:"
+msgstr ""
+
+#: ../../contents/session/submit_a_session.rst:22
+msgid "Options:"
+msgstr ""
+
+#: ../../contents/session/submit_a_session.rst:25
+msgid "실제로 점수를 제출하기 전, 데이터의 포맷 오류나 기타 버그들을 찾기 위해"
+msgstr "Submit the session in test mode "
+
+#: ../../contents/session/submit_a_session.rst:27
+msgid "지원하는 debug 모드(test 모드)로 session 을 제출합니다."
+msgstr "before actually submitting your score. "
+
+#: ../../contents/session/submit_a_session.rst:29
+msgid "test 모드로 제출 후 session이 새로 생기면 :ref:`logs<nsml logs>` 를 보고"
+msgstr "After submitting in test mode, you can see :ref:`logs<nsml logs>` and "
+
+#: ../../contents/session/submit_a_session.rst:31
+msgid "debugging 을 할 수 있습니다."
+msgstr "debugging when session is newly created."
+
+#: ../../contents/session/submit_a_session.rst:33
+msgid "Troubleshooting:"
+msgstr ""
+
+#: ../../contents/session/submit_a_session.rst:34
+msgid "submit 도중에"
+msgstr "During the submssion, "
+
+#: ../../contents/session/submit_a_session.rst:40
+msgid ""
+"위와 같은 메시지가 나타난다면, :ref:`nsml.paused()<nsml.paused()>` 가 호출되기 전에 에러가 발생한 "
+"것으로, 크게 두 가지로 나눌 수 있습니다."
+msgstr ""
+"If you see the above messages, the error occurs before the "
+":ref:`nsml.paused()<nsml.paused()>` is called. It can occurs by the two "
+"cases."
+
+#: ../../contents/session/submit_a_session.rst:42
+msgid ""
+":ref:`nsml.paused()<nsml.paused()>` 호출되기 전 test_data 또는 test_label에 접근하는 "
+"경우"
+msgstr ""
+"When test_data or test_label is accessed before "
+":ref:`nsml.paused()<nsml.paused()>` is called."
+
+#: ../../contents/session/submit_a_session.rst:44
+msgid ":ref:`nsml.load()<nsml.load()>` 도중 에러가 난 경우"
+msgstr "During the process of :ref:`nsml.load()<nsml.load()>`."
+
+#: ../../contents/session/submit_a_session.rst:46
+msgid ""
+"위와 같은 문제가 발생할 때는 :ref:`nsml submit -t SESSION CKPT<nsml submit>` 를 통해서 "
+"디버깅을 할 수 있습니다."
+msgstr ""
+"You can debug and resovle the error through the :ref:`nsml submit -t "
+"SESSION CKPT<nsml submit>`."
+

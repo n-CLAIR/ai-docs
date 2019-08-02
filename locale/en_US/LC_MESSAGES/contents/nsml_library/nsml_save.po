@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-01 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../contents/nsml_library/nsml_save.rst:4
+msgid "nsml.save"
+msgstr ""
+
+#: ../../contents/nsml_library/nsml_save.rst:7
+msgid "모델을 저장합니다. :ref:`nsml.bind()<nsml.bind()>` 함수에서는 save 함수를 정의만 합니다."
+msgstr ""
+"The function that save model. :ref:`nsml.bind()<nsml.bind()>` only "
+"defines a save function."
+
+#: ../../contents/nsml_library/nsml_save.rst
+msgid "매개변수"
+msgstr "Parameters"
+
+#: ../../contents/nsml_library/nsml_save.rst:9
+msgid "매 checkpoint 마다 저장될 모델의 구분을 위해 값을 받습니다."
+msgstr ""
+"Every checkpoint receives a value to distinguish the model to be saved. "
+"The checkpoint value separates the model internally."
+
+#: ../../contents/nsml_library/nsml_save.rst:11
+msgid ""
+"checkpoint 값으로 내부적으로 모델을 구분합니다. checkpoint 이 None 일때는 현재 시각의 이름으로 모델이 "
+"저장됩니다. 똑같은 checkpoint 을 두번 저장하면 overwrite 됩니다."
+msgstr ""
+"The checkpoint value separates the model internally."
+"If checkpoint is None, the model is saved with the name of the "
+"current time."
+"If you save the same checkpoint twice, the contents will be overwritten."
+
+#: ../../contents/nsml_library/nsml_save.rst:15
+msgid "모델을 저장하는 방법이 정의된 함수를 인수로 받습니다. save 함수가 호출되는 우선순위는"
+msgstr ""
+"It receives function define the way of saving the model as an argument. "
+"The priority at which the save function is called is"
+
+#: ../../contents/nsml_library/nsml_save.rst:17
+msgid "이 함수로 전달된 save_fn"
+msgstr "save_fn delivered to this function"
+
+#: ../../contents/nsml_library/nsml_save.rst:18
+msgid "nsml.bind() 에 binding 된 save 함수"
+msgstr "save function bound to nsml.bind()"
+
+#: ../../contents/nsml_library/nsml_save.rst:19
+msgid "NSML 에서 정의된 default save 함수입니다."
+msgstr "default save function defined in NSML"
+
+#: ../../contents/nsml_library/nsml_save.rst:21
+msgid "Example ::"
+msgstr ""
+
+#~ msgid ""
+#~ "매 iteration 마다 저장될 모델의 구분을 위해 "
+#~ "값을 받습니다. iteration 값으로 내부적으로 모델을 "
+#~ "구분합니다.  iteration 이 None 일때는 현재시각의 "
+#~ "이름으로 모델이 저장됩니다.  똑같은 iteration 을 "
+#~ "두번저장하면 overwrite 됩니다."
+#~ msgstr ""
+
+#~ msgid "nsml.bind() 에서는 save 함수를 정의하기만 하고 실제 호출되는 시점은 nsml.save() 가 호출될 때 입니다."
+#~ msgstr ""
+#~ "nsml.bind() only defines a save "
+#~ "function, and the actual call time "
+#~ "is when nsml.save() is called."
+
+#~ msgid ""
+#~ "매 iteration 마다 저장될 모델의 구분을 위해 "
+#~ "값을 받습니다. iteration 값으로 내부적으로 모델을 "
+#~ "구분합니다.  iteration 이 None 일때는 현재시각의 "
+#~ "이름으로 모델이 저장됩니다.  똑같은 iteration 을 "
+#~ "두번 저장하면 overwrite 됩니다."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "모델을 저장하는 방법이 정의된 함수를 인수로 받습니다. "
+#~ "save 함수가 호출되는 우선순위는  1. 이함수로 전달된"
+#~ " save_fn 2. nsml.bind() 에 binding 된"
+#~ " save 함수 3. NSML 에서 정의된 default"
+#~ " save 함수입니다."
+#~ msgstr ""
+
+#~ msgid "매 iteration 마다 저장될 모델의 구분을 위해 값을 받습니다. iteration 값으로 내부적으로 모델을 구분합니다."
+#~ msgstr ""
+#~ "Each iteration receives a value for "
+#~ "the distinction of the model to be"
+#~ " stored. The iteration value internally "
+#~ "separates the model."
+
+#~ msgid "iteration 이 None 일때는 현재 시각의 이름으로 모델이 저장됩니다."
+#~ msgstr ""
+
+#~ msgid "똑같은 iteration 을 두번 저장하면 overwrite 됩니다."
+#~ msgstr ""
+
+#~ msgid "Parameters"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "매 iteration 마다 저장될 모델의 구분을 위해 "
+#~ "값을 받습니다. iteration 값으로 내부적으로 모델을 "
+#~ "구분합니다.  iteration 이 None 일때는 현재 "
+#~ "시각의 이름으로 모델이 저장됩니다.  똑같은 iteration "
+#~ "을 두번 저장하면 overwrite 됩니다."
+#~ msgstr ""
+#~ "Each iteration receives a value for "
+#~ "the distinction of the model to be"
+#~ " stored. The iteration value internally "
+#~ "separates the model."
+
+#~ msgid ""
+#~ ":param str : 매 iteration 마다 저장될"
+#~ " 모델의 구분을 위해 값을 받습니다. iteration "
+#~ "값으로 내부적으로 모델을 구분합니다."
+#~ msgstr ""
+
+#~ msgid "매개 변수"
+#~ msgstr ""
+
+#~ msgid "매개변수"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "매 checkpoint 마다 저장될 모델의 구분을 위해 "
+#~ "값을 받습니다. checkpoint 값으로 내부적으로 모델을 "
+#~ "구분합니다.  checkpoint 이 None 일때는 현재 "
+#~ "시각의 이름으로 모델이 저장됩니다.  똑같은 checkpoint "
+#~ "을 두번 저장하면 overwrite 됩니다."
+#~ msgstr ""
+
+#~ msgid "checkpoint 이 None 일때는 현재 시각의 이름으로 모델이 저장됩니다."
+#~ msgstr ""
+#~ "If checkpoint is None, the model "
+#~ "is saved with the name of the "
+#~ "current time."
+
+#~ msgid "똑같은 checkpoint 을 두번 저장하면 overwrite 됩니다."
+#~ msgstr ""
+#~ "If you save the same checkpoint "
+#~ "twice, the contents will be overwritten."
+

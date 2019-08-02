@@ -1,0 +1,46 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-10-26 05:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../contents/web_interface/check_session_diff.rst:4
+msgid "Check session diff"
+msgstr ""
+
+#: ../../contents/web_interface/check_session_diff.rst:6
+msgid "다음과 같이 여러 세션들을 확인할 수 있는데,"
+msgstr "You can check multiple sessions as follows:"
+
+#: ../../contents/web_interface/check_session_diff.rst:10
+msgid "alt + 마우스 왼쪽버튼으로 여러 개의 session 을 선택할수있는데, 2 개의 session 을 클릭하고, diff 를 누르면"
+msgstr "alt + left mouse button can select multiple sessions. Clicking on two sessions, press diff"
+
+#: ../../contents/web_interface/check_session_diff.rst:14
+msgid "두 session 간의 차이를 확인할 수 있습니다."
+msgstr "can see the difference between the two sessions."
+
+#~ msgid "다음과 같이 여러세션들을 확인할수있는데,"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "alt + 마우스 왼쪽버튼으로 여러개의 session 을"
+#~ " 선택할수있는데, 2 개의 session 을 클릭하고, "
+#~ "diff 를 누르면"
+#~ msgstr ""
+
+#~ msgid "두 session 간의 차이를 확인할수있습니다."
+#~ msgstr ""

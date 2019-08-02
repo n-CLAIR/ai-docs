@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-10-23 11:08+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../contents/tutorials/load_model.rst:4
+msgid "Load a model in a session"
+msgstr ""
+
+#: ../../contents/tutorials/load_model.rst:8
+msgid "코드 내에서 :ref:`nsml.load<nsml.load()>` 를 사용해서 다른 세션의 모델을 가져올 수 있습니다."
+msgstr "You can use :ref:`nsml.load<nsml.load()>` in your code to get the model of another session."
+
+#: ../../contents/tutorials/load_model.rst:10
+msgid "이번에는 `02_mnist_pytorch`_ 의 예제로 진행해 보겠습니다."
+msgstr "This time, let's move on to the example of `02_mnist_pytorch`_."
+
+#: ../../contents/tutorials/load_model.rst:12
+msgid "먼저 :ref:`nsml run<nsml run>` 명령어로 다음과 같이 실행합니다."
+msgstr "First, run :ref:`nsml run<nsml run>` command as follows."
+
+#: ../../contents/tutorials/load_model.rst:36
+msgid ":ref:`모델리스트<nsml model ls>` 를 확인해 보면 다음과 같이 생성된 모델 목록을 확인할 수 있습니다."
+msgstr "If you check the :ref:`model list<nsml model ls>`, you can see the list of models created as follows."
+
+#: ../../contents/tutorials/load_model.rst:49
+msgid ""
+"새롭게 실행할 코드에 다음과 같이 :ref:`nsml.load<nsml.load()>` 함수를 호출하면, 이전에 학습한 모델을 "
+"불러올 수 있습니다."
+msgstr ""
+"You can call up the previously learned model by calling :ref:`nsml.load<nsml.load()>` function "
+"on the new code to execute as follows."
+
+#: ../../contents/tutorials/load_model.rst:63
+msgid "로그를 확인해보면 모델이 정상적으로 load되었음을 확인할 수 있습니다."
+msgstr "If you check the log, you can see that the model is loaded normally."

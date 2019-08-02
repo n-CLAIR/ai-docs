@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-07 11:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../contents/preprocess.rst:2
+msgid "Preprocess"
+msgstr ""
+
+#: ../../contents/preprocess.rst:4
+msgid "데이터셋을 NFS 시스템에 올리고 session 내에서 수정/삭제 할 수 있습니다. (사내용)"
+msgstr ""
+"You can upload datasets to the NFS system and modify/delete them in the "
+"session. (Contents for our company)"
+
+#: ../../contents/preprocess.rst:7
+msgid "Upload data to NFS"
+msgstr ""
+
+#: ../../contents/preprocess.rst:9
+msgid "*nsml team* 에 문의 바랍니다. (kr00002549@navercorp.com)"
+msgstr "please contact *nsml team* at (kr00002549@navercorp.com)"
+
+#: ../../contents/preprocess.rst:13
+msgid "Prepare a writable session"
+msgstr ""
+
+#: ../../contents/preprocess.rst:15
+msgid "코드 내에서는 *NSML_NFS_OUTPUT* 을 통해 파일 경로를 받아서 저장합니다."
+msgstr "Inside your code, take and save the file path via *NSML_NFS_OUTPUT*."
+
+#: ../../contents/preprocess.rst:23
+msgid "파일을 읽을 때는 일반적인 방법으로 읽습니다."
+msgstr "When reading a file, read it in the usual way."
+
+#: ../../contents/preprocess.rst:33
+msgid "그 후에는"
+msgstr "After that"
+
+#: ../../contents/preprocess.rst:35
+msgid ""
+":ref:`nsml run <nsml run>` 할때 \\\\-\\\\-nfs-output 옵션을 추가해서 session을 "
+"실행합니다."
+msgstr ""
+"When command :ref:`nsml run <nsml run>`, execute session with the "
+"\\\\-\\\\-nfs-output option."
+
+#: ../../contents/preprocess.rst:42
+msgid "Run a cpu option"
+msgstr ""
+
+#: ../../contents/preprocess.rst:44
+msgid ""
+"GPU가 필요 없는 작업을 할 때, :ref:`nsml run -g 0<nsml run>` (gpu 0 개 할당)으로 실행하면 "
+"GPU를 사용하지 않는 session이 생성됩니다."
+msgstr ""
+"If you do not need a GPU, command :ref:`nsml run -g 0<nsml run>` (zero "
+"gpu assigned) to create a session that does not use the GPU."
+
+#~ msgid "데이터셋을 NFS 시스템에 올리고 session 내에서 수정/삭제 할수있습니다. (사내용)"
+#~ msgstr ""
+
+#~ msgid "*nsml team* 에 문의 바랍니다 (kr00002549@navercorp.com)"
+#~ msgstr ""
+
+#~ msgid "코드 내에서는"
+#~ msgstr "Within the code"

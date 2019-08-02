@@ -1,0 +1,182 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-16 06:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../contents/dataset/nfs_dataset.rst:4
+msgid "NFS for dataset"
+msgstr ""
+
+#: ../../contents/dataset/nfs_dataset.rst:6
+msgid ""
+"NFS는 네트워크에 파일을 저장하는 방식인 공유 dataset 저장소 개념입니다. (사내용) NFS를 사용하시면 :ref:`nsml"
+" dataset push<nsml dataset push>` 를 생략하실 수 있습니다."
+msgstr ""
+"NFS is a shared dataset storage concept in which files are stored on the "
+"network. If you use NFS, you can leave out :ref:`nsml dataset push<nsml "
+"dataset push>` ."
+
+#: ../../contents/dataset/nfs_dataset.rst:12
+msgid ""
+"NSML을 사용하기 위해선 dataset 관리가 필요한데 NFS는 이 때 매우 유용합니다. NFS에 dataset을 미리 업로드하면"
+" 로컬 환경처럼 dataset에 접근하고, read/write가 가능합니다. 세션을 진행하면서 발생한 중간 결과물을 저장하고, "
+"새롭게 들어온 세션을 처리하는 작업도 수월합니다."
+msgstr ""
+"To use NSML, you need to manage dataset. NFS is very useful at this time."
+"  If you upload dataset to NFS in advance, you can access dataset and "
+"read/write files like local environment. It is also easy to save the "
+"intermediate result of the session and process your newly started "
+"session."
+
+#: ../../contents/dataset/nfs_dataset.rst:16
+msgid "How to start using NFS"
+msgstr ""
+
+#: ../../contents/dataset/nfs_dataset.rst:18
+msgid "처음 NFS를 사용하려면 `nsml-user`_ 에 이슈를 등록해 주시기 바랍니다."
+msgstr "To use NFS for the first time, please register your issue with `nsml-user`_ "
+
+#: ../../contents/dataset/nfs_dataset.rst:20
+msgid "개인 또는 팀 단위로 NFS를 활용하실 수 있습니다."
+msgstr "You can take advantage of NFS on an individual or team basis."
+
+#: ../../contents/dataset/nfs_dataset.rst:22
+msgid ""
+"mount할 장비를 NSML팀에 알려주셔야 합니다. 활용하기 쉽게끔 원본 데이터, IDC에 있는 데이터들의 특정 경로를 장비에 직접"
+" mount해드리고 있습니다. 장비가 없다면 ncloud에서 사용 신청하시기를 추천드립니다. dataset의 크기가 매우 크다면 "
+"backup storage를 mount하여 같이 쓰셔도 됩니다."
+msgstr ""
+"You must inform NSML team of the equipment to be mounted. To make it easy"
+" to use, the specific path of the original data or data in your IDC, is "
+"mounted directly on the equipment. If you do not have the equipment, we "
+"recommend you to use ncloud. If the size of the dataset is very large, "
+"you can also mount it with backup storage."
+
+#: ../../contents/dataset/nfs_dataset.rst:26
+msgid "NFS에 등록된 데이터셋 이름을 ``nsml run -d DATASET_NAME`` 명령어 형식에 넣고 세션을 시작하시면 됩니다."
+msgstr ""
+"Put the dataset name registered in NFS into the command format ``nsml run"
+" -d DATASET_NAME`` and start the session."
+
+#: ../../contents/dataset/nfs_dataset.rst:31
+msgid "Note"
+msgstr ""
+
+#: ../../contents/dataset/nfs_dataset.rst:33
+msgid "read/write 권한"
+msgstr "read / write permission"
+
+#: ../../contents/dataset/nfs_dataset.rst:35
+msgid ""
+"NFS에서는 모든 사용자가 다른 사용자의 dataset에 read/write할 권한을 갖고 있습니다. 그러므로 다른 사용자의 "
+"dataset에 피해를 주는 행동을 하지 않도록 주의해야 합니다. 훼손되면 절대로 안되는 데이터는 미리 백업을 해두시길 권장합니다."
+msgstr ""
+"In NFS, all users have permission to read / write to another user's "
+"dataset. Therefore, you should be careful not to make any other user's "
+"dataset harmful. It is recommended to back up data that never gets "
+"damaged. "
+
+#: ../../contents/dataset/nfs_dataset.rst:39
+msgid "용량"
+msgstr "Volume"
+
+#: ../../contents/dataset/nfs_dataset.rst:41
+msgid ""
+"NFS는 다른 사람과 함께 사용하기 때문에 너무 큰 데이터셋을 사용하면 다른 사용자가 사용할 공간이 부족합니다. 이 경우에는 "
+"NSML팀과 의논하여 다른 NFS로 데이터를 옮기는 조치를 취할 수 있습니다. NSML팀에 문의하시기 바랍니다. (담당자 : "
+"김영관님 - ykkim.kim@navercorp.com)"
+msgstr ""
+"Because NFS is used with others, using a dataset that is too large does "
+"not have enough space for other users. In this case, you can talk to the "
+"NSML team and take action to move the data to another NFS. Please contact"
+" the NSML team. (contact : Youngkwan Kim - ykkim.kim@navercorp.com)"
+
+#: ../../contents/dataset/nfs_dataset.rst:44
+msgid "Recommended Case"
+msgstr ""
+
+#: ../../contents/dataset/nfs_dataset.rst:46
+msgid ""
+"NFS를 사용을 추천드리는 케이스입니다. 우선 NFS를 활용하면 local보다는 ``nsml run`` 을 할 때 걸리는 실행 "
+"속도가 빨라집니다."
+msgstr ""
+"It is recommended case to use NFS. First, using NFS will speed up the "
+"``nsml run`` rather than local execution."
+
+#: ../../contents/dataset/nfs_dataset.rst:48
+msgid "데이터 전처리 :"
+msgstr "Data preprocessing : "
+
+#: ../../contents/dataset/nfs_dataset.rst:50
+msgid ""
+"NFS로 데이터 전처리를 더욱 쉽게 할 수 있습니다. 올린 데이터셋으로 ``nsml run -g 0`` 명령어를 사용하면 세션을 "
+"CPU로만 진행합니다. 자세한 내용은 링크를 참고하시기 바랍니다."
+msgstr ""
+"NFS makes data preprocessing easier. If you use the command ``nsml run -g"
+" 0`` with the uploaded dataset, the session will proceed to the CPU only."
+" For more information, please refer to the link."
+
+#: ../../contents/dataset/nfs_dataset.rst:52
+msgid "데이터 용량 크기가 클 때 :"
+msgstr "Large data size : "
+
+#: ../../contents/dataset/nfs_dataset.rst:54
+msgid "Dataset을 pull/push하는 데 시간이 많이 걸리는 경우에는 NFS를 사용하면 편리합니다."
+msgstr "If it takes a long time to pull/push dataset, it is convenient to use NFS."
+
+#: ../../contents/dataset/nfs_dataset.rst:57
+msgid "How to start(Example)"
+msgstr ""
+
+#: ../../contents/dataset/nfs_dataset.rst:59
+msgid ""
+"NSML example에 있는 `02.NFS/01_NFS_for_dataset`_ 를 참조하시기 바랍니다. NFS를 사용할 때 "
+"유용한 예제들을 확인하실 수 있습니다."
+msgstr ""
+"Please refer to `02.NFS/01_NFS_for_dataset`_ . Here is useful example of "
+"using NFS."
+
+#: ../../contents/dataset/nfs_dataset.rst:64
+msgid "코드 내에서는 *NSML_NFS_OUTPUT* 을 통해 파일 경로를 받아서 저장합니다."
+msgstr "Inside your code, take and save the file path via *NSML_NFS_OUTPUT* "
+
+#: ../../contents/dataset/nfs_dataset.rst:72
+msgid "파일을 읽을 때는 일반적인 방법으로 읽습니다."
+msgstr "When reading a file, read it in the usual way."
+
+#: ../../contents/dataset/nfs_dataset.rst:82
+msgid "그 후에는"
+msgstr "After that"
+
+#: ../../contents/dataset/nfs_dataset.rst:84
+msgid ":ref:`nsml run <nsml run>` 할때 --nfs-output 옵션을 추가해서 session을 실행합니다."
+msgstr ""
+"When using :ref:`nsml run <nsml run>` , run session with --nfs-output "
+"option. "
+
+#: ../../contents/dataset/nfs_dataset.rst:92
+msgid "FAQ"
+msgstr ""
+
+#: ../../contents/dataset/nfs_dataset.rst:94
+msgid "NFS에 NSML에 있던 데이터셋을 옮기려면 NSML에서 직접 pull해서 NFS에 옮겨야 하나요?"
+msgstr ""
+"If I want to move datasets that were in NSML to NFS, do I need to pull "
+"them directly from NSML and move them to NFS?"
+
+#: ../../contents/dataset/nfs_dataset.rst:96
+msgid "NSML팀에게 데이터셋 이동 문제를 알려주시면 NSML에 push된 데이터셋을 옮겨드리겠습니다."
+msgstr "If you tell NSML team, we will move dataset pushed to NSML."

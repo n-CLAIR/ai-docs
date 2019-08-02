@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-05 04:40+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../contents/session/get_a_log_from_session.rst:5
+msgid "Get a log from session"
+msgstr ""
+
+#: ../../contents/session/get_a_log_from_session.rst:10
+msgid "Usage:"
+msgstr ""
+
+#: ../../contents/session/get_a_log_from_session.rst:9
+msgid "**nsml logs** *Options* SESSION_NAME"
+msgstr ""
+
+#: ../../contents/session/get_a_log_from_session.rst:13
+msgid "Description:"
+msgstr ""
+
+#: ../../contents/session/get_a_log_from_session.rst:13
+msgid "session 에서 만들어진 log 를 보여줍니다."
+msgstr "Shows log created in session."
+
+#: ../../contents/session/get_a_log_from_session.rst:22
+msgid "Example:"
+msgstr ""
+
+#: ../../contents/session/get_a_log_from_session.rst:26
+msgid "Options:"
+msgstr ""
+
+#: ../../contents/session/get_a_log_from_session.rst:27
+msgid "session 이 종료될 때까지 log 를 streaming 합니다."
+msgstr "Streams the log until the session ends."
+
+#~ msgid "follow 옵션으로 session 이 종료될때까지 log 를 streaming 합니다."
+#~ msgstr ""
+

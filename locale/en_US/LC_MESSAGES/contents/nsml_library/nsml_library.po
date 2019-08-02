@@ -1,0 +1,43 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-01 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../contents/nsml_library/nsml_library.rst:4
+msgid "NSML library"
+msgstr ""
+
+#: ../../contents/nsml_library/nsml_library.rst:6
+msgid ""
+"NSML server 와의 통신을 위해서 NSML의 함수들을 사용해야 합니다. NSML library 함수들은 main.py로 "
+"만들어진 entry 파일을 포함한 .py 파일에 모듈을 import한 뒤 사용할 수 있습니다. NSML 함수를 이용해서 save, "
+"load 기능을 간단히 사용할 수 있습니다."
+msgstr ""
+"NSML functions must be used to communicate with the NSML server. "
+"You can easily use save and load features with NSML functions by importing the nsml module."
+
+
+
+#~ msgid ""
+#~ "NSML server 와의 통신을 위해서 NSML의 함수들이"
+#~ " 사용되어야 합니다. NSML 함수를 이용해서 save, "
+#~ "load, inference 를 간단히 사용할 수 있습니다."
+#~ msgstr ""
+#~ "NSML functions must be used to "
+#~ "communicate with the NSML server. You"
+#~ " can easily use save, load, and "
+#~ "inference with NSML functions."
+

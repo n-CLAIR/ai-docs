@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-01 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../contents/web_interface/usage_of_resources.rst:4
+msgid "Usage of resources"
+msgstr ""
+
+#: ../../contents/web_interface/usage_of_resources.rst:6
+msgid "session의 자원 사용량을 확인하는 방법은 2가지가 있습니다."
+msgstr "There are two ways to check session resource usage."
+
+#: ../../contents/web_interface/usage_of_resources.rst:8
+msgid "session 화면에서 눈모양을 선택"
+msgstr "Click the eye shape of the session view."
+
+#: ../../contents/web_interface/usage_of_resources.rst:12
+msgid "메인 화면에서 눈모양을 선택"
+msgstr "Click the eye shape of the main view."
+
+#: ../../contents/web_interface/usage_of_resources.rst:16
+msgid ""
+"해당 session에 대해 눈모양을 클릭하면 실행한 session 의 GPU, CPU, memory 사용량을 그래프로 볼 수 "
+"있습니다."
+msgstr ""
+"Click on the eye for the session to view the GPU, CPU, "
+"and memory usage of the running session with a graph."
+
+#~ msgid "실행한 session 의 사용량을 실시간으로 볼수있습니다."
+#~ msgstr ""
+
+#~ msgid "Usage of GPUs"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "페이지에서 맨 윗 상단 자신의 계정 사진을 클릭하면"
+#~ " GPU를 사용할 수 있는 남은 credit 양과 "
+#~ "현재 사용 가능한 GPU 갯수를 볼 수 있습니다."
+#~ " .. figure:: ../../static/nsml_web/nsml_web_gpu_status"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "실행한 session 의 자원 사용량을 실시간으로 볼 "
+#~ "수 있습니다. Session 정보와 할당된 GPU 자원의"
+#~ " 정보를 확인하실 수 있습니다."
+#~ msgstr ""
+#~ "You can see the usage of the "
+#~ "executed session in real time. You "
+#~ "can view the session information and "
+#~ "allocated GPU resource information."
+
+#~ msgid "GPU utilization에서는 GPU core와 memory의 사용량의 평균 사용량/최대 사용량이 나타납니다."
+#~ msgstr ""
+#~ "GPU utilization shows the average "
+#~ "usage/max usage of the GPU core "
+#~ "and memory."
+
+#~ msgid ""
+#~ "CPU utilization에서는 CPU core와 memory의 평균"
+#~ " 사용량, 최대 사용량이 나타납니다. 현재 사진에서는 "
+#~ "2개의 CPU를 할당받았으므로 peak(최대 사용량)은 200% "
+#~ "이하로 나타날 것입니다."
+#~ msgstr ""
+#~ "CPU utilization shows the average usage"
+#~ " and maximum usage of CPU "
+#~ "cores/memory. Since the current picture "
+#~ "has two CPUs assigned, peak will "
+#~ "appear less than 200%."
+
+#~ msgid ""
+#~ "페이지에서 맨 윗 상단 자신의 계정 사진을 클릭하면"
+#~ " GPU를 사용할 수 있는 남은 credit 양과 "
+#~ "현재 사용 가능한 GPU 갯수를 볼 수 있습니다."
+#~ msgstr ""
+#~ "Click on the picture of your "
+#~ "account at the top of the page "
+#~ "to see how much credit remains "
+#~ "available and how many GPUs are "
+#~ "currently available."
+

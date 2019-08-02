@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-01 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../contents/nsml_library/nsml_constants.rst:2
+msgid "NSML Constants"
+msgstr ""
+
+#: ../../contents/nsml_library/nsml_constants.rst:6
+msgid "NSML server 에서 code 가 실행되는 상태면 True를 출력합니다."
+msgstr "True if the code is running on the NSML server."
+
+#: ../../contents/nsml_library/nsml_constants.rst:10
+msgid "session 이 dataset 을 가지고 있으면 True를 출력합니다."
+msgstr "True if session has a dataset."
+
+#: ../../contents/nsml_library/nsml_constants.rst:14
+msgid ":ref:`nsml run -d DATASET<nsml run>` 으로 실행시켰을 때 dataset 의 path를 출력합니다."
+msgstr ""
+"The path of the dataset when executing :ref:`nsml run -d DATASET<nsml "
+"run>`."
+
+#: ../../contents/nsml_library/nsml_constants.rst:18
+msgid ":ref:`nsml run -d DATASET<nsml run>` 으로 실행시켰을 때 dataset 의 이름입니다."
+msgstr ""
+"The name of the dataset when executing :ref:`nsml run -d DATASET<nsml "
+"run>`."
+
+#~ msgid ""
+#~ ":ref:`nsml run \\-\\-nfs-output<nsml run>` "
+#~ "으로 실행시켰을 때 write가 가능한 nfs 의 "
+#~ "경로입니다. (default '')"
+#~ msgstr ""
+#~ "The path to writeable nfs when "
+#~ "executing :ref:`nsml run \\-\\-nfs-output<nsml"
+#~ " run>`.(default '')"
+

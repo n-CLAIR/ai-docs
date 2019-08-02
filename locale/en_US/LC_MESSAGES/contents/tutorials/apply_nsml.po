@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-29 08:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../contents/tutorials/apply_nsml.rst:4
+msgid "Application of NSML for various purposes"
+msgstr ""
+
+#: ../../contents/tutorials/apply_nsml.rst:7
+msgid ""
+"NSML을 통해 모델의 학습을 포함하여 CPU, GPU를 활용하는 작업들을 진행할 수 있습니다. 이 페이지에서는 NSML를 사용할 "
+"수 있는 다양한 예들을 알아봅니다."
+msgstr ""
+"With NSML, you can run some jobs including training models using CPUs and GPUs. On this page, you will find a variety of examples of using NSML."
+
+#: ../../contents/tutorials/apply_nsml.rst:13
+msgid "Distributed Preprocessing"
+msgstr ""
+
+#: ../../contents/tutorials/apply_nsml.rst:15
+msgid ""
+"NSML에 있는 여유 CPU 자원을 활용하여 빠르게 병렬 전처리를 진행할 수 있습니다. 이때 file write 권한이 필요하기 "
+"때문에 현재는 NFS를 사용해야 합니다. 방법은 파일을 분산시켜 진행하는데 NFS에서 데이터셋을 각 session마다 나눠서 "
+"읽어들이고, 각각 나눠진 데이터들을 전처리한 후, 다시 NFS에 결과를 저장합니다. 다만 데이터 전체를 봐야만 하는 전처리 작업은 "
+"하기 어렵습니다."
+msgstr ""
+"You can take advantage of the free CPU resources in NSML to speed up parallel preprocessing. "
+"You have to use NFS because you need file write permission. The method is to distribute the files. NFS reads the dataset for each session, preprocesses the divided data, and then saves the results to NFS again. However, it is difficult to do the preprocessing which should see the entire data."
+
+#: ../../contents/tutorials/apply_nsml.rst:19
+msgid "Parallel processing"
+msgstr ""
+
+#: ../../contents/tutorials/apply_nsml.rst:20
+msgid ""
+"인공지능 모델을 병렬로 처리할 수 있습니다. 예를 들어 wavenet과 같은 모델은 음성을 합성하는 데에 오랜 시간이 걸리므로 "
+"동시에 많은 GPU를 활용해서 병렬화 작업을 하고, 예상보다 짧은 시간 안에 작업을 완료하는 것이 가능합니다."
+msgstr ""
+"Artificial intelligence models can be processed in parallel. For example, models such as wavenet take a long time to synthesize voice, so you can use many GPUs at the same time to parallelize and complete the task in less time than expected."
+
+#: ../../contents/tutorials/apply_nsml.rst:25
+msgid "NSML notebook 활용하기"
+msgstr "Using NSML notebook"
+
+#: ../../contents/tutorials/apply_nsml.rst:27
+msgid ""
+"NSML notebook을 활용하면 notebook에서 짠 코드를 NSML에서 실행시킬 수 있고, 결과를 notebook에서 받을 "
+"수 있습니다."
+msgstr ""
+"With NSML notebook, you can run the code in the notebook in NSML and receive the results in the notebook."
+
+#: ../../contents/tutorials/apply_nsml.rst:29
+msgid "data visualization"
+msgstr ""
+
+#: ../../contents/tutorials/apply_nsml.rst:31
+msgid ""
+"직접 데이터 분석을 진행할 수 있습니다. 모델을 학습한 후, 파이썬 라이브러리인 matplotlib을 활용하여 시각화를 진행합니다."
+" 가장 간단한 예로 학습된 결과를 시각화하여 그래프로 나타낼 수 있습니다."
+msgstr ""
+"You can conduct your own data analysis. After training the model, visualize using the python library matplotlib. The simplest example is to visualize and graph the trained results."
+
+#: ../../contents/tutorials/apply_nsml.rst:35
+msgid "evaluation"
+msgstr ""
+
+#: ../../contents/tutorials/apply_nsml.rst:37
+msgid ""
+"NSML에서 제공하는 평가방식이 실제 원하는 평가와 다를 때 직접 평가방식을 구현하여 활용할 수 있습니다. notebook을 "
+"활용한다면 구현 과정에서 바로 확인이 가능합니다."
+msgstr ""
+"You can implement and use a direct evaluation method when the evaluation method provided by NSML differs from the actual evaluation you want. If you use the notebook, you can check it immediately in the implementation process."
+
+#: ../../contents/tutorials/apply_nsml.rst:40
+msgid "dry-run"
+msgstr ""
+
+#: ../../contents/tutorials/apply_nsml.rst:42
+msgid ""
+"NSML notebook은 CPU 서버에 주피터 서버를 깔아서 실행하는 환경입니다. 다양한 하이퍼 파라미터가 있을 경우, 일부만 "
+"시범으로 돌려서 검증한 후 전체 모델을 학습시킬 수 있습니다. 이처럼 일부만 가볍게 돌리는 방식을 dry-run이라고 합니다."
+msgstr ""
+"NSML notebook is an environment in which a CPU server runs a Jupiter server. If there are various hyperparameters, you can test the whole model after verifying only a part by trial. This way to lightly turn it around is called dry-run."
+
+#: ../../contents/tutorials/apply_nsml.rst:46
+msgid ""
+"예를 들어 num_steps, epoch_size와 같은 하이퍼 파라미터들을 전체보다 작은 값을 설정합니다. 학습을 일부 진행시킨 "
+"후에 문제가 없다면 파라미터를 전체 값으로 설정하여 학습을 진행합니다. 이런 방식으로 dry-run을 하면 NSML에서 모델을 "
+"train하는 도중에 중단되는 것을 일부 방지할 수 있습니다."
+msgstr ""
+"For example, set the hyperparameters such as num_steps, epoch_size to a value less than the total. If you do not have any problems after you have done some training, set the parameters to the whole value and proceed training. Dry-run will prevent NSML from stopping training model."

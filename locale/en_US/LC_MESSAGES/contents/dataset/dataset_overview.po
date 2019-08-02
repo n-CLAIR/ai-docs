@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-01 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../contents/dataset/dataset_overview.rst:3
+msgid "Overview"
+msgstr ""
+
+#: ../../contents/dataset/dataset_overview.rst:5
+msgid ""
+"해커톤에서 활용하는 dataset은 이미 NSML에 업로드되어 있습니다. session을 run할 때 dataset을 -d 옵션으로"
+" 등록해야 합니다."
+msgstr ""
+"The dataset for the Hackathon is already uploaded to NSML."
+"You need a named dataset option (-d) to run a session."
+
+#: ../../contents/dataset/dataset_overview.rst:7
+msgid ""
+":ref:`nsml dataset ls<nsml dataset ls>` 명령어를 사용하면 해커톤에서 사용하는 dataset을 확인할"
+" 수 있습니다."
+msgstr ""
+":ref:`nsml dataset ls<nsml dataset ls>` command shows "
+"the list of the dataset for the Hackathon."
+
+#: ../../contents/dataset/dataset_overview.rst:9
+msgid ":ref:`nsml dataset search<nsml dataset search>` 명령어는 dataset을 이름으로 검색합니다."
+msgstr ""
+":ref:`nsml dataset search<nsml dataset search>` command allows "
+"to search the specific dataset."
+
+#: ../../contents/dataset/dataset_overview.rst:11
+msgid ""
+":ref:`show_leaderboard<nsml dataset board>` 명령어는 dataset 기준으로 :ref:`nsml "
+"submit<nsml submit>` 된 모델들의 리더보드(순위표)를 보여줍니다."
+msgstr ""
+":ref:`show_leaderboard<nsml dataset board>` command shows leaderboard of "
+"models submitted with :ref:`nsml submit<nsml submit>` ."
+
+#~ msgid ""
+#~ "session을 run할 때 dataset을 등록하고 활용하는 "
+#~ "방법에는 크게 2가지가 있습니다. 편한 방식을 선택하여 "
+#~ "활용하실 수 있습니다."
+#~ msgstr ""
+#~ "There are two ways to register and"
+#~ " use dataset when running a session."
+#~ " You can choose a convenient way "
+#~ "to use."
+
+#~ msgid ":ref:`NFS for dataset<nfs dataset>`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "NFS는 local처럼 dataset에 접근할 수 있는 "
+#~ "방법입니다. 다음 페이지에서 바로 확인해보실 수 있습니다."
+#~ " local 환경에서 dataset을 관리하고 싶으시다면 이 "
+#~ "페이지를 건너뛰시기 바랍니다."
+#~ msgstr ""
+#~ "NFS is a way to access datasets"
+#~ " like local. You can check it "
+#~ "on the next page. If you want "
+#~ "to manage dataset in local environment,"
+#~ " please skip this page."
+
+#~ msgid ":ref:`push_dataset<nsml dataset push>`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "local에 있는 dataset을 NSML에 업로드 하는 "
+#~ "명령어입니다. push된 dataset을 ``nsml run`` -d"
+#~ " 옵션으로 지정하여 활용합니다. 직접 dataset을 올리지 "
+#~ "않고, 다른 사용자가 push한 dataset을 활용할 수도"
+#~ " 있습니다. 다른 사용자가 미리 올려놓은 같은 "
+#~ "dataset을 사용하여 쉽게 협업을 진행하는 것입니다. "
+#~ "nsml의 example를 실행할 때도 이미 NSML에 "
+#~ "push된 dataset이 사용됩니다."
+#~ msgstr ""
+#~ "This command uploads dataset in local"
+#~ " to NSML. Use the pushed dataset "
+#~ "with the ``nsml run`` -d option. "
+#~ "You can also use datasets that "
+#~ "other users pushed, rather than "
+#~ "uploading datasets directly. It is easy"
+#~ " to collaborate with other users "
+#~ "using the same dataset that other "
+#~ "users have pushed in advance. When "
+#~ "running example in nsml, your session"
+#~ " use dataset already pushed to NSML."
+
+#~ msgid "dataset이 준비되면 바로 session을 돌려보실 수 있습니다."
+#~ msgstr "As soon as the dataset is ready, you can run the session."
+
+#~ msgid ""
+#~ "dataset 섹션의 나머지 페이지들은 dataset을 다운로드하고,"
+#~ " 조회하고, 변경하고, 삭제하는 명령어에 대한 설명이 "
+#~ "담겨있습니다. 필요한 dataset 관련 작업에 따라 페이지를"
+#~ " 찾아가시기 바랍니다."
+#~ msgstr ""
+#~ "The remaining pages in the dataset "
+#~ "section contain instructions for downloading,"
+#~ " viewing, changing, and deleting datasets."
+#~ " Please visit the page according to"
+#~ " the required dataset command."
+

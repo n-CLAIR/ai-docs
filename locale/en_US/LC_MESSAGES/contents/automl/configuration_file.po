@@ -1,0 +1,387 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-06 09:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../contents/automl/configuration_file.rst:4
+msgid "Configuration File"
+msgstr ""
+
+#: ../../contents/automl/configuration_file.rst:6
+msgid "Configuration file에 대한 자세한 설명을 다루겠습니다."
+msgstr "We will go into the details of Configuration file."
+
+#: ../../contents/automl/configuration_file.rst:12
+msgid "Structure"
+msgstr ""
+
+#: ../../contents/automl/configuration_file.rst:14
+msgid "Configuration file은 ``.json`` 또는 ``.yaml`` 형태로 이루어져 있어야 합니다."
+msgstr "The configuration file is in ``.json`` or ``.yaml`` format."
+
+#: ../../contents/automl/configuration_file.rst:18
+msgid "어떤 하이퍼 파라미터를 어떻게 튜닝할지를 지정할 수 있습니다."
+msgstr "You can specify how to tune certain hyperparameters."
+
+#: ../../contents/automl/configuration_file.rst:20
+msgid ""
+"Top과 Bottom 부분으로 나누어서 알아보겠습니다. Top 부분에 쓰신 내용은 main.py로 보내지고, Bottom 부분에 "
+"쓰신 내용은 시스템으로 보내집니다."
+msgstr ""
+"Let's take a look at Top and Bottom parts. The contents of the top "
+"section are sent to main.py and the contents of the Bottom section are "
+"sent to the system."
+
+#: ../../contents/automl/configuration_file.rst:26
+msgid "hyperparameters to tune(Top)"
+msgstr ""
+
+#: ../../contents/automl/configuration_file.rst:28
+msgid ""
+"Top 부분에서는 h_params 안에 필요한 hyperparameter의 이름과 함께 범위/값을 key와 value 쌍으로 "
+"입력하셔야 합니다. 이 때, hyperparameter는 원하는 이름으로 추가할 수 있습니다."
+msgstr ""
+"In the Top part, you must enter the range/value as key and value pairs "
+"with the name of the hyperparameter you need in h_params. At this time, "
+"the hyperparameter can be added with the desired name."
+
+#: ../../contents/automl/configuration_file.rst:32
+msgid "Hyperparameter 예시:"
+msgstr "Hyperparameter Example:"
+
+#: ../../contents/automl/configuration_file.rst:32
+msgid "lr(learning rate), size, activation, momentum, sh 등"
+msgstr "lr(learning rate), size, activation, momentum, sh etc."
+
+#: ../../contents/automl/configuration_file.rst:48
+msgid "Hyperparameter에 지원되는 값:"
+msgstr "Supported values ​​for Hyperparameter:"
+
+#: ../../contents/automl/configuration_file.rst
+msgid "parameters"
+msgstr ""
+
+#: ../../contents/automl/configuration_file.rst:35
+msgid ""
+"distribution에 따른 값을 List 데이터 타입으로 넣습니다. lower bound를 왼쪽, upper bound를 "
+"오른쪽에 List 형태로 넣어야 합니다. 반대로 입력하면 오류가 발생합니다."
+msgstr ""
+"value according to distribution. should use List data. Make sure to put "
+"lower bound on the left and upper bound in the form of a list on the "
+"right. If you type the opposite, an error will occur. "
+
+#: ../../contents/automl/configuration_file.rst
+msgid "distribution"
+msgstr ""
+
+#: ../../contents/automl/configuration_file.rst:37
+msgid "hyperparameter의 분포입니다. uniform, log_uniform, categorical를 사용합니다."
+msgstr "Distribution of hyperparameter. Use uniform, log_uniform, and categorical."
+
+#: ../../contents/automl/configuration_file.rst
+msgid "type"
+msgstr ""
+
+#: ../../contents/automl/configuration_file.rst:39
+msgid "hyperparameter값의 데이터 타입입니다. distribution에 따라 int, float, string를 넣습니다."
+msgstr ""
+"Data type of hyperparameter value. Depending on the distribution, you "
+"insert int, float, and string value."
+
+#: ../../contents/automl/configuration_file.rst
+msgid "p_range"
+msgstr ""
+
+#: ../../contents/automl/configuration_file.rst:41
+msgid ""
+"허용되는 값의 범위를 정합니다. uniform과 log_uniform를 분포로 하여 PBT의 exploit를 이용하는 경우, "
+"parameters의 최소/최대값이 넘게 되는 경우가 있습니다."
+msgstr ""
+"Sets the range of acceptable values. If PBT exploits are used with "
+"uniform and log_uniform distribution, the minimum/maximum values ​​of the"
+" parameters may be exceeded. "
+
+#: ../../contents/automl/configuration_file.rst:45
+msgid ""
+"이 때 parameters에 적어놓은 값에서 허용하는 수치를 List 데이터 타입으로 넣습니다. parameters의 범위를 넘는 "
+"것을 허용하지 않는다면 parameters와 같은 값을 넣어야 합니다."
+msgstr ""
+"At this time, the values ​​allowed in the parameters are put into the "
+"List data type. If you do not want to exceed the range of the parameters,"
+" you must enter the same value as the parameters."
+
+#: ../../contents/automl/configuration_file.rst:47
+msgid ""
+"예를 들어 parameters에서 [0.01, 0.09]로 최솟값을 0.01, 최댓값을 0.09로 설정한다고 가정합니다. 이 경우에"
+" 최솟값보다 낮은 0.009, 최댓값보다 높은 0.098과 같은 경계에 걸린 값도 탐색하고 싶을 수도 있습니다. 이 때 "
+"p_range를 [0.009, 0.098]로 지정하면 0.01, 0.09가 좋은 성능을 보일 때 p_range 값까지 탐색이 "
+"확장됩니다. 확장을 원하지 않는다면 parameters와 같은 [0.01, 0.09]를 p_range에 입력합니다."
+msgstr ""
+"For example, suppose you set the minimum value to 0.01, and the maximum "
+"value to 0.09 in parameters like [0.01, 0.09]. In this case, you may also"
+" want to search for boundary values such as 0.009 below the minimum value"
+" and 0.098 above the maximum value. If you specify p_range as [0.009, "
+"0.098], the exploration expands to the p_range value when 0.01 and 0.09 "
+"perform well. If you do not want to expand, type [0.01, 0.09] in p_range,"
+" same as parameters."
+
+#: ../../contents/automl/configuration_file.rst:50
+msgid "**distribution의 케이스에 따른 설정:**"
+msgstr "**Case-specific configuration of distribution**"
+
+#: ../../contents/automl/configuration_file.rst:52
+msgid "Hyperparameter들의 튜닝 속성들은 distribution에 따라 달라집니다."
+msgstr "The tuning properties of the hyperparameters depend on the distribution."
+
+#: ../../contents/automl/configuration_file.rst:54
+msgid "uniform, log_uniform의 경우"
+msgstr "For uniform, log_uniform"
+
+#: ../../contents/automl/configuration_file.rst:56
+msgid "최솟값, 최댓값을 리스트로 넣습니다."
+msgstr "The minimum and maximum values ​​are listed."
+
+#: ../../contents/automl/configuration_file.rst:58
+msgid "ex) [0.1, 0.9]"
+msgstr ""
+
+#: ../../contents/automl/configuration_file.rst:60
+msgid "int, float으로 설정합니다."
+msgstr "int, float."
+
+#: ../../contents/automl/configuration_file.rst:62
+msgid "parameters와 같거나 parameters 범위보다 넓은 값을 지정합니다."
+msgstr "Specify a value equal to or greater than the parameters range."
+
+#: ../../contents/automl/configuration_file.rst:64
+msgid "string 형식의 데이터를 categorical하게 사용하는 경우"
+msgstr "If you use categorical data in string format"
+
+#: ../../contents/automl/configuration_file.rst:66
+#: ../../contents/automl/configuration_file.rst:76
+msgid "사용하는 카테고리 아이템을 리스트에 넣습니다."
+msgstr "Put the category items you use in the list."
+
+#: ../../contents/automl/configuration_file.rst:68
+msgid "ex) [\"tiger\", \"rabit\", \"horse\"]"
+msgstr ""
+
+#: ../../contents/automl/configuration_file.rst:70
+msgid "string으로 설정합니다."
+msgstr "string type"
+
+#: ../../contents/automl/configuration_file.rst:72
+#: ../../contents/automl/configuration_file.rst:82
+msgid "[]으로 설정합니다."
+msgstr "Set to []. "
+
+#: ../../contents/automl/configuration_file.rst:74
+msgid "int 또는 float 형식의 데이터를 categorical하게 사용하는 경우"
+msgstr "If you use categorical data in the int or float format"
+
+#: ../../contents/automl/configuration_file.rst:78
+msgid "ex) [\"1\", \"3\", \"5\"], ['1.5', '3.5', '5.5']"
+msgstr ""
+
+#: ../../contents/automl/configuration_file.rst:80
+msgid "int 또는 float으로 설정합니다."
+msgstr "int or float"
+
+#: ../../contents/automl/configuration_file.rst:88
+msgid "How to tune hyperparameters(Bottom)"
+msgstr ""
+
+#: ../../contents/automl/configuration_file.rst:90
+msgid "Bottom 부분은 모델 평가법, 혹은 탐색할 모델 수,  튜닝 방법 등을 작성하는 공간입니다."
+msgstr ""
+"The Bottom part is a space for model evaluation, the number of models to "
+"be searched and tuning methods."
+
+#: ../../contents/automl/configuration_file.rst
+msgid "population"
+msgstr ""
+
+#: ../../contents/automl/configuration_file.rst:92
+msgid "한번에 돌리는 최대 NSML 세션 개수입니다."
+msgstr "The maximum number of NSML sessions to run at one time."
+
+#: ../../contents/automl/configuration_file.rst
+msgid "step"
+msgstr ""
+
+#: ../../contents/automl/configuration_file.rst:93
+msgid ""
+"세션 간 성능을 비교하는 단위입니다. 어느 시점에서 성능을 비교할 지를 설정합니다. step이 너무 적으면 depth가 큰 모델은 "
+"Agent가 빨리 죽어버리는 경우가 있습니다. 이런 경우에는 epoch을 크게 해서 가능성을 살필 필요가 있고, 늘 bias 있는 "
+"실험이 될 수 있음을 고려하시기 바랍니다. 성능 비교를 하고 싶지 않다면 epoch을 -1로 지정합니다."
+msgstr ""
+"A unit of performance comparison between sessions. The point to do "
+"performance comparison. If the step is too small, a model with a large "
+"depth may die quickly by Agent. In this case, please consider increasing "
+"the epoch to check the possibility, and whether you experiment with bias."
+" If you do not want to compare performance, set epoch to -1."
+
+#: ../../contents/automl/configuration_file.rst
+msgid "order"
+msgstr ""
+
+#: ../../contents/automl/configuration_file.rst:94
+msgid ""
+"measure의 평가지표에 따라 모델을 표시하는 순서를 지정합니다. 높은 점수의 모델부터 나타내고 싶다면 내림차순인 "
+"'descending'을 적고, 낮은 점수의 모델부터 남기고 싶다면 오름차순인 'ascending'을 적습니다."
+msgstr ""
+"The way you present your model based on the metrics you have chosen to "
+"use in your measure. If you want to show high scores from the model, set "
+"'descending'. If you want to leave from the model of low scores, set "
+"'ascending'"
+
+#: ../../contents/automl/configuration_file.rst
+msgid "measure"
+msgstr ""
+
+#: ../../contents/automl/configuration_file.rst:95
+msgid "모델을 평가하는 방법입니다. ex) 'test/accuracy'"
+msgstr "How to evaluate your model. ex) 'test / accuracy'"
+
+#: ../../contents/automl/configuration_file.rst
+msgid "tune"
+msgstr ""
+
+#: ../../contents/automl/configuration_file.rst:96
+msgid ""
+"hyperparameter 튜닝 방법입니다. random search와 pbt를 구분하기 위해 fork를 다르게 설정하여 "
+"AutoML 세션을 실행합니다. fork를 'True'로 설정하면 pbt, 'False'로 설정하면 random search로 "
+"실행합니다."
+msgstr ""
+"Hyperparameter tuning method. To distinguish random search from pbt, run "
+"an AutoML session with different fork settings. If fork is set to 'True',"
+" pbt, if set to 'False', it will be executed with random search."
+
+#: ../../contents/automl/configuration_file.rst:99
+msgid "pbt"
+msgstr ""
+
+#: ../../contents/automl/configuration_file.rst:99
+msgid "'pbt': {'exploit': 'truncation', 'explore': 'perturb', 'fork': **True**}"
+msgstr ""
+
+#: ../../contents/automl/configuration_file.rst:101
+msgid "random search"
+msgstr ""
+
+#: ../../contents/automl/configuration_file.rst:101
+msgid "'pbt': {'exploit': 'truncation', 'explore': 'perturb', 'fork': **False**}"
+msgstr ""
+
+#: ../../contents/automl/configuration_file.rst
+msgid "nfs-output"
+msgstr ""
+
+#: ../../contents/automl/configuration_file.rst:104
+msgid ""
+"nfs를 사용할 때 필요한 옵션입니다. False가 초기값이고, 'nfs-output': True로 지정하면 파일에서 nfs 관련 "
+"소스 코드를 작성하여 사용하실 수 있습니다."
+msgstr ""
+"Option required when using nfs. False is the initial value, 'nfs-output':"
+" True allows you to write and use the nfs-related source code in the "
+"file."
+
+#: ../../contents/automl/configuration_file.rst
+msgid "resources"
+msgstr ""
+
+#: ../../contents/automl/configuration_file.rst:105
+msgid ""
+":ref:`nsml run<nsml run>` 을 할 때 사용하는 옵션인 gpus, cpus, memory, shm-size를 "
+"configuration file에서 미리 설정합니다. ex) 'gpus': 1, 'cpus': 2, 'memory': '24G',"
+" 'shm-size': '1G'"
+msgstr ""
+"The options(gpus, cpus, memory, shm-size) used in :ref:`nsml run<nsml "
+"run>` are prset in the configuration file. ex) 'gpus': 1, 'cpus': 2, "
+"'memory': '24G', 'shm-size': '1G'"
+
+#: ../../contents/automl/configuration_file.rst:110
+msgid "**gpus** *string_or_integer*"
+msgstr ""
+
+#: ../../contents/automl/configuration_file.rst:108
+msgid "할당받을 GPU 의 갯수"
+msgstr "Number of GPU to allocate"
+
+#: ../../contents/automl/configuration_file.rst:110
+msgid "ex) nsml run -g 4"
+msgstr ""
+
+#: ../../contents/automl/configuration_file.rst:113
+msgid "cpus *string_or_integer*"
+msgstr ""
+
+#: ../../contents/automl/configuration_file.rst:113
+msgid "사용할 GPU 갯수 ex) nsml run -c 5"
+msgstr "Number of GPU to use ex) nsml run -c 5"
+
+#: ../../contents/automl/configuration_file.rst:116
+msgid "memory *string*"
+msgstr ""
+
+#: ../../contents/automl/configuration_file.rst:116
+msgid "필요한 CPU memory 사이즈 (default '24G')"
+msgstr "Required CPU memory size (default '24G')"
+
+#: ../../contents/automl/configuration_file.rst:120
+msgid "shm-size *string*"
+msgstr ""
+
+#: ../../contents/automl/configuration_file.rst:119
+msgid "필요한 share memory 사이즈 (default '1G')"
+msgstr "Required share memory size (default '1G')"
+
+#: ../../contents/automl/configuration_file.rst
+msgid "termination"
+msgstr ""
+
+#: ../../contents/automl/configuration_file.rst:122
+msgid ""
+"AutoML session이 종료되는 조건입니다. NSML session 전체 갯수를 기입하는 max_session_number 가"
+" 존재합니다."
+msgstr ""
+"This is the termination condition for AutoML session. There is a "
+"max_session_number which writes the total number of NSML sessions."
+
+#: ../../contents/automl/configuration_file.rst
+msgid "args"
+msgstr ""
+
+#: ../../contents/automl/configuration_file.rst:123
+msgid "활용할 argument입니다."
+msgstr "The argument to use."
+
+#: ../../contents/automl/configuration_file.rst
+msgid "entry"
+msgstr ""
+
+#: ../../contents/automl/configuration_file.rst:124
+msgid "entry 파일의 이름입니다. ex) 'main.py'"
+msgstr "The name of the entry file. ex) 'main.py'"
+
+#: ../../contents/automl/configuration_file.rst
+msgid "dataset"
+msgstr ""
+
+#: ../../contents/automl/configuration_file.rst:125
+msgid "dataset의 이름입니다. ex) 'mnist'"
+msgstr "The name of the dataset. ex) 'mnist'"
+

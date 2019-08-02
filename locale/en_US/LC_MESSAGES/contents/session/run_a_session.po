@@ -1,0 +1,220 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-01 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../contents/session/run_a_session.rst:4
+msgid "Run a session"
+msgstr ""
+
+#: ../../contents/session/run_a_session.rst:6
+msgid "Usage:"
+msgstr ""
+
+#: ../../contents/session/run_a_session.rst:8
+msgid "**nsml run** *Options*"
+msgstr ""
+
+#: ../../contents/session/run_a_session.rst:11
+msgid "Description:"
+msgstr ""
+
+#: ../../contents/session/run_a_session.rst:12
+msgid ""
+"현재 위치의 파일들을 NSML server 로 보내 세션을 실행시킵니다. run을 하면 자동으로 현재 위치의 main.py 를 "
+"entry 파일로 인식하여 session을 실행하고, entry 파일이 없으면 에러가 발생합니다. -e 옵션으로 entry 파일을 "
+"바꿀 수 있습니다."
+msgstr ""
+"It sends the files in the current location to the NSML server to run the "
+"session. Current location's main.py is recognized as an entry file and if"
+" it does not exist, an error will occur. You can change the entry file "
+"with the -e option."
+
+#: ../../contents/session/run_a_session.rst:15
+msgid "Example:"
+msgstr ""
+
+#: ../../contents/session/run_a_session.rst:20
+msgid "-d 옵션을 설정하여 dataset을 꼭 지정해주셔야 합니다."
+msgstr ""
+"Must specify the dataset name to use when you run the session."
+
+#: ../../contents/session/run_a_session.rst:23
+msgid "Options:"
+msgstr ""
+
+#: ../../contents/session/run_a_session.rst:24
+msgid "세션이 실행될 때 사용할 dataset 을 선택합니다."
+msgstr "Select the dataset to use when the session runs. "
+
+#: ../../contents/session/run_a_session.rst:26
+msgid "할당받을 gpu 의 갯수를 입력합니다."
+msgstr "Enter the number of gpu you want to assign. ex) nsml run -g 4"
+
+#: ../../contents/session/run_a_session.rst:28
+msgid "cpu로만 training하고 싶으면 옵션을 -g 0으로 설정합니다."
+msgstr "set option -g as 0 if you want to use only cpu for your session."
+
+#: ../../contents/session/run_a_session.rst:30
+msgid "GPU 사용량 rule은 :ref:`Policy<GPU policy>` 를 확인하시기 바랍니다."
+msgstr "The detail rules for the GPU usage, check :ref:`Policy<GPU policy>`."
+
+#: ../../contents/session/run_a_session.rst:32
+msgid "ex) nsml run -g 2"
+msgstr ""
+
+#: ../../contents/session/run_a_session.rst:34
+msgid "세션의 훈련이 다 끝난 뒤에 세션은 자동으로 삭제됩니다."
+msgstr "the session is automatically deleted when you finish training the session."
+
+#: ../../contents/session/run_a_session.rst:36
+msgid "세션에 간단한 memo 를 입력할 수 있습니다."
+msgstr "can type simple memo to session"
+
+#: ../../contents/session/run_a_session.rst:38
+msgid "ex) nsml run -m 'LSTM'"
+msgstr ""
+
+#: ../../contents/session/run_a_session.rst:40
+msgid "세션이 실행될 때의 main entry 파일을 설정합니다."
+msgstr "Sets the main entry file at the time the session is run. "
+
+#: ../../contents/session/run_a_session.rst:42
+msgid "ex) nsml run -e lstm.py"
+msgstr ""
+
+#: ../../contents/session/run_a_session.rst:44
+msgid "main entry 파일의 arguments 를 전달합니다."
+msgstr "Passes the arguments in the main entry file. "
+
+#: ../../contents/session/run_a_session.rst:46
+msgid "ex) nsml run -a \"--batch 1000 --lr 0.02\""
+msgstr ""
+
+#: ../../contents/session/run_a_session.rst:48
+msgid "사용할 cpu 갯수입니다. ex) nsml run -c 5"
+msgstr "The number of cpu to use. ex) nsml run -c 5"
+
+#: ../../contents/session/run_a_session.rst:50
+msgid "필요한 CPU memory 사이즈입니다. (default '24G')"
+msgstr "CPU Memory size required. (default '24G')"
+
+#: ../../contents/session/run_a_session.rst:52
+msgid "필요한 share memory 사이즈 입니다. (default '1G')"
+msgstr "Required share memory size. (default '1G')"
+
+#~ msgid ""
+#~ "현재 위치의 파일들을 NSML server 로 보내 "
+#~ "세션을 실행시킵니다. 현재위치의 main.py 를 entry "
+#~ "파일로 인식해서 실행시키고 없으면 에러가납니다. -e 옵션으로"
+#~ " entry 파일을 바꿀수가있습니다."
+#~ msgstr ""
+
+#~ msgid "세션이 실행될때 사용할 dataset 을 지정합니다. ex) nsml run -d mnist"
+#~ msgstr ""
+
+#~ msgid "세션에 간단한 memo 를 입력할수있습니다. ex) nsml run -m 'LSTM'"
+#~ msgstr ""
+
+#~ msgid "실행될 node 의 address 를 지정할수있습니다. (지정하지않으면 scheduler 에 의해 할당됩니다.)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "최소 요구사항의 gpu driver version 을 적습니다"
+#~ " (nvidia). ex) --gpu-driver-version "
+#~ "390.46"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "distributed training 을 할때 필요한 노드의 "
+#~ "갯수를 적습니다 (experimental feature) ex) nsml"
+#~ " run -n 4"
+#~ msgstr ""
+
+#~ msgid "세션이 실행될 때 사용할 dataset 을 지정합니다. ex) nsml run -d mnist"
+#~ msgstr ""
+#~ "Specifies the dataset to use when "
+#~ "the session runs. ex) nsml run -d"
+#~ " mnist"
+
+#~ msgid "세션에 간단한 memo 를 입력할 수 있습니다. string 타입으로 지정합니다. ex) nsml run -m 'LSTM'"
+#~ msgstr ""
+#~ "You can enter a simple memo in "
+#~ "your session. Specify it as a "
+#~ "string type. ex) nsml run -m "
+#~ "'LSTM'"
+
+#~ msgid ""
+#~ "``nsml run --show-default-nsmlignore`` "
+#~ "명령어를 CLI에 입력하면 nsml run을 실행할 때 "
+#~ "nsml 서버에 올라가지 않는 파일/폴더들의 목록을 확인할"
+#~ " 수 있습니다. (예. lib/, *.so 등) nsml"
+#~ " 서버에 올리지 않을 파일/폴더를 추가하고 싶다면 "
+#~ ":ref:`.nsmlignore<nsmlignore>` 파일을 만들어서 저장하시면 "
+#~ "됩니다."
+#~ msgstr ""
+#~ "When you enter ``nsml run --show-"
+#~ "default-nsmlignore`` command, you can see"
+#~ " a list of files/folders that will"
+#~ " not be uploaded on NSML server. "
+#~ "(e.g., lib/, *.so, etc.) If you "
+#~ "want to add a file/folder that "
+#~ "will not be uploaded to NSML "
+#~ "server, simply create and save the "
+#~ "file :ref:`.nsmlignore<nsmlignore>` ."
+
+#~ msgid "Basic command"
+#~ msgstr ""
+
+#~ msgid "상세한 진행과정을 표시합니다."
+#~ msgstr "Displays detailed progress."
+
+#~ msgid "\"--KEY VALUE\"의 포맷으로 입력해야"
+#~ msgstr "You must enter the format \"--KEY VALUE\" "
+
+#~ msgid "web에서 올바르게 확인할 수 있습니다."
+#~ msgstr "in order to verify it correctly on the web."
+
+#~ msgid "--lr=0.02 로 입력하면 lr=0.02만 KEY로 전달됩니다."
+#~ msgstr "If type --lr=0.02, lr=0.02 passed to only KEY."
+
+#~ msgid "실행될 node 의 address 를 지정할 수 있습니다."
+#~ msgstr "You can specify the address of the node to be executed."
+
+#~ msgid "지정하지 않으면 scheduler 에 의해 할당됩니다."
+#~ msgstr "If not specified, it is assigned by scheduler."
+
+#~ msgid "nfs 로 실행될때 write 를 하용하는 옵션입니다."
+#~ msgstr "An option to enable writing when running in nfs."
+
+#~ msgid "최소 요구사항의 gpu driver version 을 적습니다. (nvidia)"
+#~ msgstr "Write down the minimum required gpu driver version. (nvidia)."
+
+#~ msgid "ex) --gpu-driver-version 390.46"
+#~ msgstr ""
+
+#~ msgid "사용하고자 하는 GPU의 모델명을 적습니다."
+#~ msgstr "An option for GPU model you want to use"
+
+#~ msgid "ex) --gpu-model P40"
+#~ msgstr ""
+
+#~ msgid "distributed training 을 할때 필요한 노드의 갯수를 적습니다."
+#~ msgstr "Write down the number of nodes required for distributed training. "
+
+#~ msgid "(experimental feature) ex) nsml run -n 4"
+#~ msgstr "(experimental feature) ex) \" \"nsml run -n 4"
+

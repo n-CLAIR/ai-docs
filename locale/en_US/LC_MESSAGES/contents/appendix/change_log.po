@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-21 10:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../contents/appendix/change_log.rst:4
+msgid "NSML Docs Change Log"
+msgstr ""
+
+#: ../../contents/appendix/change_log.rst:7
+msgid "2019-01-16"
+msgstr ""
+
+#: ../../contents/appendix/change_log.rst:10
+msgid "AutoML"
+msgstr ""
+
+#: ../../contents/appendix/change_log.rst:12
+msgid ""
+"AutoML 사용 상의 주의 사항을 :ref:`Prepare source code files<prepare source>` 에 "
+"추가했습니다."
+msgstr ""
+"Added :ref:`Prepare source code files<prepare source>` with caution when "
+"using AutoML"
+
+#: ../../contents/appendix/change_log.rst:14
+msgid ":ref:`Structure<structure>` 에 Top과 Bottom 파트 내용이 활용되는 곳을 추가했습니다."
+msgstr ""
+"Added a place where Top and Bottom contents are used in "
+":ref:`Structure<structure>`. "
+
+#: ../../contents/appendix/change_log.rst:22
+msgid ""
+":ref:`hyperparameters to tune(Top)<config top>` 에 parameters에 값을 삽입할 때의 "
+"주의 사항을 추가했습니다."
+msgstr ""
+"Added caution when inserting values into parameters on :ref:`hyperparameters to tune(Top)<config top>` . "
+
+#: ../../contents/appendix/change_log.rst:30
+msgid "Main page"
+msgstr ""
+
+#: ../../contents/appendix/change_log.rst:32
+msgid ""
+":ref:`Resource<index resources>` 에서 ``Q&A 레파지토리`` 를 ``Q&A, Bug Report "
+"레파지토리`` 로 변경하였습니다."
+msgstr ""
+"In :ref:`Resource<index resources>` , ``Q&A repository`` changes into "
+"``Q&A, Bug Report repository`` "

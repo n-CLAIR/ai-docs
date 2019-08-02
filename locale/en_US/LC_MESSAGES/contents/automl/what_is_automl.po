@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-31 07:40+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../contents/automl/what_is_automl.rst:4
+msgid "What is AutoML"
+msgstr ""
+
+#: ../../contents/automl/what_is_automl.rst:9
+msgid "Why AutoML & How it works"
+msgstr ""
+
+#: ../../contents/automl/what_is_automl.rst:11
+msgid ""
+"AutoML은 hyperparameter 튜닝을 자동화시켜 최적의 hypterparameter를 찾을 수 있도록 도와주고, "
+"tuning 과정을 시각화해주는 NSML의 기능입니다."
+msgstr ""
+"AutoML is an NSML feature that automates hyperparameter tuning to help you find the optimal hypterparameter and visualizes the tuning process."
+
+#: ../../contents/automl/what_is_automl.rst:17
+msgid "hypterparameter 튜닝은 머신러닝 연구에서 귀찮은 작업 중 하나입니다. 그 이유는 크게 2가지입니다."
+msgstr "Hypterparameter tuning is one of the most troublesome tasks in machine learning research. There are two main reasons for this."
+
+#: ../../contents/automl/what_is_automl.rst:16
+msgid "하나하나 일일이 값을 넣어가면서 찾기 때문에 바로 적절한 값을 찾기까지는 시간이 소요되기 때문입니다."
+msgstr "This is because it takes time to find the appropriate value immediately after finding each value one by one."
+
+#: ../../contents/automl/what_is_automl.rst:17
+msgid "model이 달라지면 다시 튜닝을 해야 하기 때문입니다."
+msgstr "If the model is different, you need to re-tune."
+
+#: ../../contents/automl/what_is_automl.rst:19
+msgid ""
+"AutoML은 이런 문제를 해결하기 위해 Agent를 사용합니다. 우리의 일을 도와주는 일꾼과 같은 존재인 Agent는 "
+"hyperparameter를 튜닝하는 역할을 수행합니다. Agent는 configuration 파일에 들어있는 설정값에 따라 "
+"움직이므로 configuration 파일의 설정이 매우 중요합니다."
+msgstr ""
+"AutoML uses an Agent to solve this problem. An agent, like a worker who helps us with our work, serves to tune the hyperparameter. Configuration of the configuration file is very important because the agent moves according to the setting value contained in the configuration file."
+
+#: ../../contents/automl/what_is_automl.rst:27
+msgid "AutoML session and NSML session"
+msgstr ""
+
+#: ../../contents/automl/what_is_automl.rst:29
+msgid ""
+":ref:`nsml automl run<automl run>` 을 실행하면 AutoML 세션 1개가 시작됩니다. AutoML 세션은"
+" 부모의 개념으로 존재하여 기존 NSML session들을 자식으로 보유합니다. AutoML 세션의 이름은 "
+"유저명/데이터셋이름/세션번호로 주어집니다. NSML session과 형식이 같으므로 착각하지 않도록 주의해야 합니다. AutoML "
+"session과 NSML session이라는 용어를 잘 이해하시고 넘어가시기 바랍니다."
+msgstr ""
+"When running :ref:`nsml automl run<automl run>` , one AutoML session starts. AutoML session exists as a parent concept and holds existing NSML sessions as children. The name of the AutoML session is given as username/dataset name/session number. Be careful not to mistake it with NSML session because they have same name format. "
+
+#: ../../contents/automl/what_is_automl.rst:32
+msgid "Parent"
+msgstr ""
+
+#: ../../contents/automl/what_is_automl.rst:32
+msgid "Child"
+msgstr ""
+
+#: ../../contents/automl/what_is_automl.rst:34
+msgid "AutoML session"
+msgstr ""
+
+#: ../../contents/automl/what_is_automl.rst:34
+#: ../../contents/automl/what_is_automl.rst:38
+msgid "NSML session (Running)"
+msgstr ""
+
+#: ../../contents/automl/what_is_automl.rst:36
+msgid "NSML session (Stop)"
+msgstr ""
+
+#: ../../contents/automl/what_is_automl.rst:40
+#: ../../contents/automl/what_is_automl.rst:42
+#: ../../contents/automl/what_is_automl.rst:44
+msgid "."
+msgstr ""
+
+#: ../../contents/automl/what_is_automl.rst:46
+msgid "NSML session (Exited)"
+msgstr ""
+
+#: ../../contents/automl/what_is_automl.rst:49
+msgid "AutoML session은 여러 개의 NSML session을 가집니다."
+msgstr "AutoML session has multiple NSML sessions."
+
+#: ../../contents/automl/what_is_automl.rst:53
+msgid ""
+"1개의 AutoML session에서는 NSML session들을 Live pool, Stop pool, Dead pool에 넣어 "
+"관리합니다. NSML session들은 상태에 따라 방(pool)을 옮겨다닙니다. running nsml session은 Live "
+"pool, stop nsml session은 stop pool, exited nsml session은 dead pool에 넣습니다."
+msgstr ""
+"In one AutoML session, NSML sessions are managed in Live pool, Stop pool and Dead pool. NSML sessions move pools according to their state. Running nsml session is in live pool, stop nsml session is in stop pool, and exited nsml session is in dead pool."
+
+#: ../../contents/automl/what_is_automl.rst:60
+msgid "Configuration File"
+msgstr ""
+
+#: ../../contents/automl/what_is_automl.rst:62
+msgid ""
+"Configuration 파일은 hypterparameter 튜닝 방법을 저장합니다. 어떤 파라미터를 어떻게 튜닝할 것인지에 대한 "
+"설정들이 포함됩니다. configuration 파일의 구조와 자세한 요소들은 :ref:`configuration "
+"file<configuration file>` 파트에서 설명하겠습니다."
+msgstr ""
+"Configuration file stores the hypterparameter tuning method. It includes settings for how to tune certain parameters. The structure and details of the configuration file are described in the :ref:`configuration "
+"file<configuration file>` part."
+
+#: ../../contents/automl/what_is_automl.rst:67
+msgid "Tuning Algorithm(Method)"
+msgstr ""
+
+#: ../../contents/automl/what_is_automl.rst:69
+msgid "AutoML에서 hyperparameter를 탐색하기 위해서는 2가지의 방법을 사용합니다. random search와 pbt입니다."
+msgstr "There are two ways to explore the hyperparameter in AutoML. random search and pbt."
+
+#: ../../contents/automl/what_is_automl.rst:72
+msgid "random search"
+msgstr ""
+
+#: ../../contents/automl/what_is_automl.rst:72
+msgid ""
+"hyperparameter를 하나씩 처음부터 돌려보는 방법을 말합니다. Agent는 configuration file 설정에 맞춰 "
+"좋은 결과를 낳을 가망이 없는, 즉 싹수가 좋지 않은 모델을 끝까지 돌리기 전에 죽이고 다음 모델을 돌리는 방식을 취합니다. "
+"AutoML을 사용하지 않을 때보다 훨씬 짧은 시간 안에 튜닝을 마무리할 수 있습니다."
+msgstr ""
+"One way to proceed from the beginning of the hyperparameter. The agent takes the approach of killing the bad model, which is not likely to produce good results for the configuration file settings, and then running the next model. The tuning can be completed in a much shorter time than when AutoML is not used."
+
+#: ../../contents/automl/what_is_automl.rst:77
+msgid "pbt"
+msgstr ""
+
+#: ../../contents/automl/what_is_automl.rst:75
+msgid ""
+"결과가 좋은 곳으로 더욱 depth를 깊게 파서 좋은 모델을 찾는 방법입니다. 성능이 좋은 모델의 hypterparameter를 "
+"copy해서 돌리는 방식을 취합니다. 자세한 사항은 `PBT of NN <https://deepmind.com/blog"
+"/population-based-training-neural-networks>`_ 를 참조하시기 바랍니다."
+msgstr ""
+"It is a way to find a good model by digging deeper into a better place. It takes a way to copy and execute a hypterparameter of a good performance model. Please refer to `PBT of NN <https://deepmind.com/blog"
+"/population-based-training-neural-networks>`_ for details."
+
+#: ../../contents/automl/what_is_automl.rst:79
+msgid "다음 파트에서는 AutoML 사용법을 예제를 통해 살펴보겠습니다."
+msgstr "In the next part, we will look at an example of using AutoML."

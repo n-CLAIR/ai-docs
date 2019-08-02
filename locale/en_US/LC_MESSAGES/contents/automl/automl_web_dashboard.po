@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-01 07:44+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../contents/automl/automl_web_dashboard.rst:4
+msgid "AutoML Web Dashboard"
+msgstr ""
+
+#: ../../contents/automl/automl_web_dashboard.rst:6
+msgid ""
+"AutoML에서는 튜닝 과정을 확인할 수 있도록 web visualization을 지원합니다. hyperparameter "
+"tuning 결과를 쉽게 분석하고, fine-tuning이 가능한 시각화 기반 분석 시스템입니다. Running한 세션들을 볼 수 "
+"있는 ``Dashboard`` 와 분석할 수 있는 ``Visual Analytics`` 로 구성되어 있습니다. 이 페이지에서는 "
+"``Dashboard`` 를 설명하고, 다음 페이지에서 ``Visual Analytics`` 에 대해 알아보겠습니다."
+msgstr ""
+"AutoML supports web visualization so you can see the tuning process. "
+"This is a visualization-based analysis system that can easily analyze "
+"the results of hyperparameter tuning and fine-tuning. It consists of a ``Dashboard`` "
+"where you can view running sessions and a ``Visual Analytics`` where you can analyze them. "
+"On this page, we will explain the ``Dashboard`` and on the next page we will learn about the ``Visual Analytics`` . "
+
+#: ../../contents/automl/automl_web_dashboard.rst:11
+msgid "Web visualization을 보기 위해선 https://automl.nsml.navercorp.com/로 접속하시면 됩니다."
+msgstr "To view Web visualization, go to https://automl.nsml.navercorp.com/ . "
+
+#: ../../contents/automl/automl_web_dashboard.rst:15
+msgid "Table of contents"
+msgstr ""
+
+#: ../../contents/automl/automl_web_dashboard.rst:17
+msgid ":ref:`Dashboard <Dashboard>`"
+msgstr ""
+
+#: ../../contents/automl/automl_web_dashboard.rst:19
+msgid ":ref:`How to go to Visual Analytics <how to go vis>`"
+msgstr ""
+
+#: ../../contents/automl/automl_web_dashboard.rst:26
+msgid "Dashboard"
+msgstr ""
+
+#: ../../contents/automl/automl_web_dashboard.rst:30
+msgid ""
+"AutoML의 메인 페이지인 ``Dashboard`` 페이지에서는 run을 시켰던 AutoML session들을 모두 볼 수 "
+"있습니다. 세션들의 상태를 확인하고, 설정들을 살펴볼 수 있습니다."
+msgstr ""
+"On the main page of AutoML, ``Dashboard`` page, you can see "
+"all of AutoML sessions that were run. You can check the status of the sessions and look at the settings."
+
+#: ../../contents/automl/automl_web_dashboard.rst:33
+msgid "Dashboard에 보이는 테이블의 각 열에 대해 알아보겠습니다."
+msgstr "Let's take a look at each column of the table shown in the Dashboard. "
+
+#: ../../contents/automl/automl_web_dashboard.rst:35
+msgid ":guilabel:`Name` : AutoML 세션의 이름입니다."
+msgstr ":guilabel:`Name` : name of AutoML session. "
+
+#: ../../contents/automl/automl_web_dashboard.rst:36
+msgid ""
+":guilabel:`Status` : 현재 AutoML 세션의 상태입니다. Running, Stopped, Exited 3가지의 "
+"상태로 이루어집니다. Running하고 있는 NSML 세션의 작업이 모두 끝나면 자동으로 Exited 상태가 됩니다. 직접 "
+"여러분이 AutoML을 stop시킨 경우에는 현재 진행 중인 NSML 세션이 끝난 뒤에 Exited 상태가 됩니다. 바로 모든 세션을 "
+"종료시키고 싶다면 ``nsml automl stop -f`` 명령어를 사용하시기 바랍니다. :ref:`nsml automl "
+"stop<automl stop>`"
+msgstr "
+":guilabel:`Status` : Status of the current AutoML session. There are three states: Running, Stopped, Exited. When all tasks of NSML session you are running are completed, the session is automatically exited. "
+"If you have directly stopped AutoML, it will be exited after the current NSML session."
+"When you want to end all sessions immediately, use ``nsml automl stop -f`` command. :ref:`nsml automl stop<automl stop>`"
+
+#: ../../contents/automl/automl_web_dashboard.rst:37
+msgid ":guilabel:`Running/Exited` : 현재 진행 중인 NSML 세션과 종료된 NSML 세션의 갯수를 나타냅니다."
+msgstr ":guilabel:`Running/Exited` : Shows the number of NSML sessions currently in progress and the number of NSML sessions terminated."
+
+#: ../../contents/automl/automl_web_dashboard.rst:38
+msgid ":guilabel:`Creation time` : AutoML 모델이 생성된 시간입니다."
+msgstr ":guilabel:`Creation time` : created time of AutoML model"
+
+#: ../../contents/automl/automl_web_dashboard.rst:39
+msgid ""
+":guilabel:`Description` : :ref:`nsml automl memo<automl memo>` 으로 입력한 내용이"
+" 표시됩니다."
+msgstr ""
+":guilabel:`Description` : Displays the description entered as :ref:`nsml automl memo<automl memo>` command."
+
+#: ../../contents/automl/automl_web_dashboard.rst:44
+msgid "이 중 하나의 세션을 클릭하면 자세한 AutoML session 정보를 확인할 수 있습니다."
+msgstr "Click on one of these sessions to view detailed AutoML session information."
+
+#: ../../contents/automl/automl_web_dashboard.rst:46
+msgid ""
+":guilabel:`Job Status` : 전체 NSML session들이 진행되는 상태를 확인할 수 있습니다. 자세한 내용은 "
+":ref:`AutoML session and NSML session <automl and NSML session>` 을 참고하셔서 "
+"session들의 status에 대해 다시 한번 확인하시기 바랍니다."
+msgstr ""
+":guilabel:`Job Status` : You can check detailed information in :ref:`AutoML session and NSML session <automl and NSML session>` to look around status of sessions again. "
+
+#: ../../contents/automl/automl_web_dashboard.rst:47
+msgid ""
+":guilabel:`Job configuration` : :ref:`Configuration file<configuration "
+"file>` 에 적었던 설정이 나타납니다."
+msgstr ""
+":guilabel:`Job configuration` : setup you wrote down on :ref:`Configuration file<configuration "
+"file>` is shown. "
+
+#: ../../contents/automl/automl_web_dashboard.rst:48
+msgid ""
+":guilabel:`Hypterparameter Configuration` : :ref:`Configuration "
+"file<configuration file>` 에 적었던 설정이 나타납니다."
+msgstr ""
+":guilabel:`Hypterparameter Configuration` : setup you wrote down on :ref:`Configuration file<configuration "
+"file>` is shown. "
+
+#: ../../contents/automl/automl_web_dashboard.rst:51
+msgid ""
+":guilabel:`Stop tuning job` 을 누르면 running 상태가 중단됩니다. 현재 진행하고 있는 NSML "
+"session의 작업이 마무리된 후 최종 중단됩니다. ``nsml automl stop AUTOML_SESS_NAME`` 과 같은 "
+"효과를 갖고 있고, ``-f`` option을 넣어서 당장 session을 중단하고 싶다면 CLI를 사용하셔야 합니다."
+msgstr ""
+"When you click :guilabel:`Stop tuning job` , running status is terminated. After running the current NSML session, then AutoML session is finished completely. "
+
+#: ../../contents/automl/automl_web_dashboard.rst:57
+msgid "How to go to Visual Analytics"
+msgstr ""
+
+#: ../../contents/automl/automl_web_dashboard.rst:59
+msgid ""
+"Visualization을 볼 수 있는 페이지는 ``Visual Analytics`` 입니다. AutoML 세션 안에는 NSML "
+"세션들이 존재합니다. ``Visual Analytics`` 페이지에서는 이 NSML 세션들에 대한 정보들을 다양한 관점에서 파악할 "
+"수 있습니다. ``Dashboard`` 에서 ``Visual Analytics`` 로 이동하는 방법을 알아보겠습니다."
+msgstr ""
+"Visualization page is called ``Visual Analytics`` There are NSML sessions inside the AutoML session. ``Visual Analytics`` page provides a variety of views on the information about these NSML sessions. Let's learn how to move from ``Dashboard`` to ``Visual Analytics.``"
+
+msgid "Single session"
+msgstr ""
+
+#: ../../contents/automl/automl_web_dashboard.rst:65
+msgid "Dashboard를 사용하기 위해선 세션을 선택한 후, AutoMLVis 버튼을 클릭합니다."
+msgstr "To use the Dashboard, select a session and click AutoMLVis button."
+
+msgid "Multiple sessions"
+msgstr ""
+
+#: ../../contents/automl/automl_web_dashboard.rst:71
+msgid "여러 세션을 선택하고, 오른쪽 상단 AutoMLVis 버튼을 누르면 여러 세션을 한번에 확인할 수 있습니다."
+msgstr "Select multiple sessions and click AutoMLVis button in the upper right corner to view multiple sessions at once."

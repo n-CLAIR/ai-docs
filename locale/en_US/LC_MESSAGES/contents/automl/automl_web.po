@@ -1,0 +1,421 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-03 09:19+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../contents/automl/automl_web.rst:4
+msgid "AutoML web_interface"
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:6
+msgid ""
+"AutoML에서는 튜닝 과정을 확인할 수 있도록 web visualization을 지원합니다. hyperparameter "
+"tuning 결과를 쉽게 분석하고, fine-tuning이 가능한 시각화 기반 분석 시스템입니다. Running한 세션들을 볼 수 "
+"있는 Dashboard와 분석할 수 있는 Visual Analytics 로 구성되어 있습니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:10
+msgid "https://automl.nsml.navercorp.com/로 접속하시면 됩니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:14
+msgid "Table of contents"
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:16
+msgid ":ref:`Dashboard <Dashboard>`"
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:18
+msgid ":ref:`How to go to Visual Analytics <how to go vis>`"
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:20
+msgid ":ref:`Visual Analytics <VA>`"
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:22
+msgid ":ref:`Visual Analytics(Main Visualization) <VA main>`"
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:24
+msgid ":ref:`Visual Analytics(Left Panel) <VA left>`"
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:26
+msgid ":ref:`Visual Analytics(Right Panel) <VA right>`"
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:28
+msgid ":ref:`Setting <automl setting>`"
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:30
+msgid ":ref:`Brush Interaction <brush interaction>`"
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:37
+msgid "Dashboard"
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:41
+msgid ""
+"AutoML의 메인 페이지인 ``Dashboard`` 페이지에서는 run을 시켰던 AutoML session들을 모두 볼 수 "
+"있습니다. 세션들의 상태를 확인하고, 설정들을 살펴볼 수 있습니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:44
+msgid "Dashboard에 보이는 테이블의 각 열에 대해 알아보겠습니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:46
+msgid ":guilabel:`Name` : AutoML 세션의 이름입니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:47
+msgid ""
+":guilabel:`Status` : 현재 AutoML 세션의 상태입니다. Running, Stopped, Exited 3가지의 "
+"상태로 이루어집니다. Running하고 있는 NSML 세션의 작업이 모두 끝나면 자동으로 Exited 상태로 되고, 직접 "
+"AutoML을 stop시킨 경우에는 현재 진행 중인 NSML 세션이 끝난 뒤에 Exited 상태가 됩니다. 바로 모든 세션을 "
+"종료시키고 싶다면 ``nsml automl stop -f`` 명령어을 사용하시기 바랍니다. :ref:`nsml automl "
+"stop<automl stop>`"
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:48
+msgid ":guilabel:`Running/Exit` : 현재 진행 중인 NSML 세션과 종료된 NSML 세션의 갯수를 나타냅니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:49
+msgid ":guilabel:`Creation time` : AutoML 모델이 생성된 시간입니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:50
+msgid ""
+":guilabel:`Description` : :ref:`nsml automl memo<automl memo>` 으로 입력한 내용이"
+" 표시됩니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:55
+msgid "이 중 하나의 세션을 클릭하면 자세한 AutoML session 정보를 확인할 수 있습니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:57
+msgid ""
+":guilabel:`Job Status` : 전체 NSML session들이 진행되는 상태를 확인할 수 있습니다. 자세한 내용은 "
+":ref:`AutoML session and NSML session <automl and NSML session>` 을 참고하셔서 "
+"session들의 status에 대해 다시 한번 확인하시기 바랍니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:58
+msgid ""
+":guilabel:`Job configuration` : Configuration file에 적었던 설정이 나타납니다. "
+"`configuraion file <configuration file>`"
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:59
+msgid ""
+":guilabel:`Hypterparameter Configuration` : Configuration file에 적었던 설정이 "
+"나타납니다. `configuraion file <configuration file>`"
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:62
+msgid ""
+":guilabel:`Stop tuning job` 을 누르면 running 상태가 중단됩니다. ``nsml automl stop "
+"AUTOML_SESS_NAME`` 과 같은 효과를 갖고 있고, ``-f`` option을 넣어서 당장 session을 중단하고 "
+"싶다면 CLI를 사용하셔야 합니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:68
+msgid "How to go to Visual Analytics"
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:70
+msgid ""
+"Visualization을 볼 수 있는 페이지를 ``Visual Analytics`` 라 하겠습니다. AutoML 세션 안에는 "
+"NSML 세션들이 존재합니다. 이 NSML 세션들에 대한 정보들을 다양한 관점에서 파악할 수 있는 시각화에 대해 알아보겠습니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:74
+msgid "Dashboard를 사용하기 위해선 세션을 선택한 후, AutoMLVis 버튼을 클릭합니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:80
+msgid "여러 세션을 선택하고, 오른쪽 상단 AutoMLVis 버튼을 누르면 여러 세션을 한번에 확인할 수 있습니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:87
+msgid "Visual Analytics"
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:89
+msgid ""
+"``Visual Analytics`` 화면에서는 AutoML 세션 안의 nsml 세션들을 확인할 수 있습니다. 왼쪽 패널, 오른쪽 "
+"패널, 중간 부분으로 이루어져 있습니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:94
+msgid "전체 화면을 크게 3개의 파트로 나눠서 살펴보겠습니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:101
+msgid "Visual Analytics(Main Visualization)"
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:105
+msgid ""
+"Main Visualization 파트에서는 튜닝을 하면서 model이 저장된 모든 NSML 세션들을 하나의 선으로 표현한 시각화가"
+" 나타납니다. 현재 진행 중인 NSML 세션 안의 모델은 점선으로 표시됩니다. 점선으로 표시할지의 여부는 오른쪽 상단의 설정에서 "
+"확인할 수 있습니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:107
+msgid "각각의 hyperpararmter range를 여러 축으로 평행하게 배열(parallel coordinates)한 상태입니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:109
+msgid ""
+"맨 왼쪽의 Axis는 NSML 세션의 모델이 생성된 walltime 시간이 나타나고, 맨 오른쪽의 Axis는 각 세션에서 저장된 "
+"모델이 평가방법에 따라 성능을 평가받는 metric입니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:111
+msgid "선 색은 1개의 AutoML session이 1개의 색으로 임의로 배정됩니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:117
+msgid "각 hyperparamer 파트 마다 Drag를 하면 Drag한 범위에만 해당하는 session들만 필터링됩니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:119
+msgid ""
+"이를 Visual Analytics에서는 :ref:`brush interaction <brush interaction>` 으로 "
+"지칭합니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:121
+msgid "세션을 여러 개 선택하고 난 후 scalar graph 버튼을 누르면 scalar graph를 확인할 수 있습니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:128
+msgid "Visual Analytics(Left Panel)"
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:130
+msgid ""
+"왼쪽 패널에 대해 알아보겠습니다. 왼쪽 패널은 AutoML 세션에 대한 general한 정보들을 나타냅니다. Sessions, "
+"Get Top/Bottom, Axes Config, Curveness와 Session info. 섹션을 확인할 수 있습니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:135
+msgid "Sessions"
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:139
+msgid ""
+"Dashboard에서 하나의 세션을 선택하여 Visual Analytics에 들어오면 하나의 AutoML 세션에 대한 Visual "
+"Analytics 화면을 볼 수 있습니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:143
+msgid ""
+"여러 개의 세션을 선택하면 여러 개 중 하나씩 선택할 수도 있고, Merge 버튼을 눌러서 session들을 모두 한꺼번에 볼 수 "
+"있습니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:147
+msgid "Get Top/Bottom"
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:149
+msgid "NSML 세션들 중 evaluation 값이 높은 상위/하위 n개를 선택할 수 있습니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:155
+msgid "Axes Config"
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:159
+msgid "각 hyperparameter를 집중적으로 보기 위한 파트입니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:161
+msgid ":guilabel:`Highlight` : 해당 option을 색상으로 강조합니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:163
+msgid ":guilabel:`Axis Scale` : 해당 option의 값의 범위를 변경합니다. ><는 축소, <>는 확대입니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:165
+msgid ":guilabel:`Visibility` : 해당 option을 시각화에 나타낼 지의 여부를 선택합니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:168
+msgid "Session info."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:172
+msgid "AutoML 세션의 정보를 확인할 수 있습니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:174
+msgid ":guilabel:`Stop` : 현재 진행 중이면 AutoML session이 NSML 세션 생성을 중단합니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:176
+msgid ":guilabel:`Re-run!` : 새로운 AutoML 세션이 만들어집니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:184
+msgid "Visual Analytics(Right Panel)"
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:186
+msgid ""
+"오른쪽 패널에 대해 알아보겠습니다. 오른쪽 패널에 대해 알아보겠습니다. 오른쪽 패널에서는 고급 분석을 위한 도구를 지원합니다. "
+"선택한 세션들의 자세한 정보를 확인하고, configuration을 다운로드 하실 수 있습니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:189
+msgid "Parameter Analytics와 Session Overview, Selected Model Summary를 제공합니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:191
+msgid "Parameter Analytics"
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:195
+msgid "x축, y축, 값에 따른 색상, 값에 따른 size을 설정하여 scatter plot 시각화를 확인합니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:197
+msgid "Session Overview"
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:201
+msgid "automl session이 생성한 nsml session들에 대한 overview를 제공합니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:203
+msgid "기본 interaction을 소개하겠습니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:205
+msgid ""
+":guilabel:`filtering by selection` : main visualization(중간 부분)에서 brush "
+"interaction을 통해 선택한 session만 표시합니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:207
+msgid ":guilabel:`PlayBack` : train을 하는 과정을 처음부터 보여주는 그래프 시각화 애니메이션을 확인합니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:209
+msgid ""
+":guilabel:`size by`, :guilabel:`color by` : size와 color로 표현할 옵션을 설정할 수 "
+"있습니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:211
+msgid "Mouse hover on object: hover된 세션에 대한 정보를 확인할 수 있습니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:213
+msgid "Mouse click on object: click한 세션을 scalar plot list에 담을 수 있습니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:218
+msgid ""
+"Projection view of hyperparameter space: 각각의 nsml session들이 가진 "
+"hyperparameter space 에 대한 overview를 보여줍니다. 기본적으로 tuning할 hyperparameter "
+"space 모두를 t-SNE (ref: https://lvdmaaten.github.io/tsne/ , "
+"https://github.com/karpathy/tsnejs ) 을 이용하여 2차원 상에 hyperparamter를 시각화 "
+"합니다. t-SNE에서 각 hyperparameter 간에 어떻게 뭉쳐있는지 살펴볼 수 있습니다. 시각화하고자 하는 space를 "
+"조절하고 싶다면 우측의 버튼을 이용해서 hyperparameter 조합을 지정할 수 있습니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:225
+msgid ""
+"Hierarchical overview (only for PBT): automl이 어떻게 nsml session들을 fork했는지에"
+" 대한 hierarchical overview를 보여줍니다. (참고: automl session 생성시 Fork option을 "
+"true로 했을 경우에만 유의미한 결과가 나타납니다.)"
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:230
+msgid "Selected Model Summary"
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:232
+msgid "선택된 nsml session에 대한 metric을 확인하고, configuration을 다운로드 받을 수 있습니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:239
+msgid "Setting"
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:243
+msgid "Visual Analytics 오른쪽 상단에서 settings 버튼을 확인하실 수 있습니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:247
+msgid ""
+":guilabel:`Reload for Running jobs` : session이 계속 진행 중이라면 그래프의 모양은 계속 변경될"
+" 것입니다. 주기적으로 업데이트를 할 것인지를 묻는 옵션입니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:249
+msgid ""
+":guilabel:`Show Running session's context` : 현재 진행 중인 세션을 점선으로 표시할 것인지 묻는"
+" 옵션입니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:251
+msgid ""
+":guilabel:`Axis ordering method of parallel coordinates` : Axis들이 정렬되는 "
+"순서입니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:253
+msgid ""
+":guilabel:`Curveness of parallel coordinates` : 그래프에 있는 모델들의 꺾어지는 정도를 "
+"설정하는 옵션입니다. 숫자가 커질 수록 곡선이 부드러워집니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:259
+msgid "Brush Interaction"
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:261
+msgid ""
+"메인 부분에서 Brush Interaction을 넣으면 연계할 수 있는 작업들에 대해 알아보겠습니다. 우선 brush "
+"interaction으로 최대로 자세히 분석할 수 있는 session은 20개입니다."
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:264
+msgid "Re-run"
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:265
+msgid "Models on board"
+msgstr ""
+
+#: ../../contents/automl/automl_web.rst:266
+msgid "filtering by selection"
+msgstr ""
+
+#~ msgid "Contents"
+#~ msgstr ""
+

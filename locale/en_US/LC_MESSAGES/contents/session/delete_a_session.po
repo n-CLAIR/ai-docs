@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-23 05:35+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../contents/session/delete_a_session.rst:4
+msgid "Delete a session"
+msgstr ""
+
+#: ../../contents/session/delete_a_session.rst:9
+msgid "Usage:"
+msgstr ""
+
+#: ../../contents/session/delete_a_session.rst:8
+msgid "**nsml rm** *Options* SESSION_NAME"
+msgstr ""
+
+#: ../../contents/session/delete_a_session.rst:12
+msgid "Description:"
+msgstr ""
+
+#: ../../contents/session/delete_a_session.rst:12
+msgid "하나 또는 여러 개의 session 을 삭제합니다. 정규식의 * 와 ? 를 이용하면 여러 개의 session을 삭제할 수 있습니다."
+msgstr ""
+"Delete one or several sessions. You can also delete using * and ? of "
+"regular expressions to delete several sessions."
+
+#: ../../contents/session/delete_a_session.rst:22
+msgid "Example:"
+msgstr ""
+
+#: ../../contents/session/delete_a_session.rst:15
+msgid "Basic command"
+msgstr ""
+
+#: ../../contents/session/delete_a_session.rst:31
+msgid "Options:"
+msgstr ""
+
+#: ../../contents/session/delete_a_session.rst:27
+msgid "NSML storage 에서 session 삭제하는 것을 skip 합니다."
+msgstr "Skip session deletion from NSML storage."
+
+#: ../../contents/session/delete_a_session.rst:31
+msgid "실행 중인 session 을 강제로 삭제합니다."
+msgstr "Forcibly deletes a running session."
+
+#: ../../contents/session/delete_a_session.rst:65
+msgid "Use case:"
+msgstr ""
+
+#: ../../contents/session/delete_a_session.rst:34
+msgid "다음과 같은 세션들이 있다고 가정합니다."
+msgstr "Assume you have the following sessions:"
+
+#: ../../contents/session/delete_a_session.rst:51
+msgid "1번부터 35번 세션을 전부 bash script로 삭제하기"
+msgstr "To delete all sessions 1 to 35 with a Bash script."
+
+#: ../../contents/session/delete_a_session.rst:60
+msgid "해당 데이터셋에 연결된 세션 모두 삭제하기"
+msgstr "To delete all sessions associated with one dataset"

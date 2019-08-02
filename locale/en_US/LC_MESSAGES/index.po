@@ -1,0 +1,384 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-01 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../index.rst:7
+msgid "Welcome to NSML Documentation"
+msgstr ""
+
+#: ../../index.rst:9
+msgid ""
+"NSML은 연구에 불필요한 작업들을 제거하고, GPU 자원의 효율적인 사용을 위해 개발된 MLaaS (Machine Learning"
+" as a Service), 클라우드 플랫폼입니다."
+msgstr ""
+"NSML is a machine learning as a service (MLaaS), a cloud platform, "
+"designed to eliminate unnecessary work in research and make efficient use"
+" of GPU resources."
+
+#: ../../index.rst:11
+msgid ""
+"딥러닝 알고리즘 설계 과정에서 쉽고 빠르게 AI 연구개발이 가능하도록 돕는 역할을 수행합니다. 단순히 CLI와 Web "
+"interface만으로 복잡한 설정 없이 AI 학습을 진행할 수 있으며, 진행 과정을 모니터링 할 수 있습니다."
+msgstr ""
+"NSML plays a role in facilitating quick and easy R&D in the design of "
+"deep learning algorithms. Simply by using the CLI and Web interface, AI "
+"learning can be done without complicated setting and monitoring progress."
+
+#: ../../index.rst:13
+msgid ""
+"이 문서에서는 여러분들이 NSML에 친숙해질 수 있도록 다양한 정보를 안내하고 있습니다. NSML 개념, 명령어, 주의 사항들을 "
+"알아보실 수 있습니다. NSML이 여러분들의 해커톤 대회 기간 동안 큰 도움이 되길 바랍니다."
+msgstr ""
+"This document will guide you through a variety of information to help you"
+" become familiar with NSML. You can find NSML concepts, commands, and "
+"notes. We hope that NSML will be a great help for your work during this Hackathon."
+
+#: ../../index.rst:17
+msgid "Language version"
+msgstr ""
+
+#: ../../index.rst:19
+msgid ""
+"NSML 문서는 2가지 언어로 구성되어 있습니다. 브라우저 언어 설정에 맞춰 2개의 언어 페이지로 이동합니다. 아래 링크를 통해 "
+"원하는 버전으로 이동하시기 바랍니다."
+msgstr ""
+"NSML documentation is organized in two languages. Document automatically "
+"go to each language pages that match your browser language setting. "
+"Please go to the desired version via the link below."
+
+#: ../../index.rst:23
+msgid "`Korean ver. <./../ko_KR/index.html>`_"
+msgstr ""
+
+#: ../../index.rst:23
+msgid "`English ver. <./../en_US/index.html>`_"
+msgstr ""
+
+#: ../../index.rst:28
+msgid "NSML Intro"
+msgstr ""
+
+#: ../../index.rst:30
+msgid ""
+"NSML은 어떻게 작동할까요? Intro 파트에서는 NSML의 원리와 개념을 안내합니다. 먼저 NSML 사용법을 알고 싶으시다면 "
+"아래 내용을 생략하고 다음 파트인 :ref:`Getting Started<getting started>` 파트로 넘어가시기 "
+"바랍니다. 다만 NSML을 본격적으로 사용하고 싶으시다면 이 페이지에 있는 내용은 꼭 숙지하시는 것이 좋습니다."
+msgstr ""
+"How does NSML work? Intro part guides you through the principles and "
+"concepts of NSML. If you want to know how to use NSML first, skip the "
+"following and go to the next part, :ref:`Getting Started<getting "
+"started>` part. However, if you want to use NSML in earnest, you should "
+"familiarize yourself with the contents of this page."
+
+#: ../../index.rst:34
+msgid "Session and model"
+msgstr ""
+
+#: ../../index.rst:36
+msgid ""
+"NSML에서는 session이라는 개념이 계속 등장합니다. 여러분의 코드가 실행되는 하나의 작업 단위를 ``session`` 이라 "
+"부릅니다. 그리고 하나의 session 안에서는 여러 개의 ``model`` 을 run(진행)하면서 여러분들이 원하는 AI 작업을 "
+"수행합니다. 이 모델들은 ``checkpoint`` 라는 번호로 구분되어 계속 저장됩니다."
+msgstr ""
+"In NSML, the concept of session continues to emerge. We call a unit of "
+"work where your code is executed as ``session`` . And in one session, you"
+" can run multiple AI jobs you want with ``model`` . These models are "
+"numbered and called ``checkpoint``  and stored continuously."
+
+#: ../../index.rst:38
+msgid ""
+"NSML을 돌릴 때 local에서 만든 file(entry file 포함)에서 :ref:`nsml.save<nsml.save()>`"
+" 라는 함수를 사용할 때마다 checkpoint가 생성됩니다. 또는 세션이 진행되는 도중에 web interface에서 save "
+"버튼을 누를 때마다 checkpoint가 생성됩니다."
+msgstr ""
+"When you run NSML, checkpoint is generated whenever you use a function "
+"called :ref:`nsml.save<nsml.save()>` in a file (including entry file) "
+"created locally. Alternatively, checkpoint is created each time you click"
+" save button in the web interface during the session."
+
+#: ../../index.rst:40
+msgid ""
+"1개의 ``session`` 별로 여러분은 GPU, CPU, RAM을 할당하실 수 있습니다. 이 자원들을 너무 많이 할당받아서 "
+"사용한다면 다른 사용자들이 사용할 수 없게 되므로 session status를 늘 확인하셔서 적절한 자원을 할당받아야 합니다. "
+"GPU를 할당받고 실행 중이지만 1시간 동안 사용량이 0인 GPU가 1개라도 존재하는 경우, 상태가 zombie로 표시됩니다. "
+"zombie 상태가 되지 않도록 주의해주시기 바랍니다. GPU를 다시 사용한다면 ``session`` 은 zombie 상태에서 "
+"벗어납니다."
+msgstr ""
+"For each ``session``, you can allocate GPU, CPU, RAM. If you use these "
+"resources too much, other users will not be able to use those resources, "
+"so you should always check ``session`` status to get appropriate "
+"resources. If GPU is allocated and running but there is at least 1 GPU "
+"with zero usage for one hour, the status is displayed as zombie. Please "
+"be careful not to make zombie ``session`` . If the GPU is used again, the"
+" ``session`` escapes from the zombie state."
+
+#: ../../index.rst:44
+msgid "Prerequisites and User Interface"
+msgstr ""
+
+#: ../../index.rst:46
+msgid "NSML을 사용하기 위해 숙지해야 할 준비물 2가지와 User Interface 2가지를 소개합니다."
+msgstr ""
+"To use NSML, we have to know two things to prepare and two user "
+"interfaces."
+
+#: ../../index.rst:50
+msgid "User Local은 local 환경에서 필요한 것들입니다."
+msgstr "User Local is required in local environment."
+
+#: ../../index.rst:52
+msgid ""
+":guilabel:`Files` : 첫 시작점으로 불리는 ``entry file`` (예. main.py)을 포함한 파일들을 "
+"지칭합니다. NSML에 사용하는 명령어들과 머신러닝 모델들을 적는 파일입니다. :ref:`NSML library<nsml "
+"library>` 섹션을 참고하여 file을 정의하면 됩니다."
+msgstr ""
+":guilabel:`Files` : These are the files that contain what is called "
+"``entry file`` (e.g. main.py), the first starting point. A file that "
+"lists the commands and ML models used in NSML. You can code the file by "
+"referring to the nsml library section."
+
+#: ../../index.rst:54
+msgid ""
+":guilabel:`Dataset` : NSML에서 session을 돌릴 때 활용하는 dataset입니다. daataset은 "
+"NSML에 이미 push되어 있습니다. dataset을 조회하기 위해 :ref:`dataset<nsml dataset>` 명령어를 "
+"참고하시기 바랍니다."
+msgstr ""
+":guilabel:`Dataset` : A dataset that NSML uses to run sessions."
+"The dataset for the Hackathon is already uploaded to NSML."
+
+#: ../../index.rst:57
+msgid "User Interface는 NSML을 활용할 때 사용하는 도구입니다."
+msgstr "The User Interface is the tool you use to utilize NSML."
+
+#: ../../index.rst:59
+msgid ""
+":guilabel:`Command Line Interface(CLI)` : NSML과 명령어(command)로 소통하는 "
+"interface입니다. Windows의 cmd, Mac OS의 터미널을 지칭합니다. NSML을 다운받고 세팅을 마치면 NSML "
+"command를 사용하실 수 있습니다."
+msgstr ""
+":guilabel:`Command Line Interface(CLI)` : An interface that communicates "
+"with NSML and commands. Windows cmd, Mac OS terminal. After downloading "
+"NSML and setting, you can use NSML command."
+
+#: ../../index.rst:61
+msgid ""
+":guilabel:`Web interface` : session들의 진행 상황과 visualization을 확인할 수 있습니다. https://airush.nsml.navercorp.com 으로 접속하시면 됩니다."
+msgstr ""
+":guilabel:`Web interface` : You can see the progress and visualization of"
+" sessions which available at https://airush.nsml.navercorp.com."
+
+#: ../../index.rst:68
+msgid "그럼 이제 다음 페이지에서 NSML 사용법을 알아보겠습니다."
+msgstr "Now let's look at how to use NSML on the next page."
+
+#~ msgid "Nsml library"
+#~ msgstr ""
+
+#~ msgid "Changelog"
+#~ msgstr ""
+
+#~ msgid "Preprocess"
+#~ msgstr ""
+
+#~ msgid "Leaderboard"
+#~ msgstr ""
+
+#~ msgid "Change log"
+#~ msgstr ""
+
+#~ msgid "https://nsml.navercorp.com/blog"
+#~ msgstr ""
+
+#~ msgid "Notes"
+#~ msgstr ""
+
+#~ msgid "NSML Hackathon: https://oss.navercorp.com/nsml-competition/hack_repos"
+#~ msgstr ""
+
+#~ msgid "NSML Intro: :download:`NSML Intro.pdf<static/NSML_intro.pdf>`"
+#~ msgstr ""
+
+#~ msgid "Q&A: https://oss.navercorp.com/nsml/nsml_QA"
+#~ msgstr ""
+
+#~ msgid "Indices and tables"
+#~ msgstr ""
+
+#~ msgid ":ref:`genindex`"
+#~ msgstr ""
+
+#~ msgid ":ref:`modindex`"
+#~ msgstr ""
+
+#~ msgid ":ref:`search`"
+#~ msgstr ""
+
+#~ msgid "Getting Started"
+#~ msgstr ""
+
+#~ msgid "Dataset"
+#~ msgstr ""
+
+#~ msgid "Session"
+#~ msgstr ""
+
+#~ msgid "Web interface"
+#~ msgstr ""
+
+#~ msgid "NSML library"
+#~ msgstr ""
+
+#~ msgid "Tutorials"
+#~ msgstr ""
+
+#~ msgid "AutoML"
+#~ msgstr ""
+
+#~ msgid "Appendix"
+#~ msgstr ""
+
+#~ msgid "NSML 문서의 변경 내역들을 확인하실 수 있습니다."
+#~ msgstr "You can check the changes of NSML document."
+
+#~ msgid ":ref:`Change Log<change log>`"
+#~ msgstr ""
+
+#~ msgid "Resources"
+#~ msgstr ""
+
+#~ msgid "NSML 소개 자료 : :download:`NSML Intro.pdf<static/NSML_intro.pdf>`"
+#~ msgstr "NSML Introduction : :download:`NSML Intro.pdf<static/NSML_intro.pdf>`"
+
+#~ msgid "Q&A, Bug Report 레파지토리 : https://oss.navercorp.com/nsml/nsml_QA"
+#~ msgstr ""
+#~ "Q&A Bug Report github repository : "
+#~ "https://oss.navercorp.com/nsml/nsml_QA"
+
+#~ msgid "NSML examples : https://oss.navercorp.com/nsml/nsml-examples"
+#~ msgstr ""
+#~ "Sample examples used in NSML : "
+#~ "https://oss.navercorp.com/nsml/nsml-examples"
+
+#~ msgid "NSML RL 환경 세팅 방법 : https://share.navercorp.com/love-rl/lecture/26240"
+#~ msgstr ""
+#~ "Setting RL environment in NSML : "
+#~ "https://share.navercorp.com/love-rl/lecture/26240"
+
+#~ msgid "NSML 블로그 : https://nsml.navercorp.com/blog"
+#~ msgstr "NSML blog : https://nsml.navercorp.com/blog"
+
+#~ msgid "Hackathon with NSML"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "NSML을 활용하여 사내에서 해커톤을 개최하고, NSML "
+#~ "해커톤에 참가할 수 있습니다. 자세한 사항은 아래 "
+#~ "링크를 참고하시기 바랍니다."
+#~ msgstr ""
+#~ "You can use NSML to host hackathon"
+#~ " in-house and participate in NSML "
+#~ "hackathon. Please refer to the link "
+#~ "below for details."
+
+#~ msgid ""
+#~ "NSML Hackathon 개최 & 참가 안내 : "
+#~ "https://pages.oss.navercorp.com/nsml-"
+#~ "competition/nsml_ai_hackathon/"
+#~ msgstr ""
+#~ "NSML Hackathon hosting & participation "
+#~ "guide : https://pages.oss.navercorp.com/nsml-"
+#~ "competition/nsml_ai_hackathon/"
+
+#~ msgid ""
+#~ "과거 NSML Hackathon 내역 : "
+#~ "https://oss.navercorp.com/nsml-competition/hack_repos"
+#~ msgstr ""
+#~ "Past NSML Hackathon history : "
+#~ "https://oss.navercorp.com/nsml-competition/hack_repos"
+
+#~ msgid ""
+#~ "``session`` 이 종료되면 해당 ``session`` 에 "
+#~ "할당된 자원은 NSML에 다시 풀립니다. 이 자원을 "
+#~ "풀고, 다른 ``session`` 에서 다시 사용하려면 "
+#~ "session이 종료된 시점부터 1분 이상이 지나야 합니다."
+#~ " 만약 1분 이상의 시간이 지났는데도 새로운 세션에서"
+#~ " 풀린 자원을 할당받지 못한다면 다른 사용자가 새롭게"
+#~ " 가져갔거나 버그가 발생한 것입니다. 해당 문제가 "
+#~ "반복적으로 발생한다면 NSML팀에 제보해주시면 됩니다."
+#~ msgstr ""
+#~ "After the ``session`` ends, the "
+#~ "resources assigned to that ``session`` "
+#~ "are returned to NSML. If you want"
+#~ " to free this resource and use "
+#~ "it again in another ``session``, at "
+#~ "least one minute must be passed "
+#~ "from the end of the ``session``. "
+#~ "If more than a minute has passed"
+#~ " and resources are not allocated in"
+#~ " a new ``session``, then another user"
+#~ " has taken them or a bug has"
+#~ " occurred. If the problem occurs "
+#~ "repeatedly, you can report it to "
+#~ "NSML team."
+
+#~ msgid ":guilabel:`Dataset` : NSML에서 session을 돌릴 때 활용하는 dataset입니다."
+#~ msgstr ":guilabel:`Dataset` : A dataset that NSML uses to run sessions."
+
+#~ msgid "How Scheduler works"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "NSML에서는 scheduler로 여러분의 session job을 "
+#~ "할당합니다. scheduler는 다양한 장비 중 하나를 "
+#~ "선택하는데 그 우선 순위는 여러분이 사용할 "
+#~ "``dataset`` , ``Docker image`` 에 따라 "
+#~ "달라집니다. 여러분의 작업은 이미 같은 dataset과 "
+#~ "docker image가 존재하는 장비에 우선 할당된다고 "
+#~ "이해하시면 됩니다. 이를 locality-aware scheduling"
+#~ " 방식이라 부릅니다."
+#~ msgstr ""
+#~ "In NSML, your session's job is "
+#~ "assigned by scheduler. Scheduler choose "
+#~ "one of a variety of equipment can"
+#~ " use, and priority depends on "
+#~ "``dataset`` and ``Docker image`` . Your"
+#~ " work will be assigned to devices "
+#~ "that already have same ``dataset`` and"
+#~ " ``docker image`` . This is called"
+#~ " locality-aware scheduling."
+
+#~ msgid ""
+#~ "``dataset`` 과 ``docker image`` 는 같은 "
+#~ "우선순위를 갖고, 사용하고자 하는 ``dataset`` 과 "
+#~ "``docker image`` 가 모두 있는 장비가 할당"
+#~ " 1순위가 됩니다. 그 다음 ``dataset`` 이나 "
+#~ "``docker image`` 가 하나만 일치하는 장비가 "
+#~ "2순위로 할당됩니다. 하지만 scheduler는 해당 노드에 "
+#~ "충분한 자원이 없을 경우 다른 노드에 할당을 "
+#~ "합니다."
+#~ msgstr ""
+#~ "``dataset`` and ``docker image`` have "
+#~ "the same priority, and the equipment "
+#~ "with all ``dataset`` and ``docker "
+#~ "image`` you want to use is ranked"
+#~ " first. Then, the devices that match"
+#~ " only one ``dataset`` or ``docker "
+#~ "image`` are assigned to second "
+#~ "rank.However, the scheduler allocates to "
+#~ "another node if there is not "
+#~ "enough resources on that node."
+

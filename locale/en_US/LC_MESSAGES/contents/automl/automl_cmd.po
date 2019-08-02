@@ -1,0 +1,277 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-06 09:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../contents/automl/automl_cmd.rst:4
+msgid "AutoML Command"
+msgstr ""
+
+#: ../../contents/automl/automl_cmd.rst:6
+msgid "AutoML을 돌리기 위해 사용하는 CLI 명령어들을 알아봅니다."
+msgstr "Learn about the CLI commands you use to use AutoML."
+
+#: ../../contents/automl/automl_cmd.rst:10
+msgid "Table of contents"
+msgstr ""
+
+#: ../../contents/automl/automl_cmd.rst:12
+msgid ":ref:`Run AutoML session <automl run>`"
+msgstr ""
+
+#: ../../contents/automl/automl_cmd.rst:14
+msgid ":ref:`Check AutoML sessions as a list <automl ps>`"
+msgstr ""
+
+#: ../../contents/automl/automl_cmd.rst:16
+msgid ":ref:`Stop AutoML session <automl stop>`"
+msgstr ""
+
+#: ../../contents/automl/automl_cmd.rst:18
+msgid ":ref:`Remove AutoML session <automl rm>`"
+msgstr ""
+
+#: ../../contents/automl/automl_cmd.rst:20
+msgid ":ref:`Make memo of AutoML session <automl memo>`"
+msgstr ""
+
+#: ../../contents/automl/automl_cmd.rst:22
+msgid ":ref:`See rank of AutoML session <automl rank>`"
+msgstr ""
+
+#: ../../contents/automl/automl_cmd.rst:24
+msgid ":ref:`See logs of AutoML session <automl logs>`"
+msgstr ""
+
+#: ../../contents/automl/automl_cmd.rst:31
+msgid "Run AutoML session"
+msgstr ""
+
+#: ../../contents/automl/automl_cmd.rst:36
+#: ../../contents/automl/automl_cmd.rst:72
+#: ../../contents/automl/automl_cmd.rst:112
+#: ../../contents/automl/automl_cmd.rst:140
+#: ../../contents/automl/automl_cmd.rst:168
+#: ../../contents/automl/automl_cmd.rst:186
+#: ../../contents/automl/automl_cmd.rst:227
+msgid "Usage:"
+msgstr ""
+
+#: ../../contents/automl/automl_cmd.rst:35
+msgid "**nsml automl run** *Options*"
+msgstr ""
+
+#: ../../contents/automl/automl_cmd.rst:39
+#: ../../contents/automl/automl_cmd.rst:75
+#: ../../contents/automl/automl_cmd.rst:115
+#: ../../contents/automl/automl_cmd.rst:143
+#: ../../contents/automl/automl_cmd.rst:171
+#: ../../contents/automl/automl_cmd.rst:189
+#: ../../contents/automl/automl_cmd.rst:230
+msgid "Description:"
+msgstr ""
+
+#: ../../contents/automl/automl_cmd.rst:39
+msgid "AutoML session을 실행합니다."
+msgstr "Run AutoML session."
+
+#: ../../contents/automl/automl_cmd.rst:49
+#: ../../contents/automl/automl_cmd.rst:85
+#: ../../contents/automl/automl_cmd.rst:125
+#: ../../contents/automl/automl_cmd.rst:153
+#: ../../contents/automl/automl_cmd.rst:176
+#: ../../contents/automl/automl_cmd.rst:199
+#: ../../contents/automl/automl_cmd.rst:240
+msgid "Example:"
+msgstr ""
+
+#: ../../contents/automl/automl_cmd.rst:42
+#: ../../contents/automl/automl_cmd.rst:78
+#: ../../contents/automl/automl_cmd.rst:118
+#: ../../contents/automl/automl_cmd.rst:146
+#: ../../contents/automl/automl_cmd.rst:192
+#: ../../contents/automl/automl_cmd.rst:233
+msgid "Basic command"
+msgstr ""
+
+#: ../../contents/automl/automl_cmd.rst:62
+#: ../../contents/automl/automl_cmd.rst:102
+#: ../../contents/automl/automl_cmd.rst:130
+#: ../../contents/automl/automl_cmd.rst:158
+#: ../../contents/automl/automl_cmd.rst:217
+#: ../../contents/automl/automl_cmd.rst:249
+msgid "Options:"
+msgstr ""
+
+#: ../../contents/automl/automl_cmd.rst:54
+msgid "config 파일을 설정합니다. ex) -c config.json"
+msgstr "Set config file. ex) -c config.json"
+
+#: ../../contents/automl/automl_cmd.rst:58
+msgid "상세한 진행과정을 표시합니다."
+msgstr "Displays detailed progress."
+
+#: ../../contents/automl/automl_cmd.rst:62
+msgid "세션에 간단한 memo 를 입력할 수 있습니다."
+msgstr "Insert a simple memo in your session."
+
+#: ../../contents/automl/automl_cmd.rst:67
+msgid "Check AutoML sessions as a list"
+msgstr ""
+
+#: ../../contents/automl/automl_cmd.rst:71
+msgid "**nsml automl ps** *Options*"
+msgstr ""
+
+#: ../../contents/automl/automl_cmd.rst:75
+msgid "AutoML 세션들을 목록으로 확인합니다."
+msgstr "List AutoML sessions. "
+
+#: ../../contents/automl/automl_cmd.rst:90
+msgid "멈춘 automl 세션까지 모두 보여줍니다."
+msgstr "Show including all paused automl sessions."
+
+#: ../../contents/automl/automl_cmd.rst:93
+msgid "해당 dataset 이름으로 run한 automl 세션들만 보여줍니다."
+msgstr "Show only automl sessions that run under specific dataset name."
+
+#: ../../contents/automl/automl_cmd.rst:96
+msgid "가장 최근에 run한 n개의 automl 세션들만 보여줍니다."
+msgstr "Shows n most recently started automl sessions."
+
+#: ../../contents/automl/automl_cmd.rst:99
+msgid "해당 session 이름으로 된 automl 세션만 보여줍니다."
+msgstr "Show only automl sessions with the given session name."
+
+#: ../../contents/automl/automl_cmd.rst:102
+msgid "해당 user가 run한 automl 세션만 보여줍니다."
+msgstr "Only the automl sessions run by specific user."
+
+#: ../../contents/automl/automl_cmd.rst:107
+msgid "Stop AutoML session"
+msgstr ""
+
+#: ../../contents/automl/automl_cmd.rst:111
+msgid "**nsml automl stop** *Options* AUTOML_SESS_NAME"
+msgstr ""
+
+#: ../../contents/automl/automl_cmd.rst:115
+msgid ""
+"AutoML 세션 안에서 nsml 세션의 생성을 중지합니다. 현재 진행중인 nsml 세션이 모두 종료된 후에 AutoML 세션이 "
+"종료됩니다."
+msgstr ""
+"Stop the creation of nsml sessions within an AutoML session. The AutoML "
+"session ends after all current nsml sessions have ended."
+
+#: ../../contents/automl/automl_cmd.rst:130
+msgid "현재 실행되고 있는 NSML session도 즉시 종료 후 AutoML을 종료합니다."
+msgstr "The current running NSML session also immediately exits AutoML."
+
+#: ../../contents/automl/automl_cmd.rst:135
+msgid "Remove AutoML session"
+msgstr ""
+
+#: ../../contents/automl/automl_cmd.rst:139
+msgid "**nsml automl rm** *Options* AUTOML_SESS_NAME"
+msgstr ""
+
+#: ../../contents/automl/automl_cmd.rst:143
+msgid "AutoML 세션 및 AutoML 세션이 생성한 NSML 세션 모두를 삭제합니다."
+msgstr "Delete both AutoML sessions and NSML sessions created by AutoML sessions."
+
+#: ../../contents/automl/automl_cmd.rst:158
+msgid "현재 진행 중인 NSML session도 종료 후 삭제합니다."
+msgstr "Also delete the currently running NSML session and terminate. "
+
+#: ../../contents/automl/automl_cmd.rst:163
+msgid "Make memo of AutoML session"
+msgstr ""
+
+#: ../../contents/automl/automl_cmd.rst:167
+msgid "**nsml automl memo** AUTOML_SESS_NAME *MEMO*"
+msgstr ""
+
+#: ../../contents/automl/automl_cmd.rst:171
+msgid "AutoML 세션에 메모를 삽입합니다. Web interface에서 확인할 수 있습니다."
+msgstr "nserts a note in an AutoML session. You can check on Web interface."
+
+#: ../../contents/automl/automl_cmd.rst:181
+msgid "See rank of AutoML session"
+msgstr ""
+
+#: ../../contents/automl/automl_cmd.rst:185
+msgid "**nsml automl rank** *Options* AUTOML_SESS_NAME"
+msgstr ""
+
+#: ../../contents/automl/automl_cmd.rst:189
+msgid "AutoML 세션 안의 NSML 세션 모델들의 평가 기준에 따른 순위를 알려줍니다."
+msgstr ""
+"Ranking according to evaluation criteria of NSML session models in AutoML"
+" session."
+
+#: ../../contents/automl/automl_cmd.rst:204
+msgid "평가 기준입니다. config 파일에 쓴 설정과 다르게 지정할 수 있습니다."
+msgstr ""
+"Evaluation criteria. You can specify it differently from the settings you"
+" wrote in Config file."
+
+#: ../../contents/automl/automl_cmd.rst:207
+msgid "보고싶은 NSML 세션의 갯수입니다. 기본값은 5개 입니다."
+msgstr "The number of NSML sessions you want to see. The default value is 5."
+
+#: ../../contents/automl/automl_cmd.rst:210
+msgid "NSML 세션들의 정렬 순서입니다."
+msgstr "The sort order for NSML sessions."
+
+#: ../../contents/automl/automl_cmd.rst:212
+msgid "오름차순을 원한다면 \"ascending\","
+msgstr "If you want ascending order, \"ascending\""
+
+#: ../../contents/automl/automl_cmd.rst:214
+msgid "내림차순을 원한다면 \"descending\"을 입력합니다."
+msgstr "If descending order is desired, enter \"descending\"."
+
+#: ../../contents/automl/automl_cmd.rst:217
+msgid "1개의 NSML 세션 안에서 1개의 모델만을 보여줍니다."
+msgstr "Only one model is shown in one NSML session."
+
+#: ../../contents/automl/automl_cmd.rst:222
+msgid "See logs of AutoML session"
+msgstr ""
+
+#: ../../contents/automl/automl_cmd.rst:226
+msgid "**nsml automl logs** *Options* AUTOML_SESS_NAME"
+msgstr ""
+
+#: ../../contents/automl/automl_cmd.rst:230
+msgid "AutoML의 로그를 보여줍니다."
+msgstr "Shows the log of AutoML."
+
+#: ../../contents/automl/automl_cmd.rst:245
+msgid "최근 n개까지의 로그만 보여줍니다."
+msgstr "Only the last n logs are displayed."
+
+#: ../../contents/automl/automl_cmd.rst:248
+msgid "[주의] 더 이상 사용되지 않는 명령어입니다. (deprecated)"
+msgstr "[Caution] This command is no longer used. (deprecated)"
+
+#: ../../contents/automl/automl_cmd.rst:250
+msgid "실시간으로 업데이트되는 로그를 바로 보여줍니다."
+msgstr "It shows the log that is updated in real time."
+
+#~ msgid "Contents"
+#~ msgstr ""
+

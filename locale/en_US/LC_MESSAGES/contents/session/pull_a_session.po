@@ -1,0 +1,44 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-10-23 11:08+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../contents/session/pull_a_session.rst:4
+msgid "Pull a session"
+msgstr ""
+
+#: ../../contents/session/pull_a_session.rst:11
+msgid "Usage:"
+msgstr ""
+
+#: ../../contents/session/pull_a_session.rst:11
+msgid ""
+":ref:`nsml run<nsml run>` 하였을때 upload 된 session 파일들을 local machine 으로 "
+"가져옵니다."
+msgstr "When execute :ref:`nsml run<nsml run>`, import session files"
+"uploaded to local machine."
+
+#: ../../contents/session/pull_a_session.rst:13
+msgid "Options:"
+msgstr ""
+
+#: ../../contents/session/pull_a_session.rst:17
+msgid "상세한 진행과정을 표시합니다."
+msgstr "Displays detailed progress."
+
+#: ../../contents/session/pull_a_session.rst:21
+msgid "로컬 path 에 folder 가 있으면 지우고 덮어씁니다."
+msgstr "If there is a folder in the local path, it will be erased and overwritten."

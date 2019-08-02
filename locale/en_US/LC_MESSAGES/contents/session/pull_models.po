@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-05 04:40+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../contents/session/pull_models.rst:4
+msgid "Pull models"
+msgstr ""
+
+#: ../../contents/session/pull_models.rst:9
+msgid "Usage:"
+msgstr ""
+
+#: ../../contents/session/pull_models.rst:8
+msgid "**nsml model pull** *Options* SESSION_NAME *CHECKPOINT* PATH"
+msgstr ""
+
+#: ../../contents/session/pull_models.rst:12
+msgid "Description:"
+msgstr ""
+
+#: ../../contents/session/pull_models.rst:12
+msgid ""
+":ref:`nsml.save<nsml.save()>` 로 저장된 모델들을 local로 가져옵니다. :ref:`nsml model "
+"ls<nsml model ls>` 로 모델 목록을 확인할 수 있습니다."
+msgstr ""
+"Import models saved with :ref:`nsml.save<nsml.save()>` to local. You can "
+"check the model list with :ref:`nsml model ls<nsml model ls>`."
+
+#: ../../contents/session/pull_models.rst:22
+msgid "Example:"
+msgstr ""
+
+#: ../../contents/session/pull_models.rst:15
+msgid "Basic command"
+msgstr ""
+
+#: ../../contents/session/pull_models.rst:26
+msgid "Options:"
+msgstr ""
+
+#: ../../contents/session/pull_models.rst:27
+msgid "상세한 진행과정을 표시합니다."
+msgstr "Displays detailed progress."
+
+#~ msgid ""
+#~ ":ref:`nsml.save<nsml.save()>` 로 저장된 모델들을 "
+#~ "local로 가져옵니다. :ref:`nsml model ls<nsml "
+#~ "model ls>` 로 모델 목록을 확인할수있습니다."
+#~ msgstr ""
+
+#~ msgid "pull models"
+#~ msgstr ""
+

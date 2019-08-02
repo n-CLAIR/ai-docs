@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-01 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../contents/session/show_sessions.rst:4
+msgid "Check a session status"
+msgstr ""
+
+#: ../../contents/session/show_sessions.rst:9
+msgid "Usage:"
+msgstr ""
+
+#: ../../contents/session/show_sessions.rst:8
+msgid "**nsml ps** *Options*"
+msgstr ""
+
+#: ../../contents/session/show_sessions.rst:12
+msgid "Description:"
+msgstr ""
+
+#: ../../contents/session/show_sessions.rst:12
+msgid "session 들의 목록을 보여줍니다."
+msgstr "It shows the list of sessions."
+
+#: ../../contents/session/show_sessions.rst:18
+msgid "Example:"
+msgstr ""
+
+#: ../../contents/session/show_sessions.rst:31
+msgid "Options:"
+msgstr ""
+
+#: ../../contents/session/show_sessions.rst:21
+msgid "가장 최근 생성된 n 개의 session 들을 보여줍니다."
+msgstr "It shows only n sessions created recently."
+
+#: ../../contents/session/show_sessions.rst:23
+msgid "종료된 session 까지 포함하여 보여줍니다."
+msgstr "It shows the sessions including exited sessions."
+
+#: ../../contents/session/show_sessions.rst:26
+msgid "json format 으로 출력합니다."
+msgstr "It shows in json format."
+
+#: ../../contents/session/show_sessions.rst:28
+msgid "Session 을 dataset으로 filtering하여 보여줍니다."
+msgstr "It filters sessions by dataset name."
+
+#: ../../contents/session/show_sessions.rst:30
+msgid "ex) nsml ps -d mnist"
+msgstr ""
+
+#: ../../contents/session/show_sessions.rst:32
+msgid "해당하는 session만 보여줍니다. ex) nsml ps -s SESSION"
+msgstr "It shows the session matched by the name."
+

@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-01 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../contents/dataset/search_dataset.rst:4
+msgid "Search dataset"
+msgstr ""
+
+#: ../../contents/dataset/search_dataset.rst:11
+msgid "Usage:"
+msgstr ""
+
+#: ../../contents/dataset/search_dataset.rst:10
+msgid "**nsml dataset search** *DATASET_NAME*"
+msgstr ""
+
+#: ../../contents/dataset/search_dataset.rst:16
+msgid "Description:"
+msgstr ""
+
+#: ../../contents/dataset/search_dataset.rst:16
+msgid "NSML에 등록된 데이터셋을 이름으로 찾아줍니다."
+msgstr "It finds the dataset by the name registered in NSML."
+
+#: ../../contents/dataset/search_dataset.rst:23
+msgid "Example:"
+msgstr ""
+
+#~ msgid "**nsml dataset search** *Options* DATASET_NAME"
+#~ msgstr ""
+
+#~ msgid "Basic command"
+#~ msgstr ""
+
+#~ msgid "When you want to search all dataset pushed by specific user"
+#~ msgstr ""
+
+#~ msgid "Options:"
+#~ msgstr ""
+
+#~ msgid "특정한 user가 올린 dataset만 필터링하여 보여줍니다."
+#~ msgstr "Only specific users are filtered and shown."
+

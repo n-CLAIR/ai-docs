@@ -1,0 +1,44 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-10-26 05:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../contents/web_interface/check_log.rst:4
+msgid "Check log"
+msgstr ""
+
+#: ../../contents/web_interface/check_log.rst:6
+msgid ":ref:`nsml run<nsml run>` 으로 실행한 세션로그를 web 에서 확인할 수 있습니다."
+msgstr "You can check the session log on :ref:`nsml run<nsml run>` web."
+
+#: ../../contents/web_interface/check_log.rst:8
+msgid "첫페이지 데이터셋 목록에서 왼쪽에 데이터셋 목록이 보이고,"
+msgstr "In the first page dataset list, the dataset list is shown on the left,"
+
+#: ../../contents/web_interface/check_log.rst:10
+msgid "데이터셋 이름 왼쪽의 화살표를 클릭합니다."
+msgstr "Click the arrow to the left of the dataset name."
+
+#: ../../contents/web_interface/check_log.rst:14
+msgid "화살표를 클릭하면 session list 가 나옵니다. 그중에 하나를 클릭해서 session log 를 확인할 수 있습니다."
+msgstr "Click the arrow to display the session list. You can check the session log by clicking one of them."
+
+#~ msgid ":ref:`nsml run<nsml run>` 으로 실행한 세션로그를 web 에서 확인할수가있습니다."
+#~ msgstr ""
+
+#~ msgid "화살표를 클릭하면 session list 가 나옵니다. 그중에 하나를 클릭해서 session log 를 확인할수있습니다."
+#~ msgstr ""

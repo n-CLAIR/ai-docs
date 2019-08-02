@@ -1,0 +1,152 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-01 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../contents/nsml_library/nsml_paused.rst:4
+msgid "nsml.paused"
+msgstr ""
+
+#: ../../contents/nsml_library/nsml_paused.rst:7
+msgid ""
+":ref:`nsml fork<nsml fork>`, :ref:`nsml submit<nsml submit>` 과 같이 nsml "
+"command 를 사용해서 세션을 재생성하는 명령어를 실행할 때 사용되는 함수입니다."
+msgstr ""
+"This function is used to execute commands to regenerate a session using "
+"the nsml command, such as :ref:`nsml fork<nsml fork>`, :ref:`nsml "
+"submit<nsml submit>`, :ref:`nsml infer<nsml infer>`"
+
+#: ../../contents/nsml_library/nsml_paused.rst:9
+msgid ""
+"내부적으로 main entry 파일에 \\\\-\\\\-pause 1 이란 옵션을 줘서 세션을 재생성하므로, entry 파일에서 "
+"'pause(int)' 란 옵션을 받을 수 있어야 합니다."
+msgstr ""
+"Internally, you should be able to get the option 'pause (int)' in the "
+"entry file, because it will regenerate the session with the option "
+"\\\\-\\\\-pause 1 in the main entry file."
+
+#: ../../contents/nsml_library/nsml_paused.rst:11
+msgid "각 커맨드에 따라서 동작방식이 다릅니다."
+msgstr "The operation method differs according to each command."
+
+#: ../../contents/nsml_library/nsml_paused.rst
+msgid "매개변수"
+msgstr "Parameters"
+
+#: ../../contents/nsml_library/nsml_paused.rst:13
+msgid "entry 파일 main 함수의 scope 입니다."
+msgstr "The scope of the main function for the entry file."
+
+#: ../../contents/nsml_library/nsml_paused.rst:17
+msgid ""
+"entry 파일의 main 함수가 있다면 main 함수의 ``locals()`` 변수를 넘겨주어야 합니다. 그렇지 않으면 에러가 "
+"발생합니다."
+msgstr ""
+"If you have main function in entry file, you have to pass the "
+"``locals()`` variable of main function. Otherwise, the following error "
+"will occur."
+
+#: ../../contents/nsml_library/nsml_paused.rst:20
+msgid ":ref:`nsml fork<nsml fork>`"
+msgstr ""
+
+#: ../../contents/nsml_library/nsml_paused.rst:21
+msgid ":ref:`nsml.load<nsml.load()>` 함수가 호출된 후 `nsml.paused`_ 함수는 끝납니다."
+msgstr ""
+"After the :ref:`nsml.load<nsml.load()>` function is called, the "
+"`nsml.paused`_ function ends."
+
+#: ../../contents/nsml_library/nsml_paused.rst:24
+msgid ":ref:`nsml submit<nsml submit>`"
+msgstr ""
+
+#: ../../contents/nsml_library/nsml_paused.rst:25
+msgid ""
+"test_data 를 evaluate 한 후에 결과는 nsml server 로 전송되고 "
+":ref:`leaderboard<leaderboard>` 에 기록됩니다."
+msgstr ""
+"After :ref:`nsml.load<nsml.load()>` called, nsml.infer function that "
+"declared in :ref:`nsml.bind<nsml.bind()>` invokes. After evaluating "
+"test_data, the results are sent to the nsml server and written to the "
+":ref:`leaderboard<leaderboard>`."
+
+#: ../../contents/nsml_library/nsml_paused.rst:30
+msgid ""
+":ref:`nsml.bind()<nsml.bind()>` 가 호출된 후에 "
+":ref:`nsml.paused()<nsml.paused()>` 함수가 호출되어야 합니다."
+msgstr ""
+"The :ref:`nsml.paused()<nsml.paused()>` function should be called after "
+":ref:`nsml.bind()<nsml.bind()>` is called."
+
+#~ msgid ""
+#~ ":ref:`nsml fork<nsml fork>`, :ref:`nsml "
+#~ "submit<nsml submit>`, :ref:`nsml infer<nsml "
+#~ "infer>` 과 같이 nsml command 를 사용해서"
+#~ " 세션을 재생성 하는 명령어를 실행할때 사용되는 "
+#~ "함수입니다."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "내부적으로 main entry 파일에 \\\\-\\\\-pause 1"
+#~ " 이란 옵션을 줘서 세션을 재생성 하므로, entry"
+#~ " 파일에서 'pause(int)' 란 옵션을 받을수 있어야합니다."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":ref:`nsml.load<nsml.load()>` 가 호출된후 "
+#~ ":ref:`nsml.bind<nsml.bind()>` 에 선언된 nsml.infer "
+#~ "함수가 호출됩니다. 그리고 :ref:`nsml exec<nsml "
+#~ "exec>` 커맨드를 통해 input 을 받을수있는 상태가"
+#~ " 됩니다. (:ref:`nsml infer<nsml infer>` 로 "
+#~ "실행된 세션은 종료하지않는이상 계속 남아있으므로 inference "
+#~ "작업후에는 지워주시기 바랍니다)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":ref:`nsml.bind()<nsml.bind()>` 가 호출된후에 "
+#~ ":ref:`nsml.paused()<nsml.paused()>` 함수가 호출되어야합니다."
+#~ msgstr ""
+
+#~ msgid "Parameters"
+#~ msgstr ""
+
+#~ msgid "매개 변수"
+#~ msgstr ""
+
+#~ msgid "매개변수"
+#~ msgstr ""
+
+#~ msgid ":ref:`nsml infer<nsml infer>`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":ref:`nsml.load<nsml.load()>` 가 호출된 후 "
+#~ ":ref:`nsml.bind<nsml.bind()>` 에 선언된 nsml.infer "
+#~ "함수가 호출됩니다. 그리고 :ref:`nsml exec<nsml "
+#~ "exec>` 커맨드를 통해 input 을 받을수있는 상태가"
+#~ " 됩니다. (:ref:`nsml infer<nsml infer>` 로 "
+#~ "실행된 세션은 종료하지 않는 이상 계속 남아있으므로 "
+#~ "inference 작업후에는 지워주시기 바랍니다. )"
+#~ msgstr ""
+#~ "After :ref:`nsml.load<nsml.load()>` called, "
+#~ "nsml.infer function that declared in "
+#~ ":ref:`nsml.bind<nsml.bind()>` invokes. :ref:`nsml "
+#~ "exec<nsml exec>` command is then ready"
+#~ " to accept input. ( Sessions executed"
+#~ " with :ref:`nsml infer<nsml infer>` remain"
+#~ " unchanged until terminated, so please "
+#~ "delete them after inference)"
+

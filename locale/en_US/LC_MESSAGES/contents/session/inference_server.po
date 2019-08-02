@@ -1,0 +1,339 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-28 04:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../contents/session/inference_server.rst:4
+msgid "Inference Sever"
+msgstr ""
+
+#: ../../contents/session/inference_server.rst:6
+msgid ""
+"Inference Server는 :ref:`nsml infer<nsml infer>` 기능을 활용할 때 유용합니다. 많은 양의 "
+"inference 요청을 보낼 때 요청 작업들을 처리할 session의 수를 변경시켜 inference를 더욱 빠르게 만드는 웹 "
+"서버입니다. Inference Server의 사용법을 알아보겠습니다."
+msgstr ""
+"Inference Server is useful when utilizing the function :ref:`nsml "
+"infer<nsml infer>` .A web server that makes the inference faster by "
+"changing the number of sessions to process the requested tasks when you "
+"send a large amount of inference requests. Let's learn how to use the "
+"Inference Server."
+
+#: ../../contents/session/inference_server.rst:29
+msgid "Things to know:"
+msgstr ""
+
+#: ../../contents/session/inference_server.rst:9
+msgid "*Recognizer :*"
+msgstr ""
+
+#: ../../contents/session/inference_server.rst:11
+msgid ""
+"recognizer를 session을 식별할 수 있는 정보로 입력해야 합니다. session_name, checkpoint, "
+"userid가 있습니다. session_name에는 inference를 진행할 세션 이름을 넣고, checkpoint에는 "
+"inference를 진행할 체크포인트 이름, userid에는 사번을 입력합니다."
+msgstr ""
+"The recognizer must be entered as information to identify the session. "
+"There are session_name, checkpoint, userid. In session_name, type the "
+"name of the session you want to refer to, and in checkpoint, enter the "
+"checkpoint name to perform the reference to, and in userid, enter the "
+"number"
+
+#: ../../contents/session/inference_server.rst:14
+msgid "*Host information :*"
+msgstr ""
+
+#: ../../contents/session/inference_server.rst:16
+msgid "HOST URL: 10.106.221.222"
+msgstr ""
+
+#: ../../contents/session/inference_server.rst:17
+msgid "HOST PORT: 8080"
+msgstr ""
+
+#: ../../contents/session/inference_server.rst:20
+msgid "*API request result format :*"
+msgstr ""
+
+#: ../../contents/session/inference_server.rst:22
+msgid "모든 API의 요청 결과는 다음과 같은 형식입니다."
+msgstr "The request results for all APIs are in the following format:"
+
+#: ../../contents/session/inference_server.rst:180
+msgid "Using API:"
+msgstr ""
+
+#: ../../contents/session/inference_server.rst:32
+msgid "사용 프로세스는 크게 3가지입니다."
+msgstr "The use process is divided into 3 steps"
+
+#: ../../contents/session/inference_server.rst:34
+msgid "세션 만들기"
+msgstr "Creating session"
+
+#: ../../contents/session/inference_server.rst:36
+msgid "API 요청"
+msgstr "Requesting API"
+
+#: ../../contents/session/inference_server.rst:38
+msgid "세션 제거하기"
+msgstr "Deleting session"
+
+#: ../../contents/session/inference_server.rst:72
+msgid "**1) 세션 만들기**"
+msgstr "**1) Creating session**"
+
+#: ../../contents/session/inference_server.rst:41
+msgid "**POST** \"/v3/session\""
+msgstr ""
+
+#: ../../contents/session/inference_server.rst:43
+msgid "recognizer에 대한 session 생성 요청을 보냅니다."
+msgstr "Sends a session creation request for the recognizer."
+
+#: ../../contents/session/inference_server.rst:44
+msgid "세션이 생성되는 동안에는 recognizer에 대한 다른 세션 요청을 보낼 수 없습니다."
+msgstr ""
+"You cannot send another session request to the recognizer while a session"
+" is being created."
+
+#: ../../contents/session/inference_server.rst:45
+msgid "생성 요청이 완료된 이후에 recognizer에 대한 세션 수를 추가/제거할 수 있습니다."
+msgstr ""
+"After the creation request is completed, you can add/remove the number of"
+" sessions for the recognizer."
+
+#: ../../contents/session/inference_server.rst:46
+msgid "inference session을 증가시키면 많은 양의 request를 더 빨리 처리할 수 있습니다."
+msgstr ""
+"Increasing the inference session allows you to process large quantities "
+"of requests faster."
+
+#: ../../contents/session/inference_server.rst:47
+msgid "gpu를 0으로 설정하거나 적지 않으면 cpu만 사용하는 session이 만들어집니다."
+msgstr ""
+"If gpu is set to zero or not written down, a session with only cpu is "
+"created."
+
+#: ../../contents/session/inference_server.rst:164
+msgid "**2) API 요청**"
+msgstr "**2) Requesting API**"
+
+#: ../../contents/session/inference_server.rst:75
+msgid "**GET** \"/v3/inference\""
+msgstr ""
+
+#: ../../contents/session/inference_server.rst:77
+msgid "inference 요청의 결과를 리턴합니다."
+msgstr "Returns the result of the inference request."
+
+#: ../../contents/session/inference_server.rst:78
+msgid ""
+"inference 요청 mode는 args가 기본값입니다. inference 결과가 빨리 나온 순으로 결과 요청 API를 통해 "
+"받아올 수 있습니다. uuid로 설정하면 inference를 요청할 때 uuid를 보내서 해당 요청에 대한 결과가 있을 시 값을 "
+"반환해줍니다."
+msgstr ""
+"Inference request mode is set to args default. You can use the result "
+"request API to receive the result in the order in which the inference "
+"result is generated. When set to uuid, the uuid is sent to return the "
+"value if there is a result of the request."
+
+#: ../../contents/session/inference_server.rst:90
+msgid "**GET** \"/v3/session\""
+msgstr ""
+
+#: ../../contents/session/inference_server.rst:92
+msgid "recognizer에 대한 session들의 이름을 리턴합니다."
+msgstr "Returns the names of the sessions for recognizer."
+
+#: ../../contents/session/inference_server.rst:103
+msgid "**GET** \"/v3/session/status\""
+msgstr ""
+
+#: ../../contents/session/inference_server.rst:105
+msgid "recognizer에 대한 마지막 session 생성 요청 상태를 리턴합니다."
+msgstr "Returns the status of the last session creating request for recognizer."
+
+#: ../../contents/session/inference_server.rst:106
+msgid "ongoing, succeed, failed 상태가 있습니다."
+msgstr "There are ongoing, succeed, failed status."
+
+#: ../../contents/session/inference_server.rst:117
+msgid "**GET** \"/v3/session/count\""
+msgstr ""
+
+#: ../../contents/session/inference_server.rst:119
+msgid "inference session의 갯수를 리턴합니다."
+msgstr "Returns the number of inference sessions."
+
+#: ../../contents/session/inference_server.rst:120
+msgid ""
+"query params를 비워두면 inference session의 갯수를 리턴하고, query params로 recognizer를"
+" 보내면 해당 유저의 갯수를 리턴합니다."
+msgstr ""
+"Leave the query parameters empty to return the number of inference "
+"sessions. Or send recognizer to the query parameters to return the number"
+" of users."
+
+#: ../../contents/session/inference_server.rst:127
+msgid "**POST** \"/v3/inference\""
+msgstr ""
+
+#: ../../contents/session/inference_server.rst:129
+msgid "recognizer에 대한 inference 요청을 보낼 수 있습니다."
+msgstr "You can send an inference request for the recognizer."
+
+#: ../../contents/session/inference_server.rst:130
+msgid "요청-결과 식별 mode는 args, uuid, sync가 있습니다."
+msgstr "Request-result identification mode has args, uuid, and sync."
+
+#: ../../contents/session/inference_server.rst:132
+msgid "args: 후에 결과를 가져올 때 요청 args에 대한 json string을 결과의 키값으로 리턴해줍니다."
+msgstr ""
+"args: When the result is later imported, the json string for the request "
+"args is returned to the key value of the result."
+
+#: ../../contents/session/inference_server.rst:133
+msgid ""
+"uuid: 서버 내에서 uuid를 생성해 리턴해줍니다. 후에 결과를 가져올 때 이 uuid를 arguments에 포함하여 사용하면 "
+"됩니다."
+msgstr ""
+"uuid: Creates and returns uuid within the server. You can include this "
+"uuid in the arguments when you later get the results."
+
+#: ../../contents/session/inference_server.rst:134
+msgid ""
+"sync: 요청 시 pull을 할 필요 없이 inference가 끝날 때까지 기다렸다가 결과를 바로 받아볼 수 있습니다. 요청 "
+"timeout을 설정하지 않는 것이 좋습니다."
+msgstr ""
+"sync: You can receive results immediately at the end of the inference "
+"without having to pull on demand. It is not recommended to set the "
+"request timeout."
+
+#: ../../contents/session/inference_server.rst:150
+msgid "**POST** \"/v3/inference/subscribe\""
+msgstr ""
+
+#: ../../contents/session/inference_server.rst:152
+msgid "inference 결과에 대한 hook url을 등록합니다."
+msgstr "Register a hook url for the inference result."
+
+#: ../../contents/session/inference_server.rst:153
+msgid ""
+"hook url이 존재하면 inference 결과가 생길 때 해당 url에 결과를 POST 해줍니다. (requst body, "
+"string)"
+msgstr ""
+"If a hook url exists, it POSTs the result to the url when the inference "
+"result is generated. (requst body, string)"
+
+#: ../../contents/session/inference_server.rst:180
+msgid "**3) 세션 제거하기**"
+msgstr "**3) Deleting session**"
+
+#: ../../contents/session/inference_server.rst:167
+msgid "\"/v3/session\""
+msgstr ""
+
+#: ../../contents/session/inference_server.rst:169
+msgid "recognizer에 대한 session 제거 요청을 할 수 있습니다."
+msgstr "You can request removing a session from the recognizer."
+
+#: ../../contents/session/inference_server.rst:170
+msgid ""
+"요청된 갯수의 session은 5분 안에 제거됩니다. 제거하는 session에서 현재 일을 진행하는지 아닌지의 여부를 점검하는 "
+"시간이 필요하기 때문에 바로 session이 삭제되지 않습니다."
+msgstr ""
+"The requested number of sessions will be removed within 5 minutes. "
+"Session will not be deleted immediately because the session you remove "
+"will need time to check whether or not jobs are currently worked in the "
+"session."
+
+#: ../../contents/session/inference_server.rst:243
+msgid "ETC:"
+msgstr ""
+
+#: ../../contents/session/inference_server.rst:230
+msgid "**encoding/decoding:**"
+msgstr ""
+
+#: ../../contents/session/inference_server.rst:184
+msgid ""
+"Inference server v3 업데이트 이전에는 다음의 두가지 경우에 데이터 인코딩 처리가 필요했으나 현재는 바로 infer를"
+" 수행할 수 있습니다."
+msgstr ""
+"Before the Inference server v3 update, data encoding was required in two cases below, but now you can perform infer immediately:"
+
+#: ../../contents/session/inference_server.rst:186
+msgid "요청 단에서 요청 데이터를 base64로 인코딩"
+msgstr "You had to encode request data to base64 in the request section."
+
+#: ../../contents/session/inference_server.rst:188
+msgid "example)"
+msgstr ""
+
+#: ../../contents/session/inference_server.rst:194
+msgid "모델 단에서 (infer func of model) 전달받은 input 값 utf-8 디코딩"
+msgstr "You had to decode input variable passed by infer function of model with utf-8."
+
+#: ../../contents/session/inference_server.rst:197
+msgid ""
+"client 단에서는 infer 요청을 보낼 때 포함시켰던 args 값을 그대로 모델의 infer 함수에서 input으로 받을 수 "
+"있습니다."
+msgstr ""
+"In the client, you can receive the args value that you included "
+"when sending the infer request as input in the model's infer function."
+
+#: ../../contents/session/inference_server.rst:199
+msgid "예를 들어 요청을 아래와 같이 보낸다면"
+msgstr "For example, if you send a request as below:"
+
+#: ../../contents/session/inference_server.rst:219
+msgid "아래와 같이 받아볼 수 있습니다."
+msgstr "Here's what you can get:"
+
+#: ../../contents/session/inference_server.rst:243
+msgid "**consumer timeout:**"
+msgstr ""
+
+#: ../../contents/session/inference_server.rst:233
+msgid ""
+"Inference 결과를 얻기 위해 GET 요청을 날리면 consumer timeout이라는 메시지와 함께 400 response를"
+" 받을 수 있습니다."
+msgstr ""
+"If you send a GET request to obtain the Inference result, you can receive"
+" a 400 response with the message \"consumer timeout\"."
+
+#: ../../contents/session/inference_server.rst:235
+msgid ""
+"해당 메시지는 세션이 아직 inference를 수행하지 못했거나 (참고 : 이 경우에는 시간이 흘러 inference가 끝나면 결과"
+" 요청을 다시 보내서 받아볼 수 있습니다.) 모델 내에서 오류가 생긴 경우에 나올 수 있습니다."
+msgstr ""
+"This message may occur if the session has not yet performed an inference "
+"(Note: In this case, after the reference has been completed, you can "
+"send the result request again to receive it.) or if an error has occurred within the model."
+
+#: ../../contents/session/inference_server.rst:237
+msgid "모델 내에서 오류가 난 경우, 해당 세션의 로그를 확인해 어떤 에러가 났는지 확인해 볼 수 있습니다."
+msgstr ""
+"If there is an error within the model, you can check the logs for that "
+"session to see what errors occurred."
+
+#: ../../contents/session/inference_server.rst:277
+msgid "Code Example:"
+msgstr ""
+
+#~ msgid "로 나눠집니다."
+#~ msgstr ". "

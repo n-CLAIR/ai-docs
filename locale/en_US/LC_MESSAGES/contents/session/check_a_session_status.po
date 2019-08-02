@@ -1,0 +1,111 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-29 11:11+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../contents/session/check_a_session_status.rst:4
+msgid "Check a session status"
+msgstr ""
+
+#: ../../contents/session/check_a_session_status.rst:9
+msgid "Usage:"
+msgstr ""
+
+#: ../../contents/session/check_a_session_status.rst:8
+msgid "**nsml ps** *Options*"
+msgstr ""
+
+#: ../../contents/session/check_a_session_status.rst:12
+msgid "Description:"
+msgstr ""
+
+#: ../../contents/session/check_a_session_status.rst:12
+msgid "session 들의 목록을 보여줍니다."
+msgstr "Displays a list of sessions."
+
+#: ../../contents/session/check_a_session_status.rst:23
+msgid "Example:"
+msgstr ""
+
+#: ../../contents/session/check_a_session_status.rst:15
+msgid "Basic command"
+msgstr ""
+
+#: ../../contents/session/check_a_session_status.rst:52
+msgid "Options:"
+msgstr ""
+
+#: ../../contents/session/check_a_session_status.rst:28
+msgid "가장 최근 생성된 n 개의 session 들을 보여줍니다."
+msgstr "Displays the most recently created n sessions. ex) nsml ps -n 10"
+
+#: ../../contents/session/check_a_session_status.rst:32
+msgid "자세한 설명을 추가하여 보여줍니다."
+msgstr "Add a detailed description."
+
+#: ../../contents/session/check_a_session_status.rst:36
+msgid "종료된 session 까지 포함하여 보여줍니다."
+msgstr "It shows up to the finished session."
+
+#: ../../contents/session/check_a_session_status.rst:40
+msgid "json format 으로 출력합니다."
+msgstr "Output in json format."
+
+#: ../../contents/session/check_a_session_status.rst:44
+msgid "session 을 dataset 으로 filtering 하여 보여줍니다. ex) nsml ps -d mnist"
+msgstr "Filter session by dataset. ex) nsml ps -d mnist"
+
+#: ../../contents/session/check_a_session_status.rst:48
+msgid "해당하는 session 만 보여줍니다. ex) nsml ps -s SESSION_NAME"
+msgstr "Only the corresponding session is displayed. ex) nsml ps -s SESSION"
+
+#: ../../contents/session/check_a_session_status.rst:52
+msgid "세션네임만 보여줍니다"
+msgstr "Only shows session names"
+
+#: ../../contents/session/check_a_session_status.rst:54
+msgid "Types:"
+msgstr ""
+
+#: ../../contents/session/check_a_session_status.rst:56
+msgid "``normal``: :ref:`nsml run<nsml run>` 에 의해 실행된 기본세션입니다."
+msgstr "``normal``: normal session launched by :ref:`nsml run<nsml run>`"
+
+#: ../../contents/session/check_a_session_status.rst:59
+msgid "``normal/fork``: :ref:`nsml fork<nsml fork>` 에 의해 기존에 있던 세션을 fork한 세션입니다."
+msgstr "``normal/fork``: forked session. launched by :ref:`nsml fork<nsml fork>`"
+
+#: ../../contents/session/check_a_session_status.rst:61
+msgid "``infer``: :ref:`nsml infer<nsml infer>` 에 의해서 생성된 세션입니다."
+msgstr "``infer``: inference session launched by :ref:`nsml infer<nsml infer>`"
+
+#: ../../contents/session/check_a_session_status.rst:63
+msgid ""
+"``submit``: :ref:`nsml submit<nsml submit>` 에 의해 실행된 세션입니다. 서브밋이 끝나면 세션은 "
+"삭제됩니다."
+msgstr ""
+"``submit``: submit session launched by :ref:`nsml submit<nsml submit>` . "
+"When it is finished, it will be deleted."
+
+#: ../../contents/session/check_a_session_status.rst:65
+msgid "``submit(test)``: :ref:`nsml submit --test<nsml submit>` 에 의해 실행된 세션입니다."
+msgstr ""
+"``submit(test)``: submit test session. launched by :ref:`nsml submit "
+"--test<nsml submit>`"
+
+#~ msgid "가장최근 생성된 n 개의 session 들을보여줍니다. ex) nsml ps -n 10"
+#~ msgstr ""
+

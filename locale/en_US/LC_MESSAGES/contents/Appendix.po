@@ -1,0 +1,199 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, NAVER
+# This file is distributed under the same license as the NSML package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: NSML \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-01 09:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: ../../contents/Appendix.rst:2
+msgid "Appendix"
+msgstr ""
+
+#: ../../contents/Appendix.rst:12
+msgid "Notification"
+msgstr ""
+
+#: ../../contents/Appendix.rst:14
+msgid "session의 상태 변화를 email을 통해 알람을 받을 수 있습니다."
+msgstr "You can receive an alarm via e-mail about the status change of session."
+
+#: ../../contents/Appendix.rst:16
+msgid "https://airush.nsml.navercorp.com/settings/profile"
+msgstr ""
+
+#: ../../contents/Appendix.rst:18
+msgid "**session의 상태가 zombie가 되는 조건**"
+msgstr "**The condition that session state becomes zombie**"
+
+#: ../../contents/Appendix.rst:20
+msgid ""
+"GPU를 할당받고 실행 중이지만 1시간 동안 사용량이 0 인 경우 상태가 zombie로 표시됩니다. (여러 대의 GPU를 할당 받고"
+" 하나의 GPU라도 사용량이 0일 때도 zombie가 됩니다. )"
+msgstr ""
+"If the GPU is allocated and running, but has a usage of zero for one hour, the status is displayed as zombie. "
+"(If you have multiple GPUs, even a single GPU will be zombie even when usage is zero.)"
+
+#: ../../contents/Appendix.rst:23
+msgid "Dataset Policy"
+msgstr ""
+
+#: ../../contents/Appendix.rst:25
+msgid ""
+"해커톤에서 사용하는 데이터셋은 지적재산권으로 보호되는 저작물입니다. 기간 동안 참가자들에게만 사용이 허용됩니다. 해커톤 이외의 "
+"용도(개인적 용도/상업적 용도 등)으로 저장하여 수집하려는 시도를 했을 경우 법적 조치가 취해질 수 있습니다."
+msgstr ""
+"Datasets used by hacker tones are copyrighted works."
+"Use only for participants during the period. Legal action may be taken if an attempt is made to"
+" save and collect it for purposes other than hacker tones (personal use / commercial use, etc.)."
+
+#: ../../contents/Appendix.rst:31
+msgid "GPU credit rule"
+msgstr ""
+
+#: ../../contents/Appendix.rst:33
+msgid "한 유저가 동시에 실행 가능한 GPU MAX 개수는 2개로 정해져있고, 이는 리소스 상황에 따라 계속 변경됩니다."
+msgstr ""
+"The maximum number of GPUs that can be executed simultaneously"
+" by a user is two, which is constantly changing according to the resource situation."
+
+#: ../../contents/Appendix.rst:35
+msgid "GPU MAX값이 줄어도 이미 시작된 session에는 영향을 주지 않습니다."
+msgstr "Decreasing the GPU MAX value does not affect sessions that have already started."
+
+#~ msgid "Tobe"
+#~ msgstr ""
+
+#~ msgid "NSML hackaton"
+#~ msgstr ""
+
+#~ msgid "NSML을 활용하여 사내에서 해커톤을 개최하고, 참여할 수 있습니다."
+#~ msgstr "Use NSML to host and participate in hackaton."
+
+#~ msgid "자세한 사항은 아래 링크를 참고하시기 바랍니다."
+#~ msgstr "For more details, please refer to the link below."
+
+#~ msgid "https://pages.oss.navercorp.com/nsml-competition/nsml_ai_challenge/"
+#~ msgstr ""
+
+#~ msgid "한 유저가 동시에 실행 가능한 GPU의 최대 개수는 40개, RAM 제한은 1280 GB입니다."
+#~ msgstr ""
+#~ "The maximum number of GPUs that a"
+#~ " user can run at the same time"
+#~ " is 40, RAM is 1280 GB"
+
+#~ msgid "https://nsml.navercorp.com/settings/profile"
+#~ msgstr ""
+
+#~ msgid "User Policy"
+#~ msgstr ""
+
+#~ msgid "(사내용)  시스템에 해를 끼치는 행위가 있을 경우, 어뷰징 행위로 간주되어 차단당할 수 있습니다."
+#~ msgstr ""
+#~ "(in-house info.) If there is any"
+#~ " activity that harms the system, it"
+#~ " may be regarded as an act of"
+#~ " attack and may be blocked."
+
+#~ msgid "어뷰징으로 분류되는 예시를 잘 확인하시고, NSML 사용에 주의하시길 당부드립니다."
+#~ msgstr ""
+#~ "Please be sure to check the "
+#~ "examples that fall into the category "
+#~ "of abuse and pay attention to the"
+#~ " use of NSML."
+
+#~ msgid "같은 명령어를 지속적, 반복적으로 사용하는 행위"
+#~ msgstr "Using the same command repeatedly and repeatedly"
+
+#~ msgid "크기가 큰 데이터셋이나 모델을 자주 다운로드하는 행위"
+#~ msgstr "Download large datasets or models frequently"
+
+#~ msgid "차단을 풀고 싶은 경우, nsml팀에 문의하시기 바랍니다. (양영일님)"
+#~ msgstr ""
+#~ "If you want to unblock it, please"
+#~ " contact the nsml team. (Yang "
+#~ "Young-il)s"
+
+#~ msgid "Resource Policy"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "NSML에서 한 유저가 최대로 사용할 수 있는 "
+#~ "GPU, CPU, memory 리소스 양은 전체 사용량에"
+#~ " 따라서 가변적으로 변경됩니다."
+#~ msgstr ""
+#~ "The maximum amount of GPU, CPU, "
+#~ "memory resources available for a user"
+#~ " is changed as the total status "
+#~ "of resources usage."
+
+#~ msgid "Team"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Team을 만들어서 Team에 속한 사람들끼리 session을 "
+#~ "공유할 수 있습니다. (기존에 있던 session은 공유할"
+#~ " 수 없습니다.)"
+#~ msgstr ""
+#~ "You can share a session among "
+#~ "people belonging to team by creating "
+#~ "team. (Existing sessions can not be "
+#~ "shared.)"
+
+#~ msgid "https://nsml.navercorp.com/groups/new"
+#~ msgstr ""
+
+#~ msgid "Team을 만들었다면, nsml login 으로 다시 로그인해야 하며,"
+#~ msgstr "If you have created a team, you must log in again with nsml login,"
+
+#~ msgid "Login 할 때 -t 옵션으로 TEAM 명을 입력한 후 login 하면 기존과 똑같은 환경에서 사용할 수 있습니다."
+#~ msgstr ""
+#~ "When you login, you can use team"
+#~ " name with -t option and login "
+#~ "in the same environment."
+
+#~ msgid "Team 이름은 최소 5글자 이상이 필요합니다."
+#~ msgstr "Team names must be at least 5 characters long."
+
+#~ msgid "Nsml-notebook(beta)"
+#~ msgstr ""
+
+#~ msgid "NSML의 기능을 jupyter notebook에서도 사용할 수 있습니다."
+#~ msgstr "NSML functionality is also available in the jupyter notebook."
+
+#~ msgid "notebook에서 사용하는 함수들은 NSML의 명령어와 유사합니다."
+#~ msgstr "Functions used in notebook are similar to those of NSML."
+
+#~ msgid "(nsml.run() -> nsml run , nsml.ps() -> nsml ps)"
+#~ msgstr ""
+
+#~ msgid "하지만 아직 beta 버전이므로 사용에 유의하시기 바랍니다."
+#~ msgstr "However, please note that it is still in beta."
+
+#~ msgid "https://oss.navercorp.com/nsml/nsml_notebook"
+#~ msgstr ""
+
+#~ msgid "Leaving nsml"
+#~ msgstr ""
+
+#~ msgid "(사내용) 퇴사하실 때는 아래의 과정을 진행해 주시기 바랍니다."
+#~ msgstr ""
+#~ "Please take the following steps when "
+#~ "leaving company.(Contents for our company)"
+
+#~ msgid "필요 없는 session 지우기"
+#~ msgstr "Clear unneeded session"
+
+#~ msgid "필요 없는 model 지우기"
+#~ msgstr "Clear unnecessary model"
+
