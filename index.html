@@ -2,28 +2,29 @@
 <html lang="en">
 <head>
     <meta />
-    <!--<meta http-equiv="refresh" content="0; url=_build/html/index.html" />-->
+    <meta http-equiv="refresh" content="0; url=_build/html/en_US/index.html" />
     <title>Title</title>
 
     <script type="text/javascript">
-        //window.document.getElementsByTagName("meta");
-        function getLang(){
-          var userLang = navigator.language || navigator.userLanguage;
-          return userLang;
-        }
-        var lang = getLang();
-        if(lang != ("ko-KR" || "ko")){
-          lang = "en_US";
-        }
-        else{
-          lang = "ko_KR";
-        }
-        lang = "en_US";
-        var meta = document.getElementsByTagName('meta')[0];
-        //var meta = document.getElementsByTagName('head')[0].appendChild(meta);
-        meta.setAttribute("content","0; url=_build/html/"+lang+"/index.html");
-        meta.setAttribute("http-equiv","refresh");
-        //document.getElementsByTagName('head')[0].appendChild(meta);
+        // //window.document.getElementsByTagName("meta");
+
+        // function getLang(){
+        //   var userLang = navigator.language || navigator.userLanguage;
+        //   return userLang;
+        // }
+        // var lang = getLang();
+        // if(lang != ("ko-KR" || "ko")){
+        //   lang = "en_US";
+        // }
+        // else{
+        //   lang = "ko_KR";
+        // }
+        // lang = "en_US";
+        // var meta = document.getElementsByTagName('meta')[0];
+        // //var meta = document.getElementsByTagName('head')[0].appendChild(meta);
+        // meta.setAttribute("content","0; url=_build/html/"+lang+"/index.html");
+        // meta.setAttribute("http-equiv","refresh");
+        // //document.getElementsByTagName('head')[0].appendChild(meta);
 
     </script>
 
