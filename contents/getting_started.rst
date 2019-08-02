@@ -96,7 +96,7 @@ Run a session
 
     .. code-block:: console
 
-        $ git clone https://github.com/ai-starthon/AI_Starthon2019.git
+        $ git clone https://github.com/ai-rush-2019/airush.git
         Cloning into 'AI_Starthon2019'...
         remote: Enumerating objects: 48, done.
         remote: Counting objects: 100% (48/48), done.
