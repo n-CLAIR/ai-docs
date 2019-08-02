@@ -36,11 +36,6 @@ Login
     NSML을 사용하기 위해선 로그인을 해야 합니다.
     Github 아이디와 비밀번호로 로그인합니다. 아래 소스 코드에서는 ``nsmlteam`` 을 Github 아이디로 사용하여 로그인하겠습니다.
 
-
-    .. note:: **Github에서 Two-factor authentication을 해제해야 사용 가능합니다.**
-
-        (확인 방법 : Settings > Security > Two-factor authentication 체크)
-
     .. code-block:: console
 
         $ nsml login
@@ -97,7 +92,7 @@ Run a session
     .. code-block:: console
 
         $ git clone https://github.com/ai-rush-2019/airush.git
-        Cloning into 'AI_Starthon2019'...
+        Cloning into 'airush'...
         remote: Enumerating objects: 48, done.
         remote: Counting objects: 100% (48/48), done.
         remote: Compressing objects: 100% (31/31), done.
