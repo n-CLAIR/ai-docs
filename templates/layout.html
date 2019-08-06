@@ -2,8 +2,15 @@
 {% extends "!layout.html" %}
 
 {%- block extrahead %}
-<meta name="sourcename" content="{{ sourcename }}" />
+{{ super() }}
+<!-- <meta name="sourcename" content="{{ sourcename }}" /> -->
 
-<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script><script type="text/javascript">if(!wcs_add) var wcs_add = {};wcs_add["wa"] = "bc1744d24abe20";wcs_do();</script>
-
+<!-- <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script><script type="text/javascript">if(!wcs_add) var wcs_add = {};wcs_add["wa"] = "bc1744d24abe20";wcs_do();</script> -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130409790-4"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-130409790-4');
+  </script>
 {% endblock %}
