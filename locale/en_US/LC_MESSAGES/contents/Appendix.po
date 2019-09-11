@@ -29,7 +29,7 @@ msgid "session의 상태 변화를 email을 통해 알람을 받을 수 있습�
 msgstr "You can receive an alarm via e-mail about the status change of session."
 
 #: ../../contents/Appendix.rst:16
-msgid "https://airush.nsml.navercorp.com/settings/profile"
+msgid "https://ai.nsml.navercorp.com/settings/profile"
 msgstr ""
 
 #: ../../contents/Appendix.rst:18

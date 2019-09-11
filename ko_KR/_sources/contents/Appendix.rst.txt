@@ -13,7 +13,7 @@ Notification
 
     session의 상태 변화를 email을 통해 알람을 받을 수 있습니다.
 
-    https://airush.nsml.navercorp.com/settings/profile
+    https://ai.nsml.navercorp.com/settings/profile
 
     .. note:: **session의 상태가 zombie가 되는 조건**
 

@@ -58,7 +58,7 @@ Prerequisites and User Interface
 
     - :guilabel:`Command Line Interface(CLI)` : NSML과 명령어(command)로 소통하는 interface입니다. Windows의 cmd, Mac OS의 터미널을 지칭합니다. NSML을 다운받고 세팅을 마치면 NSML command를 사용하실 수 있습니다.
 
-    - :guilabel:`Web interface` : session들의 진행 상황과 visualization을 확인할 수 있습니다. https://airush.nsml.navercorp.com 으로 접속하시면 됩니다.
+    - :guilabel:`Web interface` : session들의 진행 상황과 visualization을 확인할 수 있습니다. https://ai.nsml.navercorp.com 으로 접속하시면 됩니다.
 
 
 .. <br />

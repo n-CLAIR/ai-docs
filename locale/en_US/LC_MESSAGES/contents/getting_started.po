@@ -25,10 +25,10 @@ msgid "Install nsml"
 msgstr ""
 
 #: ../../contents/getting_started.rst:10
-msgid "https://airush.nsml.navercorp.com/download 페이지에서 자신의 플랫폼에 맞는 NSML을 다운받습니다."
+msgid "https://ai.nsml.navercorp.com/download 페이지에서 자신의 플랫폼에 맞는 NSML을 다운받습니다."
 msgstr ""
 "Download the NSML for your platform from the "
-"https://airush.nsml.navercorp.com/download page."
+"https://ai.nsml.navercorp.com/download page."
 
 #: ../../contents/getting_started.rst:12
 msgid "혹은 `wget` 명령어를 이용해서 받습니다. (아래 예제는 mac버전의 NSML을 다운받습니다.)"

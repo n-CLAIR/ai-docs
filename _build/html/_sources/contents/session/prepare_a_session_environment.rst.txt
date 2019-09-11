@@ -76,7 +76,7 @@ Prepare a session environment
 
 
 
-    .. _nsml/default_ml:latest: https://airush.nsml.navercorp.com/support
+    .. _nsml/default_ml:latest: https://ai.nsml.navercorp.com/support
 
 
 NSML ignore

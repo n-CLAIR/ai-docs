@@ -7,7 +7,7 @@ Getting started
 Install nsml
 ------------
 
-    https://airush.nsml.navercorp.com/download 페이지에서 자신의 플랫폼에 맞는 NSML을 다운받습니다.
+    https://ai.nsml.navercorp.com/download 페이지에서 자신의 플랫폼에 맞는 NSML을 다운받습니다.
 
     혹은 `wget` 명령어를 이용해서 받습니다. (아래 예제는 mac버전의 NSML을 다운받습니다.)
 
@@ -39,7 +39,7 @@ Login
     .. code-block:: console
 
         $ nsml login
-        INFO[2019/07/18 16:05:38.667] connecting to airush-cli.nsml.navercorp.com:18553
+        INFO[2019/07/18 16:05:38.667] connecting to ai-cli.nsml.navercorp.com:18553
         GitHub Username: nsml-admin
         GitHub Password: ****************
         INFO[2019/07/18 16:05:55.570] Welcome to NSML!
@@ -91,7 +91,7 @@ Run a session
 
     .. code-block:: console
 
-        $ git clone https://github.com/ai-rush-2019/airush.git
+        $ git clone https://github.com/clovaai/speech_hackathon_2019.git
         Cloning into 'airush'...
         remote: Enumerating objects: 48, done.
         remote: Counting objects: 100% (48/48), done.
