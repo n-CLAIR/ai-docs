@@ -2,8 +2,7 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<html class="writer-html5" lang="ko" >
 <head>
   <meta charset="utf-8">
   
@@ -13,28 +12,30 @@
   
 
   
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
   
   
   
 
   
-  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
-        <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+        <script src="../../_static/translations.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="색인" href="../../genindex.html" />
     <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="nsml.report" href="nsml_report.html" />
@@ -64,7 +65,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> NSML
+            <a href="../../index.html" class="icon icon-home" alt="Documentation Home"> NSML
           
 
           
@@ -87,6 +88,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -189,6 +191,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -227,7 +230,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../../index.html">Docs</a> &raquo;</li>
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
         
           <li><a href="nsml_library.html">NSML library</a> &raquo;</li>
         
@@ -253,25 +256,25 @@
   <div class="section" id="nsml-constants">
 <h1>NSML Constants<a class="headerlink" href="#nsml-constants" title="제목 주소">¶</a></h1>
 <blockquote>
-<div><dl class="attribute">
+<div><dl class="py attribute">
 <dt id="nsml.IS_ON_NSML">
 <code class="sig-prename descclassname">nsml.</code><code class="sig-name descname">IS_ON_NSML</code><a class="headerlink" href="#nsml.IS_ON_NSML" title="정의 주소">¶</a></dt>
 <dd><p>NSML server 에서 code 가 실행되는 상태면 True를 출력합니다.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="nsml.HAS_DATASET">
 <code class="sig-prename descclassname">nsml.</code><code class="sig-name descname">HAS_DATASET</code><a class="headerlink" href="#nsml.HAS_DATASET" title="정의 주소">¶</a></dt>
 <dd><p>session 이 dataset 을 가지고 있으면 True를 출력합니다.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="nsml.DATASET_PATH">
 <code class="sig-prename descclassname">nsml.</code><code class="sig-name descname">DATASET_PATH</code><a class="headerlink" href="#nsml.DATASET_PATH" title="정의 주소">¶</a></dt>
 <dd><p><a class="reference internal" href="../session/run_a_session.html#nsml-run"><span class="std std-ref">nsml run -d DATASET</span></a> 으로 실행시켰을 때 dataset 의 path를 출력합니다.</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="nsml.DATASET_NAME">
 <code class="sig-prename descclassname">nsml.</code><code class="sig-name descname">DATASET_NAME</code><a class="headerlink" href="#nsml.DATASET_NAME" title="정의 주소">¶</a></dt>
 <dd><p><a class="reference internal" href="../session/run_a_session.html#nsml-run"><span class="std std-ref">nsml run -d DATASET</span></a> 으로 실행시켰을 때 dataset 의 이름입니다.</p>
@@ -300,11 +303,19 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2019, NAVER
+        
+        &copy; 저작권 2018, NAVER
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -315,7 +326,6 @@
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

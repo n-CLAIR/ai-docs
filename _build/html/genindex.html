@@ -1,10 +1,8 @@
 
 
 
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<html class="writer-html5" lang="ko" >
 <head>
   <meta charset="utf-8">
   
@@ -14,28 +12,30 @@
   
 
   
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
   
   
   
 
   
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
-        <script type="text/javascript" src="_static/translations.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="색인" href="#" />
     <link rel="search" title="검색" href="search.html" />
  
@@ -63,7 +63,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> NSML
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> NSML
           
 
           
@@ -86,6 +86,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -131,7 +132,6 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="contents/session/run_a_session.html">Run a session</a></li>
 <li class="toctree-l2"><a class="reference internal" href="contents/session/submit_a_session.html">Submit a session</a></li>
-<li class="toctree-l2"><a class="reference internal" href="contents/session/access_to_a_session_for_repl.html">Access to a session for repl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="contents/session/change_a_session_memo.html">Change a session memo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="contents/session/delete_a_model.html">Delete a model</a></li>
 <li class="toctree-l2"><a class="reference internal" href="contents/session/fork_a_session.html">Fork a session</a></li>
@@ -188,6 +188,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -226,7 +227,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
       <li>색인</li>
     
@@ -254,13 +255,19 @@
  | <a href="#H"><strong>H</strong></a>
  | <a href="#I"><strong>I</strong></a>
  | <a href="#N"><strong>N</strong></a>
+ | <a href="#ᄂ"><strong>ᄂ</strong></a>
  
 </div>
 <h2 id="B">B</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="contents/nsml_library/bind_model.html#bind_model">bind_model() (내장 함수)</a>
+      <li>
+    bind_model()
+
+      <ul>
+        <li><a href="contents/nsml_library/bind_model.html#bind_model">내장 함수</a>
 </li>
+      </ul></li>
   </ul></td>
 </tr></table>
 
@@ -295,18 +302,66 @@
 <h2 id="N">N</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="contents/nsml_library/nsml_bind.html#nsml.bind">nsml.bind() (내장 함수)</a>
+      <li>
+    nsml.bind()
+
+      <ul>
+        <li><a href="contents/nsml_library/nsml_bind.html#nsml.bind">내장 함수</a>
 </li>
-      <li><a href="contents/nsml_library/nsml_load.html#nsml.load">nsml.load() (내장 함수)</a>
+      </ul></li>
+      <li>
+    nsml.load()
+
+      <ul>
+        <li><a href="contents/nsml_library/nsml_load.html#nsml.load">내장 함수</a>
 </li>
+      </ul></li>
+      <li>
+    nsml.paused()
+
+      <ul>
+        <li><a href="contents/nsml_library/nsml_paused.html#nsml.paused">내장 함수</a>
+</li>
+      </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="contents/nsml_library/nsml_paused.html#nsml.paused">nsml.paused() (내장 함수)</a>
+      <li>
+    nsml.report()
+
+      <ul>
+        <li><a href="contents/nsml_library/nsml_report.html#nsml.report">내장 함수</a>
 </li>
-      <li><a href="contents/nsml_library/nsml_report.html#nsml.report">nsml.report() (내장 함수)</a>
+      </ul></li>
+      <li>
+    nsml.save()
+
+      <ul>
+        <li><a href="contents/nsml_library/nsml_save.html#nsml.save">내장 함수</a>
 </li>
-      <li><a href="contents/nsml_library/nsml_save.html#nsml.save">nsml.save() (내장 함수)</a>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="ᄂ">ᄂ</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    내장 함수
+
+      <ul>
+        <li><a href="contents/nsml_library/bind_model.html#bind_model">bind_model()</a>
 </li>
+        <li><a href="contents/nsml_library/nsml_bind.html#nsml.bind">nsml.bind()</a>
+</li>
+        <li><a href="contents/nsml_library/nsml_load.html#nsml.load">nsml.load()</a>
+</li>
+        <li><a href="contents/nsml_library/nsml_paused.html#nsml.paused">nsml.paused()</a>
+</li>
+        <li><a href="contents/nsml_library/nsml_report.html#nsml.report">nsml.report()</a>
+</li>
+        <li><a href="contents/nsml_library/nsml_save.html#nsml.save">nsml.save()</a>
+</li>
+      </ul></li>
   </ul></td>
 </tr></table>
 
@@ -322,11 +377,19 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2019, NAVER
+        
+        &copy; 저작권 2018, NAVER
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -337,7 +400,6 @@
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

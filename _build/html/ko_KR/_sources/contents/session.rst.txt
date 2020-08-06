@@ -13,4 +13,10 @@ Session
         session/prepare_a_session_environment
         session/run_a_session
         session/submit_a_session
-        session/*
+        session/change_a_session_memo
+        session/delete_a_model
+        session/fork_a_session
+        session/get_a_log_from_session
+        session/pull_sessions
+        session/show_models
+        session/show_sessions

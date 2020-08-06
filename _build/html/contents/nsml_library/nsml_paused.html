@@ -2,8 +2,7 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<html class="writer-html5" lang="ko" >
 <head>
   <meta charset="utf-8">
   
@@ -13,28 +12,30 @@
   
 
   
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
   
   
   
 
   
-  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
-        <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+        <script src="../../_static/translations.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="색인" href="../../genindex.html" />
     <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="bind_model" href="bind_model.html" />
@@ -64,7 +65,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> NSML
+            <a href="../../index.html" class="icon icon-home" alt="Documentation Home"> NSML
           
 
           
@@ -87,6 +88,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -189,6 +191,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -227,7 +230,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../../index.html">Docs</a> &raquo;</li>
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
         
           <li><a href="nsml_library.html">NSML library</a> &raquo;</li>
         
@@ -252,11 +255,11 @@
             
   <div class="section" id="nsml-paused">
 <span id="id1"></span><h1>nsml.paused<a class="headerlink" href="#nsml-paused" title="제목 주소">¶</a></h1>
-<dl class="function">
+<dl class="py function">
 <dt id="nsml.paused">
-<code class="sig-prename descclassname">nsml.</code><code class="sig-name descname">paused</code><span class="sig-paren">(</span><em class="sig-param">scope=None</em><span class="sig-paren">)</span><a class="headerlink" href="#nsml.paused" title="정의 주소">¶</a></dt>
+<code class="sig-prename descclassname">nsml.</code><code class="sig-name descname">paused</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">scope</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#nsml.paused" title="정의 주소">¶</a></dt>
 <dd><p><a class="reference internal" href="../session/fork_a_session.html#nsml-fork"><span class="std std-ref">nsml fork</span></a>, <a class="reference internal" href="../session/submit_a_session.html#nsml-submit"><span class="std std-ref">nsml submit</span></a> 과 같이 nsml command 를 사용해서 세션을 재생성하는 명령어를 실행할 때 사용되는 함수입니다.</p>
-<p>내부적으로 main entry 파일에 --pause 1 이란 옵션을 줘서 세션을 재생성하므로, entry 파일에서 〈pause(int)〉 란 옵션을 받을 수 있어야 합니다.</p>
+<p>내부적으로 main entry 파일에 \-\-pause 1 이란 옵션을 줘서 세션을 재생성하므로, entry 파일에서 〈pause(int)〉 란 옵션을 받을 수 있어야 합니다.</p>
 <p>각 커맨드에 따라서 동작방식이 다릅니다.</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수</dt>
@@ -268,7 +271,7 @@
 <p>entry 파일의 main 함수가 있다면 main 함수의 <code class="docutils literal notranslate"><span class="pre">locals()</span></code> 변수를 넘겨주어야 합니다. 그렇지 않으면 에러가 발생합니다.</p>
 </div>
 <dl class="simple">
-<dt><a class="reference internal" href="../session/fork_a_session.html#nsml-fork"><span class="std std-ref">nsml fork</span></a></dt><dd><p><a class="reference internal" href="nsml_load.html#nsml-load"><span class="std std-ref">nsml.load</span></a> 함수가 호출된 후 <a class="reference internal" href="#nsml.paused">nsml.paused</a> 함수는 끝납니다.</p>
+<dt><a class="reference internal" href="../session/fork_a_session.html#nsml-fork"><span class="std std-ref">nsml fork</span></a></dt><dd><p><a class="reference internal" href="nsml_load.html#nsml-load"><span class="std std-ref">nsml.load</span></a> 함수가 호출된 후 <a class="reference internal" href="#id1">nsml.paused</a> 함수는 끝납니다.</p>
 </dd>
 <dt><a class="reference internal" href="../session/submit_a_session.html#nsml-submit"><span class="std std-ref">nsml submit</span></a></dt><dd><p>test_data 를 evaluate 한 후에 결과는 nsml server 로
 전송되고 <a class="reference internal" href="../web_interface/leaderboard.html#leaderboard"><span class="std std-ref">leaderboard</span></a> 에 기록됩니다.</p>
@@ -302,11 +305,19 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2019, NAVER
+        
+        &copy; 저작권 2018, NAVER
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -317,7 +328,6 @@
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

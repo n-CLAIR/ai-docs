@@ -2,8 +2,7 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<html class="writer-html5" lang="ko" >
 <head>
   <meta charset="utf-8">
   
@@ -13,28 +12,30 @@
   
 
   
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
   
   
   
 
   
-  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
-        <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+        <script src="../../_static/translations.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="색인" href="../../genindex.html" />
     <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="Web interface" href="../web_interface/web_interface.html" />
@@ -64,7 +65,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> NSML
+            <a href="../../index.html" class="icon icon-home" alt="Documentation Home"> NSML
           
 
           
@@ -87,6 +88,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -189,6 +191,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -227,7 +230,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../../index.html">Docs</a> &raquo;</li>
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
         
           <li><a href="nsml_library.html">NSML library</a> &raquo;</li>
         
@@ -252,17 +255,17 @@
             
   <div class="section" id="bind-model">
 <span id="id1"></span><h1>bind_model<a class="headerlink" href="#bind-model" title="제목 주소">¶</a></h1>
-<dl class="function">
+<dl class="py function">
 <dt id="bind_model">
 <code class="sig-name descname">bind_model</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bind_model" title="정의 주소">¶</a></dt>
 <dd><p>bind_model은 NSML의 함수는 아니지만 <a class="reference internal" href="nsml_bind.html#nsml-bind"><span class="std std-ref">nsml.bind</span></a> 를 쉽게 사용하기 위한 wrapper 함수입니다.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">bind_model</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">class_to_save</span><span class="p">,</span> <span class="n">optimizer</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">bind_model</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">class_to_save</span><span class="p">,</span> <span class="n">optimizer</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">load</span><span class="p">(</span><span class="n">dir_path</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="n">state</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;model.pt&#39;</span><span class="p">))</span>
         <span class="n">model</span><span class="o">.</span><span class="n">load_state_dict</span><span class="p">(</span><span class="n">state</span><span class="p">[</span><span class="s1">&#39;model&#39;</span><span class="p">])</span>
         <span class="k">if</span> <span class="s1">&#39;optimizer&#39;</span> <span class="ow">in</span> <span class="n">state</span> <span class="ow">and</span> <span class="n">optimizer</span><span class="p">:</span>
             <span class="n">optimizer</span><span class="o">.</span><span class="n">load_state_dict</span><span class="p">(</span><span class="n">state</span><span class="p">[</span><span class="s1">&#39;optimizer&#39;</span><span class="p">])</span>
-        <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Model loaded&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Model loaded&#39;</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">save</span><span class="p">(</span><span class="n">dir_path</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="n">state</span> <span class="o">=</span> <span class="p">{</span>
@@ -275,9 +278,9 @@
         <span class="c1"># load data into torch tensor</span>
         <span class="n">model</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>
         <span class="c1"># from list to tensor</span>
-        <span class="n">image</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">stack</span><span class="p">(</span><span class="n">preprocess</span><span class="p">(</span><span class="bp">None</span><span class="p">,</span> <span class="nb">input</span><span class="p">))</span>
+        <span class="n">image</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">stack</span><span class="p">(</span><span class="n">preprocess</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="nb">input</span><span class="p">))</span>
         <span class="n">image</span> <span class="o">=</span> <span class="n">Variable</span><span class="p">(</span><span class="n">image</span><span class="o">.</span><span class="n">cuda</span><span class="p">())</span>
-        <span class="n">_</span><span class="p">,</span> <span class="n">clean_state</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+        <span class="n">_</span><span class="p">,</span> <span class="n">clean_state</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
         <span class="n">_</span><span class="p">,</span> <span class="n">all_cls</span> <span class="o">=</span> <span class="n">clean_state</span><span class="o">.</span><span class="n">size</span><span class="p">()</span>
         <span class="n">prediction</span> <span class="o">=</span> <span class="n">F</span><span class="o">.</span><span class="n">softmax</span><span class="p">(</span><span class="n">clean_state</span><span class="p">)</span><span class="o">.</span><span class="n">topk</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">top_k</span><span class="p">,</span> <span class="n">all_cls</span><span class="p">))</span>
         <span class="c1"># output format</span>
@@ -312,11 +315,19 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2019, NAVER
+        
+        &copy; 저작권 2018, NAVER
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -327,7 +338,6 @@
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {
